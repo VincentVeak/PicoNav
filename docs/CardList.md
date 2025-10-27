@@ -27,7 +27,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 <tbody>
   <!-- FIRE CARDS -->
   <tr data-aspect="Fire">
-    <td class="card-icon">🔥</td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_00.png"></td>
     <td><strong>Fireball</strong></td>
     <td>Adds a Fire counter that deals 12.5% damage per turn</td>
     <td><span class="aspect-fire">Fire</span></td>
