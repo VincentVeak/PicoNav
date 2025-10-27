@@ -4,8 +4,8 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 
 
 <div class="stats-box">
-  <strong>Total Cards:</strong> <span id="total-cards">90</span> | 
-  <strong>Showing:</strong> <span id="showing-cards">90</span>
+  <strong>Total Available Cards:</strong> <span id="total-cards">50</span> | 
+  <strong>Future Planned Cards:</strong> <span id="showing-cards">33</span>
 </div>
 
 <input type="text" class="card-search" id="card-search" placeholder="Search cards by name, description, or tags..." onkeyup="searchCards()">
