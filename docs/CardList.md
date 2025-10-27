@@ -2,9 +2,6 @@
 
 Complete reference for all cards in PicoNav. Click column headers to sort, or use filters and search below.
 
-<div class="note-box">
-  <strong>⚠️ Note:</strong> The interactive features (sorting, filtering, search) will work on the live site (piconav.com) but not in GitHub's preview. This is normal - GitHub doesn't execute JavaScript in previews for security.
-</div>
 
 <div class="stats-box">
   <strong>Total Cards:</strong> <span id="total-cards">90</span> | 
