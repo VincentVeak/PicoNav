@@ -1,144 +1,3 @@
----
-layout: default
-title: Card Reference
-nav_order: 8
-description: "Complete card database for PicoNav card game"
-permalink: /docs/cards
----
-
-<style>
-/* Card reference table styling */
-.card-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  font-size: 14px;
-}
-
-.card-table th {
-  background-color: #2a2a2a;
-  color: #E6EBC5;
-  padding: 12px;
-  text-align: left;
-  font-weight: bold;
-  border-bottom: 2px solid #00313A;
-  cursor: pointer;
-  user-select: none;
-}
-
-.card-table th:hover {
-  background-color: #333;
-}
-
-.card-table th::after {
-  content: ' ⇅';
-  opacity: 0.5;
-  font-size: 12px;
-}
-
-.card-table td {
-  padding: 10px 12px;
-  border-bottom: 1px solid #333;
-  vertical-align: middle;
-}
-
-.card-table tr:hover {
-  background-color: #252525;
-}
-
-/* Icon column */
-.card-icon {
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  font-size: 24px;
-}
-
-.card-icon img {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
-}
-
-/* Aspect type badges */
-.aspect-fire { color: #ff6b35; font-weight: bold; }
-.aspect-earth { color: #8b4513; font-weight: bold; }
-.aspect-water { color: #4a9eff; font-weight: bold; }
-.aspect-lightning { color: #ffeb3b; font-weight: bold; }
-.aspect-nature { color: #4caf50; font-weight: bold; }
-.aspect-wind { color: #a8dadc; font-weight: bold; }
-.aspect-drain { color: #9d4edd; font-weight: bold; }
-.aspect-steam { color: #f4a261; font-weight: bold; }
-.aspect-siphon { color: #457b9d; font-weight: bold; }
-.aspect-null { color: #adb5bd; font-weight: bold; }
-
-/* Search box */
-.card-search {
-  width: 100%;
-  max-width: 400px;
-  padding: 10px;
-  margin: 20px 0;
-  border: 2px solid #00313A;
-  border-radius: 5px;
-  font-size: 16px;
-  background-color: #1e1e1e;
-  color: #E6EBC5;
-}
-
-/* Filter buttons */
-.filter-buttons {
-  margin: 20px 0;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.filter-btn {
-  padding: 8px 16px;
-  border: 2px solid #00313A;
-  background-color: #2a2a2a;
-  color: #E6EBC5;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: all 0.2s;
-}
-
-.filter-btn:hover {
-  background-color: #00313A;
-}
-
-.filter-btn.active {
-  background-color: #00313A;
-  border-color: #E6EBC5;
-}
-
-.stats-box {
-  background-color: #2a2a2a;
-  padding: 15px;
-  border-radius: 5px;
-  margin: 20px 0;
-}
-
-.priority-badge {
-  background-color: #ffd60a;
-  color: #000;
-  padding: 2px 6px;
-  border-radius: 3px;
-  font-size: 11px;
-  font-weight: bold;
-  margin-left: 5px;
-}
-
-.note-box {
-  background-color: #1e3a5f;
-  border-left: 4px solid #4a9eff;
-  padding: 15px;
-  margin: 20px 0;
-  border-radius: 4px;
-}
-</style>
-
 # Card Reference Database
 
 Complete reference for all cards in PicoNav. Click column headers to sort, or use filters and search below.
@@ -150,19 +9,6 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 <div class="stats-box">
   <strong>Total Cards:</strong> <span id="total-cards">90</span> | 
   <strong>Showing:</strong> <span id="showing-cards">90</span>
-</div>
-
-## Filters
-
-<div class="filter-buttons">
-  <button class="filter-btn active" onclick="filterByAspect('all')">All Cards</button>
-  <button class="filter-btn" onclick="filterByAspect('Fire')">🔥 Fire</button>
-  <button class="filter-btn" onclick="filterByAspect('Earth')">🪨 Earth</button>
-  <button class="filter-btn" onclick="filterByAspect('Water')">💧 Water</button>
-  <button class="filter-btn" onclick="filterByAspect('Lightning')">⚡ Lightning</button>
-  <button class="filter-btn" onclick="filterByAspect('Nature')">🌿 Nature</button>
-  <button class="filter-btn" onclick="filterByAspect('Wind')">💨 Wind</button>
-  <button class="filter-btn" onclick="filterByAspect('NULL')">⚪ Neutral</button>
 </div>
 
 <input type="text" class="card-search" id="card-search" placeholder="Search cards by name, description, or tags..." onkeyup="searchCards()">
@@ -324,8 +170,8 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   </tr>
   <tr data-aspect="Earth">
     <td class="card-icon">🛡️</td>
-    <td><strong>Fortify</strong><span class="priority-badge">PRIORITY</span></td>
-    <td>Upgrades Earth to Metal counter, which on removal grants an Earth counter. Instantly maxes out Earth counter stacks to 3</td>
+    <td><strong>Fortify</strong></td>
+    <td><b>Priority move.</b> Upgrades Earth to Metal counter, which on removal grants an Earth counter. Instantly maxes out Earth counter stacks to 3</td>
     <td><span class="aspect-earth">Earth</span></td>
     <td>Earth</td>
     <td>15</td>
@@ -353,8 +199,8 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   <!-- EARTH/NATURE CARDS -->
   <tr data-aspect="Earth">
     <td class="card-icon">🌿</td>
-    <td><strong>Terraform</strong><span class="priority-badge">PRIORITY</span></td>
-    <td>Upgrades Earth Counter to Nature Counter, which heals 12.5% each turn</td>
+    <td><strong>Terraform</td>
+    <td><b>Priority move.</b>Upgrades Earth Counter to Nature Counter, which heals 12.5% each turn</td>
     <td><span class="aspect-earth">Earth</span></td>
     <td><span class="aspect-nature">Nature</span></td>
     <td>15</td>
@@ -519,8 +365,8 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   </tr>
   <tr data-aspect="Wind">
     <td class="card-icon">💨</td>
-    <td><strong>Air Slash</strong><span class="priority-badge">PRIORITY</span></td>
-    <td>Remove Wind counter on self for 3x damage</td>
+    <td><strong>Air Slash</td>
+    <td><b>Priority move.</b> Remove Wind counter on self for 3x damage</td>
     <td><span class="aspect-wind">Wind</span></td>
     <td>Wind</td>
     <td>30</td>
@@ -611,8 +457,8 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   </tr>
   <tr data-aspect="NULL">
     <td class="card-icon">⚔️</td>
-    <td><strong>Lunge</strong><span class="priority-badge">PRIORITY</span></td>
-    <td>Neutral Priority damage</td>
+    <td><strong>Lunge</td>
+    <td><b>Priority move.</b></td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
     <td>40</td>
@@ -620,8 +466,8 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   </tr>
   <tr data-aspect="NULL">
     <td class="card-icon">🛡️</td>
-    <td><strong>Block</strong><span class="priority-badge">PRIORITY</span></td>
-    <td>Prevent all damage from opponent's move if Block was not used last turn</td>
+    <td><strong>Block</td>
+    <td><b>Priority move.</b> Prevent all damage from opponent's move if Block was not used last turn</td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
     <td>0</td>
@@ -927,115 +773,6 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 </tbody>
 </table>
 
-<script>
-// Initialize card count
-document.addEventListener('DOMContentLoaded', function() {
-  updateCardCount();
-});
-
-// Table sorting functionality
-let sortDirection = {};
-
-function sortTable(columnIndex) {
-  const table = document.getElementById('card-table');
-  const tbody = table.getElementsByTagName('tbody')[0];
-  const rows = Array.from(tbody.getElementsByTagName('tr'));
-  
-  // Determine sort direction
-  if (!sortDirection[columnIndex]) {
-    sortDirection[columnIndex] = 'asc';
-  } else {
-    sortDirection[columnIndex] = sortDirection[columnIndex] === 'asc' ? 'desc' : 'asc';
-  }
-  
-  // Sort rows
-  rows.sort((a, b) => {
-    const aValue = a.getElementsByTagName('td')[columnIndex].textContent.trim();
-    const bValue = b.getElementsByTagName('td')[columnIndex].textContent.trim();
-    
-    // Try to parse as number for damage column
-    const aNum = parseFloat(aValue.replace(/[^0-9.-]/g, ''));
-    const bNum = parseFloat(bValue.replace(/[^0-9.-]/g, ''));
-    
-    if (!isNaN(aNum) && !isNaN(bNum)) {
-      return sortDirection[columnIndex] === 'asc' ? aNum - bNum : bNum - aNum;
-    }
-    
-    // String comparison
-    if (sortDirection[columnIndex] === 'asc') {
-      return aValue.localeCompare(bValue);
-    } else {
-      return bValue.localeCompare(aValue);
-    }
-  });
-  
-  // Re-append sorted rows
-  rows.forEach(row => tbody.appendChild(row));
-}
-
-// Search functionality
-function searchCards() {
-  const input = document.getElementById('card-search');
-  const filter = input.value.toLowerCase();
-  const table = document.getElementById('card-table');
-  const rows = table.getElementsByTagName('tr');
-  
-  updateCardCount(filter);
-}
-
-// Filter by aspect
-function filterByAspect(aspect) {
-  const table = document.getElementById('card-table');
-  const rows = table.getElementsByTagName('tr');
-  
-  // Update button states
-  const buttons = document.querySelectorAll('.filter-btn');
-  buttons.forEach(btn => btn.classList.remove('active'));
-  event.target.classList.add('active');
-  
-  for (let i = 1; i < rows.length; i++) {
-    const row = rows[i];
-    const rowAspect = row.getAttribute('data-aspect');
-    
-    if (aspect === 'all' || rowAspect === aspect) {
-      row.style.display = '';
-    } else {
-      row.style.display = 'none';
-    }
-  }
-  
-  updateCardCount();
-  document.getElementById('card-search').value = ''; // Clear search
-}
-
-// Update card count
-function updateCardCount(searchFilter = '') {
-  const table = document.getElementById('card-table');
-  const rows = table.getElementsByTagName('tr');
-  let visibleCount = 0;
-  
-  for (let i = 1; i < rows.length; i++) {
-    const row = rows[i];
-    const text = row.textContent.toLowerCase();
-    const isVisible = row.style.display !== 'none';
-    
-    if (searchFilter) {
-      if (text.includes(searchFilter) && isVisible) {
-        row.style.display = '';
-        visibleCount++;
-      } else if (!text.includes(searchFilter)) {
-        row.style.display = 'none';
-      } else if (isVisible) {
-        visibleCount++;
-      }
-    } else if (isVisible) {
-      visibleCount++;
-    }
-  }
-  
-  document.getElementById('showing-cards').textContent = visibleCount;
-}
-</script>
 
 ---
 
