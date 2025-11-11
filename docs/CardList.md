@@ -74,7 +74,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   <tr data-aspect="Fire">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_20.png"></td>
     <td><strong>Overheat</strong></td>
-    <td>Replace user's counter with a DEF DOWN counter</td>
+    <td>Lowers the user's defense stat by 2 stages</td>
     <td><span class="aspect-fire">Fire</span></td>
     <td>Fire</td>
     <td>100</td>
@@ -445,8 +445,8 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   </tr>
   <tr data-aspect="NULL">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_47.png"></td>
-    <td><strong>Insult</strong></td>
-    <td>Place a Def Down counter on the opponent</td>
+    <td><strong></strong></td>
+    <td>Lower the opponent's defense stage by 1</td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
     <td>0</td>
