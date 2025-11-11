@@ -97,7 +97,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td>Adds or increases Lightning counter. Damage is multiplied by number of counters</td>
     <td><span class="aspect-fire">Fire</span></td>
     <td><span class="aspect-lightning">Lightning</span></td>
-    <td>30</td>
+    <td>40</td>
     <td>Fire, Lightning</td>
   </tr>
   <tr data-aspect="Fire">
