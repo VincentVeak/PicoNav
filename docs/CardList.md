@@ -445,7 +445,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   </tr>
   <tr data-aspect="NULL">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_47.png"></td>
-    <td><strong></strong></td>
+    <td><strong>Insult</strong></td>
     <td>Lower the opponent's defense stage by 1</td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
