@@ -417,7 +417,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td>Neutral, Defense, Priority</td>
   </tr>
   <tr data-aspect="NULL">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_35.png"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_36.png"></td>
     <td><strong>Payout</strong></td>
     <td>Grants extra money if this is the killing move</td>
     <td><span class="aspect-null">Neutral</span></td>
