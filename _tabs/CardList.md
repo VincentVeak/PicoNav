@@ -1,8 +1,8 @@
-   ---
-   layout: page
-   icon: fas fa-book
-   order: 2
-   ---
+---
+layout: page
+icon: fas fa-book
+order: 2 
+---
 
 # Card Reference Database
 
