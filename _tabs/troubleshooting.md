@@ -1,8 +1,8 @@
----
-layout: default
-title: Troubleshooting
-nav_order: 4
----
+   ---
+   layout: page
+   icon: fas fa-book
+   order: 2
+   ---
 
 # Troubleshooting
 
