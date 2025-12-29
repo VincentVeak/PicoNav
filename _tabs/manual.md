@@ -1,3 +1,9 @@
+   ---
+   layout: page
+   icon: fas fa-book
+   order: 2
+   ---
+
 # PicoNav User Manual
 
 Complete guide to using your PicoNav device.
