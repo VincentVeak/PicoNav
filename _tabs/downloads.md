@@ -1,8 +1,8 @@
----
-layout: default
-title: Downloads
-nav_order: 3
----
+   ---
+   layout: page
+   icon: fas fa-book
+   order: 2
+   ---
 
 # Downloads
 
