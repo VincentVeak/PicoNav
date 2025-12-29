@@ -1,3 +1,9 @@
+   ---
+   layout: page
+   icon: fas fa-book
+   order: 2
+   ---
+
 # Card Reference Database
 
 Complete reference for all cards in PicoNav. Click column headers to sort, or use filters and search below.
