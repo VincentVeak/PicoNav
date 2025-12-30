@@ -1,182 +1,64 @@
-# The Site Configuration
-
-# Import the theme
-theme: jekyll-theme-chirpy
-
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
-lang: en
-
-# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone: America/New_York
-
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-# ↓ --------------------------
-
 title: PicoNav
-
-tagline: Your virtual pet companion
-
-description: >-
-  User guides, downloads, and support for PicoNav - 
-  the open-source handheld gaming device
-
-# Fill in the protocol & hostname for your site.
+description: Your virtual pet companion - User guides, downloads, and support
+baseurl: "" 
 url: "https://piconav.com"
 
-github:
-  username: VincentVeak
+# Theme
+remote_theme: just-the-docs/just-the-docs
 
-social:
-  # Change to your full name.
-  name: Veak Designs
-  email: # Add your email if you want
-  links:
-    # The first element serves as the copyright owner's link
-    - https://github.com/VincentVeak/PicoNav
-    - https://veak.design
+# Color scheme (can be: light, dark, or custom)
+color_scheme: dark
 
-# Site Verification Settings
-webmaster_verifications:
-  google: # fill in your Google verification code
-  bing: # fill in your Bing verification code
-  alexa: # fill in your Alexa verification code
-  yandex: # fill in your Yandex verification code
-  baidu: # fill in your Baidu verification code
-  facebook: # fill in your Facebook verification code
+# Logo
+logo: "/assets/images/piconav-logo.png"
 
-# ↑ --------------------------
-# The end of `jekyll-seo-tag` settings
+# Footer
+footer_content: 'Copyright &copy; 2025 <a href="https://veak.design">Veak Designs</a>. Open source project on <a href="https://github.com/VincentVeak/PicoNav">GitHub</a>.'
 
-# Web Analytics Settings
-analytics:
-  google:
-    id: # fill in your Google Analytics ID
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
 
-# Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
-# Available options:
-#
-#     light  - Use the light color scheme
-#     dark   - Use the dark color scheme
-#
-theme_mode: dark
+# Navigation - Shop button in header
+aux_links:
+  "Shop PicoNav":
+    - "https://veak.design/collections/piconav"
 
-# The CDN endpoint for images.
-# Notice that once it is assigned, the CDN url
-# will be added to all image (site avatar & posts' images) paths starting with '/'
-#
-# e.g. 'https://cdn.com'
-img_cdn: 
+aux_links_new_tab: true
 
-# the avatar on sidebar, support local or CORS resources
-avatar: /assets/images/piconav-logo.png
+# Enable search
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
 
-# The URL of the site-wide social preview image used in SEO `og:image` meta tag.
-# It can be overridden by a customized `page.image` in front matter.
-social_preview_image: # string, local or CORS resources
+# Heading anchor links
+heading_anchors: true
 
-# boolean type, the global switch for TOC in posts.
-toc: true
+# External navigation links
+nav_external_links:
+  - title: Buy PicoNav
+    url: https://veak.design/collections/piconav
+    hide_icon: false
 
-comments:
-  # Global switch for the post comment system. Keeping it empty means disabled.
-  provider: # [disqus | utterances | giscus]
+# Enable "Edit this page" on GitHub
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/VincentVeak/PicoNav"
+gh_edit_branch: "main"
+gh_edit_view_mode: "edit"
 
-# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
-assets:
-  self_host:
-    enabled: # boolean, keep empty means false
-    # specify the Jekyll environment, empty means both
-    # only works if `assets.self_host.enabled` is 'true'
-    env: # [development | production]
+# Plugins
+plugins:
+  - jekyll-seo-tag
 
-pwa:
-  enabled: true # the option for PWA feature (installable)
-  cache:
-    enabled: true # the option for PWA offline cache
-    # Paths defined here will be excluded from the PWA cache.
-    # Usually its value is the `baseurl` of another website that
-    # shares the same domain name as the current website.
-    deny_paths:
-      # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
-
-paginate: 10
-
-# The base URL of your site
-baseurl: ""
-
-# ------------ The following options are not recommended to be modified ------------------
-
-kramdown:
-  footnote_backlink: "&#8617;&#xfe0e;"
-  syntax_highlighter: rouge
-  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
-    css_class: highlight
-    # default_lang: console
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
-
-collections:
-  tabs:
-    output: true
-    sort_by: order
-
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      comments: true
-      toc: true
-      permalink: /posts/:title/
-  - scope:
-      path: _drafts
-    values:
-      comments: false
-  - scope:
-      path: ""
-      type: tabs
-    values:
-      layout: page
-      permalink: /:title/
-
-sass:
-  style: compressed
-
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  profile: false
-  blanklines: false
-  ignore:
-    envs: [development]
-
+# Exclude from processing
 exclude:
-  - "*.gem"
-  - "*.gemspec"
-  - docs
-  - tools
   - README.md
-  - LICENSE
-  - "*.config.js"
-  - package*.json
-
-jekyll-archives:
-  enabled: [categories, tags]
-  layouts:
-    category: category
-    tag: tag
-  permalinks:
-    tag: /tags/:name/
-    category: /categories/:name/
+  - Gemfile
+  - Gemfile.lock
