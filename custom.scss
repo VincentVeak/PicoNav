@@ -1,0 +1,28 @@
+// Import Comfortaa font from Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+// Override the default fonts
+body {
+  font-family: "Comfortaa", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+// Headers
+h1, h2, h3, h4, h5, h6,
+.site-title,
+.site-nav,
+.site-header,
+.main-header {
+  font-family: "Comfortaa", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+// Navigation
+.nav-list .nav-list-item,
+.aux-nav,
+.site-footer {
+  font-family: "Comfortaa", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+// Keep code blocks monospace
+code, pre, .highlight {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+}
