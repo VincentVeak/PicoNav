@@ -62,3 +62,13 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+
+# Google Fonts
+google_fonts:
+  - "Comfortaa:300,400,500,600,700"
+
+# Font settings
+font_family:
+  body: "Comfortaa, sans-serif"
+  heading: "Comfortaa, sans-serif"
+  code: "'Courier New', monospace"
