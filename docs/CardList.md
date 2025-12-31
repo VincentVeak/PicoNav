@@ -177,6 +177,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><strong>Earthquake</strong></td>
     <td>Damage is multiplied by the number of Earth counters on the user</td>
     <td><span class="aspect-earth">Earth</span></td>
+	<td>Earth</td>
     <td data-value="25">25</td>
     <td>Earth</td>
   </tr>
@@ -232,6 +233,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><strong>Erosion</strong></td>
     <td>Removes one Earth stack on the user. Damage is multiplied for each turn that has passed this battle</td>
     <td><span class="aspect-earth">Earth</span></td>
+	<td>Earth</td>
     <td data-value="15">15</td>
     <td>Earth</td>
   </tr>
@@ -250,6 +252,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><strong>Icicle</strong></td>
     <td>Remove a Water counter on the user for 2x damage</td>
     <td><span class="aspect-water">Water</span></td>
+	<td>Water</td>
     <td data-value="50">50</td>
     <td>Water</td>
   </tr>
@@ -267,6 +270,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><strong>Hydration</strong></td>
     <td>Places a Water counter on the user and heals for 25% of max HP</td>
     <td><span class="aspect-water">Water</span></td>
+	<td>Water</td>
     <td data-value="2">20</td>
     <td>Water, Heal</td>
   </tr>
