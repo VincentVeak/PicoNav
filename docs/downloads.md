@@ -6,26 +6,18 @@ order: 2
 
 # Downloads
 
-## Firmware
+## PicoNav Firmware
 
-- [PicoNav Firmware v1.0.0](https://github.com/yourusername/piconav/releases/tag/v1.0.0)
-- [PicoNav Firmware v0.9.0](https://github.com/yourusername/piconav/releases/tag/v0.9.0)
+- [PicoNav Firmware v1.0.3](link)
 
-## Software
+## PicoNav Update Tool (PNUT)
 
-- [PicoNav Configurator (Windows)](link)
+- [PicoNav Update Tool v1.1](link)
 - [PicoNav Configurator (macOS)](link)
 - [PicoNav Configurator (Linux)](link)
 
-## Documentation
 
-- [User Manual PDF](link)
-- [Quick Start Guide PDF](link)
+## Extras
 
-## Hardware Files
+[PicoNav Accent Frame STL](link).
 
-All hardware files are open source and available on [GitHub](https://github.com/yourusername/piconav).
-
-- CAD files
-- PCB designs
-- 3D printable parts
