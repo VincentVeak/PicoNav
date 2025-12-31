@@ -64,14 +64,6 @@ PicoNav is an innovative virtual pet device that combines the nostalgia of class
 
 ---
 
-## Need Help?
-
-- **Questions?** Browse the [FAQ](/docs/faq)
-- **Bug reports?** [Open an issue on GitHub](https://github.com/VincentVeak/PicoNav/issues)
-- **Email support:** vincent@veak.design
-
----
-
 ## Open Source
 
 PicoNav is an open-source project! View the code, contribute, and help improve the PicoNav for everyone.
