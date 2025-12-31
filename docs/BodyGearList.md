@@ -6,7 +6,7 @@ nav_order: 5
 
 # Body Gear Reference
 
-Complete reference for all body gear in PicoNav. Click column headers to sort, or use search below.
+Complete reference for all body gear in PicoNav. Click column headers to sort, or use search below. Gear animations and designs created in collaboration with Noris, our art designer, who allowed the spirit of Dave to move her. Every frame of animation was hand-crafted, giving the Pico life and charm. Noris can be reached noris.m.sola@gmail.com for any further enquiries.
 
 <div class="stats-box">
   <strong>Total Body Gear:</strong> <span id="total-bodygear">31</span> | 
