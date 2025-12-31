@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Head Gear Reference
-nav_order: 3
+nav_order: 4
 ---
 
 # Head Gear Reference

@@ -1,7 +1,7 @@
 ---
 layout: page
 icon: fas fa-book
-order: 2
+order: 6
 ---
 
 # Downloads
