@@ -114,7 +114,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><span class="aspect-fire">Fire</span></td>
     <td><span class="aspect-lightning">Lightning</span></td>
     <td data-value="40">40</td>
-    <td>Fire, Lightning</td>
+    <td>Lightning</td>
   </tr>
   <tr data-aspect="Fire">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_16.png" alt="Discharge"></td>
@@ -123,7 +123,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><span class="aspect-fire">Fire</span></td>
     <td><span class="aspect-lightning">Lightning</span></td>
     <td data-value="40">40</td>
-    <td>Fire, Lightning</td>
+    <td>Lightning</td>
   </tr>
   <tr data-aspect="Fire">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_17.png" alt="Storm"></td>
@@ -132,7 +132,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><span class="aspect-fire">Fire</span></td>
     <td><span class="aspect-lightning">Lightning</span></td>
     <td data-value="25">25</td>
-    <td>Fire, Lightning, Arena</td>
+    <td>Lightning, Arena</td>
   </tr>
   <tr data-aspect="Fire">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_14.png" alt="Thunder"></td>
@@ -141,7 +141,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><span class="aspect-fire">Fire</span></td>
     <td><span class="aspect-lightning">Lightning</span></td>
     <td data-value="25">25</td>
-    <td>Fire, Lightning</td>
+    <td>Lightning</td>
   </tr>
   <tr data-aspect="Fire">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_15.png" alt="Recharge"></td>
@@ -184,7 +184,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   <tr data-aspect="Earth">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_26.png" alt="Aftershock"></td>
     <td><strong>Aftershock</strong></td>
-    <td>Add a Slow counter to opponent if you have an Earth counter</td>
+    <td>Lower the opponent's speed by one stage if you have an Earth counter</td>
     <td><span class="aspect-earth">Earth</span></td>
     <td>Earth</td>
     <td data-value="70">70</td>
@@ -204,7 +204,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   <tr data-aspect="Earth">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_29.png" alt="Terraform"></td>
     <td><strong>Terraform</strong></td>
-    <td><b>Priority move.</b>Upgrades Earth Counter to Nature Counter, which heals 12.5% each turn</td>
+    <td><b>Priority move.</b> Upgrades Earth Counter to Nature Counter, which heals 12.5% each turn</td>
     <td><span class="aspect-earth">Earth</span></td>
     <td><span class="aspect-nature">Nature</span></td>
     <td data-value="15">15</td>
@@ -217,54 +217,44 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><span class="aspect-earth">Earth</span></td>
     <td><span class="aspect-nature">Nature</span></td>
     <td data-value="25">25</td>
-    <td>Earth, Nature, Heal, Counter Removal</td>
+    <td>Nature, Heal, Counter Removal</td>
   </tr>
   <tr data-aspect="Earth">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_31.png" alt="Life Leech"></td>
     <td><strong>Life Leech</strong></td>
-    <td>Remove Nature Counter from opponent to deal 3x damage and heal the damage dealt</td>
+    <td>Heals 50% of the damage dealt. Damage is doubled if the user has a Nature counter</td>
     <td><span class="aspect-earth">Earth</span></td>
     <td><span class="aspect-nature">Nature</span></td>
-    <td data-value="20">20</td>
+    <td data-value="45">45</td>
     <td>Earth, Nature, Heal</td>
   </tr>
   <tr data-aspect="Earth">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_34.png" alt="Synthesis"></td>
-    <td><strong>Synthesis</strong></td>
-    <td>Heals double healing if user has Nature counter</td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_32.png" alt="Erosion"></td>
+    <td><strong>Erosion</strong></td>
+    <td>Removes one Earth stack on the user. Damage is multiplied for each turn that has passed this battle</td>
     <td><span class="aspect-earth">Earth</span></td>
-    <td><span class="aspect-nature">Nature</span></td>
-    <td data-value="0">0</td>
-    <td>Earth, Nature, Heal</td>
-  </tr>
-  <tr data-aspect="Earth">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_32.png" alt="Overgrowth"></td>
-    <td><strong>Overgrowth</strong></td>
-    <td>Adds/Replaces Overgrowth Counter to arena. Grants Nature counter to both players at end of turn</td>
     <td><span class="aspect-earth">Earth</span></td>
-    <td><span class="aspect-nature">Nature</span></td>
-    <td data-value="25">25</td>
-    <td>Earth, Nature, Heal</td>
+    <td data-value="15">15</td>
+    <td>Earth</td>
   </tr>
-  <tr data-aspect="Earth">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_33.png" alt="Solar Beam"></td>
-    <td><strong>Solar Beam</strong></td>
-    <td>Does 4x damage if Overgrowth counter is active</td>
-    <td><span class="aspect-earth">Earth</span></td>
-    <td><span class="aspect-nature">Nature</span></td>
-    <td data-value="25">25</td>
-    <td>Earth, Nature</td>
-  </tr>
-
   <!-- WATER CARDS -->
   <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_02.png" alt="Bubble"></td>
-    <td><strong>Bubble</strong></td>
-    <td>Adds a Water counter that heals 12.5% per turn</td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_02.png" alt="Tidal Wave"></td>
+    <td><strong>Tidal Wave</strong></td>
+    <td>Place a Water counter on the opponent to reduce speed by 25%</td>
     <td><span class="aspect-water">Water</span></td>
     <td>Water</td>
-    <td data-value="70">70</td>
-    <td>Water, Heal</td>
+    <td data-value="40">40</td>
+    <td>Water</td>
+  </tr>
+  <tr data-aspect="Water">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_34.png" alt="Icicle"></td>
+    <td><strong>Icicle</strong></td>
+    <td>Remove a Water counter on the user for 2x damage</td>
+    <td><span class="aspect-water">Water</span></td>
+    <td><span class="aspect-water">Water</span></td>
+    <td data-value="50">50</td>
+    <td>Water</td>
   </tr>
   <tr data-aspect="Water">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_06.png" alt="Torrent"></td>
@@ -275,6 +265,16 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td data-value="40">40</td>
     <td>Water, Arena</td>
   </tr>
+    <tr data-aspect="Water">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_33.png" alt="Hydration"></td>
+    <td><strong>Hydration</strong></td>
+    <td>Places a Water counter on the user and heals for 25% of max HP</td>
+    <td><span class="aspect-Water">Water</span></td>
+    <td><span class="aspect-Water">Water</span></td>
+    <td data-value="2">20</td>
+    <td>Water, Heal</td>
+  </tr>
+
   <tr data-aspect="Water">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_37.png" alt="Undertow"></td>
     <td><strong>Undertow</strong></td>
@@ -285,45 +285,24 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td>Water</td>
   </tr>
   <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_38.png" alt="Tidal Wave"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_38.png" alt="Life Steal"></td>
     <td><strong>Tidal Wave</strong></td>
-    <td>Does 4x damage if Whirlpool counter is active</td>
+    <td>Turn a Water counter on the user to a Life Steal counter, which heals HP equal to damage dealt</td>
     <td><span class="aspect-water">Water</span></td>
     <td>Water</td>
-    <td data-value="25">25</td>
+    <td data-value="40">40</td>
     <td>Water</td>
   </tr>
   <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_35.png" alt="Aqua Shield"></td>
-    <td><strong>Aqua Shield</strong></td>
-    <td>Removes Water Counter to heal for 2x healing</td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_35.png" alt="Freeze"></td>
+    <td><strong>Freeze</strong></td>
+    <td>Turns a Water counter on the opponent to an Ice counter, which blocks the effect of the next move/td>
     <td><span class="aspect-water">Water</span></td>
     <td>Water</td>
-    <td data-value="0">0</td>
-    <td>Water, Heal</td>
-  </tr>
-  <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_39.png" alt="Tsunami"></td>
-    <td><strong>Tsunami</strong></td>
-    <td>Adds a Water counter to both players and a Whirlpool counter to arena. Both Players with Water Counters heal 2x healing</td>
-    <td><span class="aspect-water">Water</span></td>
+    <td data-value="40">40</td>
     <td>Water</td>
-    <td data-value="50">50</td>
-    <td>Water, Heal</td>
   </tr>
-
-  <!-- WATER/STEAM CARDS -->
-
-  <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_40.png" alt="Haze"></td>
-    <td><strong>Haze</strong></td>
-    <td><b>Priority move.</b> Adds/Replaces Haze Counter to arena that decreases damage from opponent by percentage of steam counters on user</td>
-    <td><span class="aspect-water">Water</span></td>
-    <td><span class="aspect-steam">Steam</span></td>
-    <td data-value="10">10</td>
-    <td>Water, Steam, Defense</td>
-  </tr>
-  <tr data-aspect="Water">
+    <tr data-aspect="Water">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_25.png" alt="Ice Wall"></td>
     <td><strong>Ice Wall</strong></td>
     <td>Places a Wall counter on the Arena that nullifies any damage from the next three attacks from any player</td>
@@ -331,6 +310,28 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td>Water</td>
     <td data-value="0">0</td>
     <td>Water, Defense, Arena</td>
+  </tr>
+
+  <!-- WATER/STEAM CARDS -->
+
+  <tr data-aspect="Water">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_40.png" alt="Mistwalk"></td>
+    <td><strong>Mistwalk</strong></td>
+    <td>Turns a Water counter on the user to a Mist counter, which blocks the damage of the next incoming move</td>
+    <td><span class="aspect-water">Water</span></td>
+    <td><span class="aspect-steam">Steam</span></td>
+    <td data-value="10">10</td>
+    <td>Water, Steam, Defense</td>
+  </tr>
+    <tr data-aspect="Water">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_39.png" alt="Boil"></td>
+    <td><strong>Boil</strong></td>
+    <td>Turn ALL Water counters to Fire counters</td>
+    <td><span class="aspect-water">Water</span></td>
+	<td><span class="aspect-steam">Steam</span></td>
+    <td>Water</td>
+    <td data-value="60">60</td>
+    <td>Water, Steam, Fire</td>
   </tr>
 
   <!-- WIND CARDS -->
@@ -364,7 +365,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   <tr data-aspect="Wind">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_41.png" alt="Lucky Star"></td>
     <td><strong>Lucky Star</strong></td>
-    <td>Remove Wind Counter for Luck Counter that increases crit chance by 25%</td>
+    <td>Turn a Wind Counter on the user into a Luck Counter that increases crit chance by 25%</td>
     <td><span class="aspect-wind">Wind</span></td>
     <td>Wind</td>
     <td data-value="40">40</td>
@@ -438,7 +439,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   <tr data-aspect="NULL">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_36.png" alt="Payout"></td>
     <td><strong>Payout</strong></td>
-    <td>Grants extra money if this is the killing move</td>
+    <td>Increases the total credit reward at the end of the battle by 50% if used. This effect cannot be stacked</td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
     <td data-value="15">15</td>
@@ -483,7 +484,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   <tr data-aspect="NULL">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_23.png" alt="Aegis"></td>
     <td><strong>Aegis</strong></td>
-    <td>Place an aegis counter that prevents all damage under 40 base damage</td>
+    <td>Place an Aegis counter that prevents all damage under 50 base damage</td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
     <td data-value="0">0</td>
