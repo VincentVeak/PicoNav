@@ -654,12 +654,11 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   margin: 0 auto;
 }
 
-/* Make aspect badges smaller */
 .aspect-fire {
   background-color: #ff4444;
   color: white;
   padding: 0.2rem 0.5rem;
-  border-radius: 12px;
+  border-radius: 25px;
   font-size: 0.7rem;
   font-weight: 600;
   display: inline-block;
@@ -670,7 +669,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   background-color: #8b4513;
   color: white;
   padding: 0.2rem 0.5rem;
-  border-radius: 12px;
+  border-radius: 25px;
   font-size: 0.7rem;
   font-weight: 600;
   display: inline-block;
@@ -681,7 +680,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   background-color: #4169e1;
   color: white;
   padding: 0.2rem 0.5rem;
-  border-radius: 12px;
+  border-radius: 25px;
   font-size: 0.7rem;
   font-weight: 600;
   display: inline-block;
@@ -692,7 +691,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   background-color: #87ceeb;
   color: #00313A;
   padding: 0.2rem 0.5rem;
-  border-radius: 12px;
+  border-radius: 25px;
   font-size: 0.7rem;
   font-weight: 600;
   display: inline-block;
@@ -703,7 +702,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   background-color: #808080;
   color: white;
   padding: 0.2rem 0.5rem;
-  border-radius: 12px;
+  border-radius: 25px;
   font-size: 0.7rem;
   font-weight: 600;
   display: inline-block;
@@ -714,7 +713,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   background-color: #ffd700;
   color: #00313A;
   padding: 0.2rem 0.5rem;
-  border-radius: 12px;
+  border-radius: 25px;
   font-size: 0.7rem;
   font-weight: 600;
   display: inline-block;
@@ -725,7 +724,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   background-color: #228b22;
   color: white;
   padding: 0.2rem 0.5rem;
-  border-radius: 12px;
+  border-radius: 25px;
   font-size: 0.7rem;
   font-weight: 600;
   display: inline-block;
@@ -736,7 +735,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   background-color: #e0e0e0;
   color: #00313A;
   padding: 0.2rem 0.5rem;
-  border-radius: 12px;
+  border-radius: 25px;
   font-size: 0.7rem;
   font-weight: 600;
   display: inline-block;
