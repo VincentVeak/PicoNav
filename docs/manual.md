@@ -73,11 +73,11 @@ The PicoNav features a notification LED on the top right of the system that disp
 | <span style="color: orange;">**Orange**</span> | Your Pico is hungry (FOOD is low) |
 | <span style="color: purple;">**Purple**</span> | Your Pico is tired (STAM is low) |
 | <span style="color: hotpink;">**Pink**</span> | Your Pico is both hungry and tired |
-| <span style="color: teal;">**Teal**</span> | Planted crops are ready for harvest |
+| <span style="color: turquoise;">**Turquoise**</span> | Planted crops are ready for harvest |
 | <span style="background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">**Rainbow**</span> | Venture encounter is ready |
 | <span style="color: red;">**Red**</span> | Low battery |
 | <span style="color: green;">**Green**</span> | Battery is charging |
-| <span style="color: white; background-color: black; padding: 2px 4px;">**White**</span> | Random event |
+| <span style="color: white;">**White**</span> | Random event |
 
 **Note:** LED brightness can be adjusted or turned off entirely in the [Options](#options) menu. Do Not Disturb mode canbe quickly toggled by pressing and holding both the A and B buttons in the main menu.
 
