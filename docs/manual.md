@@ -16,16 +16,17 @@ Complete guide to using your PicoNav device.
 2. [Hardware Overview](#hardware-overview)
 3. [Charging your PicoNav](#charging-your-piconav)
 4. [Understanding Your Pico](#understanding-your-pico)
-5. [Status Screen](#status-screen)
-6. [Inventory](#inventory)
-7. [Deck](#deck)
-8. [Venture](#venture)
-9. [Shop](#shop)
-10. [Wardrobe](#wardrobe)
-11. [Sleep](#sleep)
-12. [Options](#options)
-13. [Basics of Battle](#basics-of-battle)
-14. [Using the PicoNav Update Tool (PNUT)](#using-the-piconav-update-tool-pnut)
+5. [Notification LED](#notification-led)
+6. [Status Screen](#status-screen)
+7. [Inventory](#inventory)
+8. [Deck](#deck)
+9. [Venture](#venture)
+10. [Shop](#shop)
+11. [Wardrobe](#wardrobe)
+12. [Sleep](#sleep)
+13. [Options](#options)
+14. [Basics of Battle](#basics-of-battle)
+15. [Using the PicoNav Update Tool (PNUT)](#using-the-piconav-update-tool-pnut)
 
 ---
 
@@ -62,6 +63,23 @@ After completing the navigation tutorial and introduction, you will be greeted w
 4. Current battery level
 5. Your Pico's current mood/emotion
 6. Navigation text through the Main Menu
+
+## Notification LED
+
+The PicoNav features a notification LED on the top right of the system that displays different colors to alert you to various states and events. Below is a reference of what each color indicates:
+
+| LED Color | Meaning |
+|-----------|---------|
+| <span style="color: orange;">**Orange**</span> | Your Pico is hungry (FOOD is low) |
+| <span style="color: purple;">**Purple**</span> | Your Pico is tired (STAM is low) |
+| <span style="color: hotpink;">**Pink**</span> | Your Pico is both hungry and tired |
+| <span style="color: teal;">**Teal**</span> | Planted crops are ready for harvest |
+| <span style="background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">**Rainbow**</span> | Venture encounter is ready |
+| <span style="color: red;">**Red**</span> | Low battery |
+| <span style="color: green;">**Green**</span> | Battery is charging |
+| <span style="color: white; background-color: black; padding: 2px 4px;">**White**</span> | Random event |
+
+**Note:** LED brightness can be adjusted or turned off entirely in the [Options](#options) menu. Do Not Disturb mode canbe quickly toggled by pressing and holding both the A and B buttons in the main menu.
 
 ## Status Screen
 
