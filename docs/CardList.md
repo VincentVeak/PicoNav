@@ -399,7 +399,6 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td data-value="35">35</td>
     <td>Wind</td>
   </tr>
-
   <!-- NEUTRAL/NULL CARDS -->
   <tr data-aspect="NULL">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_07.png" alt="Pierce"></td>
