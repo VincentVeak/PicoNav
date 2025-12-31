@@ -19,7 +19,8 @@ $body-text-color: $cream;
 $body-heading-color: $cream;
 
 // Keep dark background
-$body-background-color: $teal;
+$body-background-color: $bg;
+$sidebar-color: darken($bg, 5%);
 //$body-background-color: $teal;
 //$sidebar-color: darken($teal, 5%);
 
