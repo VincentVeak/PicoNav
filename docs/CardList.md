@@ -14,28 +14,30 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 </div>
 
 <div class="filter-controls">
-  <input type="text" class="card-search" id="card-search" placeholder="🔍 Search cards by name, description, or tags..." onkeyup="filterCards()">
+  <input type="text" class="card-search" id="card-search" placeholder="🔍 Search cards by name, description, or tags...">
   
   <div class="filter-buttons">
-    <button class="filter-btn active" onclick="filterByAspect('all')">All</button>
-    <button class="filter-btn aspect-fire" onclick="filterByAspect('Fire')">Fire</button>
-    <button class="filter-btn aspect-earth" onclick="filterByAspect('Earth')">Earth</button>
-    <button class="filter-btn aspect-water" onclick="filterByAspect('Water')">Water</button>
-    <button class="filter-btn aspect-wind" onclick="filterByAspect('Wind')">Wind</button>
-    <button class="filter-btn aspect-null" onclick="filterByAspect('NULL')">Neutral</button>
+    <button class="filter-btn active">All</button>
+    <button class="filter-btn aspect-fire">Fire</button>
+    <button class="filter-btn aspect-earth">Earth</button>
+    <button class="filter-btn aspect-water">Water</button>
+    <button class="filter-btn aspect-wind">Wind</button>
+    <button class="filter-btn aspect-null">Neutral</button>
   </div>
 </div>
+
+---
 
 <table class="card-table" id="card-table">
 <thead>
   <tr>
-    <th onclick="sortTable(0)" class="sortable">Icon <span class="sort-arrow">⇅</span></th>
-    <th onclick="sortTable(1)" class="sortable">Name <span class="sort-arrow">⇅</span></th>
-    <th onclick="sortTable(2)" class="sortable">Description <span class="sort-arrow">⇅</span></th>
-    <th onclick="sortTable(3)" class="sortable">Aspect <span class="sort-arrow">⇅</span></th>
-    <th onclick="sortTable(4)" class="sortable">Series <span class="sort-arrow">⇅</span></th>
-    <th onclick="sortTable(5)" class="sortable">Damage <span class="sort-arrow">⇅</span></th>
-    <th onclick="sortTable(6)" class="sortable">Tags <span class="sort-arrow">⇅</span></th>
+    <th class="sortable">Icon</th>
+    <th class="sortable">Name <span class="sort-arrow">⇅</span></th>
+    <th class="sortable">Description</th>
+    <th class="sortable">Aspect <span class="sort-arrow">⇅</span></th>
+    <th class="sortable">Series <span class="sort-arrow">⇅</span></th>
+    <th class="sortable">Base Power<span class="sort-arrow">⇅</span></th>
+    <th class="sortable">Tags <span class="sort-arrow">⇅</span></th>
   </tr>
 </thead>
 <tbody>
@@ -61,11 +63,11 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   <tr data-aspect="Fire">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_21.png" alt="Inferno"></td>
     <td><strong>Inferno</strong></td>
-    <td>Adds a Fire Counter to both players and a Blaze counter to the arena. All players with Fire counters take 2x damage</td>
+    <td>Adds a Blaze counter to the arena that replaces both player counters with Fire counters at the end of turn</td>
     <td><span class="aspect-fire">Fire</span></td>
     <td>Fire</td>
     <td data-value="50">50</td>
-    <td>Fire</td>
+    <td>Fire, Arena</td>
   </tr>
   <tr data-aspect="Fire">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_22.png" alt="Combustion"></td>
@@ -100,8 +102,8 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td>Removes a counter on the opponent</td>
     <td><span class="aspect-fire">Fire</span></td>
     <td>Fire</td>
-    <td data-value="55">55</td>
-    <td>Fire</td>
+    <td data-value="65">65</td>
+    <td>Fire, Counter Removal</td>
   </tr>
 
   <!-- FIRE/LIGHTNING CARDS -->
@@ -112,7 +114,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><span class="aspect-fire">Fire</span></td>
     <td><span class="aspect-lightning">Lightning</span></td>
     <td data-value="40">40</td>
-    <td>Fire, Lightning</td>
+    <td>Lightning</td>
   </tr>
   <tr data-aspect="Fire">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_16.png" alt="Discharge"></td>
@@ -121,7 +123,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><span class="aspect-fire">Fire</span></td>
     <td><span class="aspect-lightning">Lightning</span></td>
     <td data-value="40">40</td>
-    <td>Fire, Lightning</td>
+    <td>Lightning</td>
   </tr>
   <tr data-aspect="Fire">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_17.png" alt="Storm"></td>
@@ -130,7 +132,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><span class="aspect-fire">Fire</span></td>
     <td><span class="aspect-lightning">Lightning</span></td>
     <td data-value="25">25</td>
-    <td>Fire, Lightning</td>
+    <td>Lightning, Arena</td>
   </tr>
   <tr data-aspect="Fire">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_14.png" alt="Thunder"></td>
@@ -139,7 +141,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><span class="aspect-fire">Fire</span></td>
     <td><span class="aspect-lightning">Lightning</span></td>
     <td data-value="25">25</td>
-    <td>Fire, Lightning</td>
+    <td>Lightning</td>
   </tr>
   <tr data-aspect="Fire">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_15.png" alt="Recharge"></td>
@@ -148,52 +150,59 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><span class="aspect-fire">Fire</span></td>
     <td><span class="aspect-lightning">Lightning</span></td>
     <td data-value="20">20</td>
-    <td>Fire, Lightning, Heal</td>
+    <td>Lightning, Heal</td>
   </tr>
-
   <!-- EARTH CARDS -->
   <tr data-aspect="Earth">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_01.png" alt="Stonewall"></td>
     <td><strong>Stonewall</strong></td>
-    <td>Adds an Earth counter that reduces damage by 25%. Maximum of 3 stacks</td>
+    <td><b>Priority move.</b> Adds an Earth counter that reduces damage by 20%. Maximum of 3 stacks</td>
     <td><span class="aspect-earth">Earth</span></td>
     <td>Earth</td>
-    <td data-value="70">70</td>
-    <td>Earth, Defense</td>
+    <td data-value="40">40</td>
+    <td>Earth, Defense, Priority</td>
   </tr>
   <tr data-aspect="Earth">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_04.png" alt="Fortify"></td>
     <td><strong>Fortify</strong></td>
-    <td><b>Priority move.</b> Upgrades Earth to Metal counter, which on removal grants an Earth counter. Instantly maxes out Earth counter stacks to 3</td>
+    <td>Instantly maxes out Earth counter stacks to 3</td>
     <td><span class="aspect-earth">Earth</span></td>
     <td>Earth</td>
     <td data-value="15">15</td>
-    <td>Earth, Defense, Priority</td>
+    <td>Earth, Defense</td>
+  </tr>
+  <tr data-aspect="Earth">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_13.png" alt="Earthquake"></td>
+    <td><strong>Earthquake</strong></td>
+    <td>Damage is multiplied by the number of Earth counters on the user</td>
+    <td><span class="aspect-earth">Earth</span></td>
+	<td>Earth</td>
+    <td data-value="25">25</td>
+    <td>Earth</td>
   </tr>
   <tr data-aspect="Earth">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_26.png" alt="Aftershock"></td>
     <td><strong>Aftershock</strong></td>
-    <td>Add a Slow counter to opponent if you have an Earth counter</td>
+    <td>Lower the opponent's speed by one stage if you have an Earth counter</td>
     <td><span class="aspect-earth">Earth</span></td>
     <td>Earth</td>
     <td data-value="70">70</td>
-    <td>Earth</td>
+    <td>Earth, Debuff</td>
   </tr>
   <tr data-aspect="Earth">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_27.png" alt="Stone Rain"></td>
     <td><strong>Stone Rain</strong></td>
-    <td>Add a Sandstorm counter to the arena. Does not damage Earth counter. Sandstorm deals 12.5% per turn</td>
+    <td>Add a Sandstorm counter to the arena that deals 12.5% per turn to each player without an Earth or Nature counter</td>
     <td><span class="aspect-earth">Earth</span></td>
     <td>Earth</td>
     <td data-value="40">40</td>
-    <td>Earth, DOT</td>
+    <td>Earth, Arena</td>
   </tr>
-
   <!-- EARTH/NATURE CARDS -->
   <tr data-aspect="Earth">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_29.png" alt="Terraform"></td>
     <td><strong>Terraform</strong></td>
-    <td><b>Priority move.</b>Upgrades Earth Counter to Nature Counter, which heals 12.5% each turn</td>
+    <td><b>Priority move.</b> Upgrades Earth Counter to Nature Counter, which heals 12.5% each turn</td>
     <td><span class="aspect-earth">Earth</span></td>
     <td><span class="aspect-nature">Nature</span></td>
     <td data-value="15">15</td>
@@ -202,134 +211,122 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   <tr data-aspect="Earth">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_30.png" alt="Naturalize"></td>
     <td><strong>Naturalize</strong></td>
-    <td>Remove opponent counter and heal 12.5%. Doubles damage if counter is removed</td>
+    <td>Remove opponent counter and heal 12.5% of max HP. Doubles damage if counter is removed</td>
     <td><span class="aspect-earth">Earth</span></td>
     <td><span class="aspect-nature">Nature</span></td>
-    <td data-value="50">50</td>
-    <td>Earth, Nature, Heal</td>
+    <td data-value="25">25</td>
+    <td>Nature, Heal, Counter Removal</td>
   </tr>
   <tr data-aspect="Earth">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_31.png" alt="Life Leech"></td>
     <td><strong>Life Leech</strong></td>
-    <td>Remove Nature Counter from opponent to deal 3x damage and heal the damage dealt</td>
+    <td>Heals 50% of the damage dealt. Damage is doubled if the user has a Nature counter</td>
     <td><span class="aspect-earth">Earth</span></td>
     <td><span class="aspect-nature">Nature</span></td>
-    <td data-value="20">20</td>
+    <td data-value="45">45</td>
     <td>Earth, Nature, Heal</td>
   </tr>
   <tr data-aspect="Earth">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_34.png" alt="Synthesis"></td>
-    <td><strong>Synthesis</strong></td>
-    <td>Heals double healing if user has Nature counter</td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_32.png" alt="Erosion"></td>
+    <td><strong>Erosion</strong></td>
+    <td>Removes one Earth stack on the user. Damage is multiplied for each turn that has passed this battle</td>
     <td><span class="aspect-earth">Earth</span></td>
-    <td><span class="aspect-nature">Nature</span></td>
-    <td data-value="0">0</td>
-    <td>Earth, Nature, Heal</td>
+	<td>Earth</td>
+    <td data-value="15">15</td>
+    <td>Earth</td>
   </tr>
-  <tr data-aspect="Earth">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_32.png" alt="Overgrowth"></td>
-    <td><strong>Overgrowth</strong></td>
-    <td>Adds/Replaces Overgrowth Counter to arena. Grants Nature counter to both players at end of turn</td>
-    <td><span class="aspect-earth">Earth</span></td>
-    <td><span class="aspect-nature">Nature</span></td>
-    <td data-value="25">25</td>
-    <td>Earth, Nature, Heal</td>
-  </tr>
-  <tr data-aspect="Earth">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_33.png" alt="Solar Beam"></td>
-    <td><strong>Solar Beam</strong></td>
-    <td>Does 4x damage if Overgrowth counter is active</td>
-    <td><span class="aspect-earth">Earth</span></td>
-    <td><span class="aspect-nature">Nature</span></td>
-    <td data-value="25">25</td>
-    <td>Earth, Nature</td>
-  </tr>
-
   <!-- WATER CARDS -->
   <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_02.png" alt="Bubble"></td>
-    <td><strong>Bubble</strong></td>
-    <td>Adds a Water counter that heals 12.5% per turn</td>
-    <td><span class="aspect-water">Water</span></td>
-    <td>Water</td>
-    <td data-value="70">70</td>
-    <td>Water, Heal</td>
-  </tr>
-  <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_06.png" alt="Current"></td>
-    <td><strong>Current</strong></td>
-    <td>Remove Water counter on opponent for 3x damage</td>
-    <td><span class="aspect-water">Water</span></td>
-    <td>Water</td>
-    <td data-value="35">35</td>
-    <td>Water</td>
-  </tr>
-  <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_37.png" alt="Whirlpool"></td>
-    <td><strong>Whirlpool</strong></td>
-    <td>Adds/Replaces Whirlpool Counter to Arena, which deals damage equal to the amount healed by Water counter</td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_02.png" alt="Tidal Wave"></td>
+    <td><strong>Tidal Wave</strong></td>
+    <td>Place a Water counter on the opponent to reduce speed by 25%</td>
     <td><span class="aspect-water">Water</span></td>
     <td>Water</td>
     <td data-value="40">40</td>
-    <td>Water, DOT</td>
+    <td>Water</td>
   </tr>
   <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_38.png" alt="Tidal Wave"></td>
-    <td><strong>Tidal Wave</strong></td>
-    <td>Does 4x damage if Whirlpool counter is active</td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_34.png" alt="Icicle"></td>
+    <td><strong>Icicle</strong></td>
+    <td>Remove a Water counter on the user for 2x damage</td>
+    <td><span class="aspect-water">Water</span></td>
+	<td>Water</td>
+    <td data-value="50">50</td>
+    <td>Water</td>
+  </tr>
+  <tr data-aspect="Water">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_06.png" alt="Torrent"></td>
+    <td><strong>Torrent</strong></td>
+    <td>Adds a Rain counter to the arena that replaces both player counters with Water counters at the end of turn</td>
     <td><span class="aspect-water">Water</span></td>
     <td>Water</td>
-    <td data-value="25">25</td>
+    <td data-value="40">40</td>
+    <td>Water, Arena</td>
+  </tr>
+    <tr data-aspect="Water">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_33.png" alt="Hydration"></td>
+    <td><strong>Hydration</strong></td>
+    <td>Places a Water counter on the user and heals for 25% of max HP</td>
+    <td><span class="aspect-water">Water</span></td>
+	<td>Water</td>
+    <td data-value="2">20</td>
+    <td>Water, Heal</td>
+  </tr>
+  <tr data-aspect="Water">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_37.png" alt="Undertow"></td>
+    <td><strong>Undertow</strong></td>
+    <td>Replace existing opponent's counter to Water counter for 2x damage if replaced</td>
+    <td><span class="aspect-water">Water</span></td>
+    <td>Water</td>
+    <td data-value="30">30</td>
     <td>Water</td>
   </tr>
   <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_35.png" alt="Aqua Shield"></td>
-    <td><strong>Aqua Shield</strong></td>
-    <td>Removes Water Counter to heal for 2x healing</td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_38.png" alt="Life Steal"></td>
+    <td><strong>Life Steal</strong></td>
+    <td>Turn a Water counter on the user to a Life Steal counter, which heals HP equal to damage dealt</td>
+    <td><span class="aspect-water">Water</span></td>
+    <td>Water</td>
+    <td data-value="40">40</td>
+    <td>Water, Heal</td>
+  </tr>
+  <tr data-aspect="Water">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_35.png" alt="Freeze"></td>
+    <td><strong>Freeze</strong></td>
+    <td>Turns a Water counter on the opponent to an Ice counter, which blocks the effect of the next move/td>
+    <td><span class="aspect-water">Water</span></td>
+    <td>Water</td>
+    <td data-value="40">40</td>
+    <td>Water</td>
+  </tr>
+    <tr data-aspect="Water">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_25.png" alt="Ice Wall"></td>
+    <td><strong>Ice Wall</strong></td>
+    <td>Places a Wall counter on the Arena that nullifies any damage from the next three attacks from any player</td>
     <td><span class="aspect-water">Water</span></td>
     <td>Water</td>
     <td data-value="0">0</td>
-    <td>Water, Heal</td>
+    <td>Water, Defense, Arena</td>
   </tr>
-  <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_39.png" alt="Tsunami"></td>
-    <td><strong>Tsunami</strong></td>
-    <td>Adds a Water counter to both players and a Whirlpool counter to arena. Both Players with Water Counters heal 2x healing</td>
-    <td><span class="aspect-water">Water</span></td>
-    <td>Water</td>
-    <td data-value="50">50</td>
-    <td>Water, Heal</td>
-  </tr>
-
   <!-- WATER/STEAM CARDS -->
   <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_13.png" alt="Gust"></td>
-    <td><strong>Gust</strong></td>
-    <td>Adds or increases Steam counter, which decreases damage done by percentage of steam counter stacks</td>
-    <td><span class="aspect-water">Water</span></td>
-    <td><span class="aspect-steam">Steam</span></td>
-    <td data-value="50">50</td>
-    <td>Water, Steam, Defense</td>
-  </tr>
-  <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_40.png" alt="Haze"></td>
-    <td><strong>Haze</strong></td>
-    <td><b>Priority move.</b> Adds/Replaces Haze Counter to arena that decreases damage from opponent by percentage of steam counters on user</td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_40.png" alt="Mistwalk"></td>
+    <td><strong>Mistwalk</strong></td>
+    <td>Turns a Water counter on the user to a Mist counter, which blocks the damage of the next incoming move</td>
     <td><span class="aspect-water">Water</span></td>
     <td><span class="aspect-steam">Steam</span></td>
     <td data-value="10">10</td>
     <td>Water, Steam, Defense</td>
   </tr>
-  <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_25.png" alt="Ice Wall"></td>
-    <td><strong>Ice Wall</strong></td>
-    <td>Places a Wall counter on the Arena that nullifies any damage from any attack from any player once</td>
+    <tr data-aspect="Water">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_39.png" alt="Boil"></td>
+    <td><strong>Boil</strong></td>
+    <td>Turn ALL Water counters to Fire counters</td>
     <td><span class="aspect-water">Water</span></td>
-    <td>Water</td>
-    <td data-value="0">0</td>
-    <td>Water, Defense</td>
+	<td><span class="aspect-steam">Steam</span></td>
+    <td data-value="60">60</td>
+    <td>Water, Steam, Fire</td>
   </tr>
-
   <!-- WIND CARDS -->
   <tr data-aspect="Wind">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_03.png" alt="Tornado"></td>
@@ -347,7 +344,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><span class="aspect-wind">Wind</span></td>
     <td>Wind</td>
     <td data-value="30">30</td>
-    <td>Wind</td>
+    <td>Wind, Counter Removal</td>
   </tr>
   <tr data-aspect="Wind">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_05.png" alt="Air Slash"></td>
@@ -361,7 +358,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   <tr data-aspect="Wind">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_41.png" alt="Lucky Star"></td>
     <td><strong>Lucky Star</strong></td>
-    <td>Remove Wind Counter for Luck Counter that increases crit chance by 25%</td>
+    <td>Turn a Wind Counter on the user into a Luck Counter that increases crit chance by 25%</td>
     <td><span class="aspect-wind">Wind</span></td>
     <td>Wind</td>
     <td data-value="40">40</td>
@@ -383,7 +380,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><span class="aspect-wind">Wind</span></td>
     <td>Wind</td>
     <td data-value="35">35</td>
-    <td>Wind</td>
+    <td>Wind, Counter Removal</td>
   </tr>
   <tr data-aspect="Wind">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_44.png" alt="Force Rush"></td>
@@ -411,8 +408,8 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td>Ignore the effects of counters from both players</td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
-    <td data-value="30">30</td>
-    <td>Neutral, Ignore Counter</td>
+    <td data-value="50">50</td>
+    <td>Neutral</td>
   </tr>
   <tr data-aspect="NULL">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_09.png" alt="Lunge"></td>
@@ -420,7 +417,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><b>Priority move.</b></td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
-    <td data-value="40">40</td>
+    <td data-value="50">50</td>
     <td>Neutral, Priority</td>
   </tr>
   <tr data-aspect="NULL">
@@ -435,7 +432,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   <tr data-aspect="NULL">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_36.png" alt="Payout"></td>
     <td><strong>Payout</strong></td>
-    <td>Grants extra money if this is the killing move</td>
+    <td>Increases the total credit reward at the end of the battle by 50% if used. This effect cannot be stacked</td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
     <td data-value="15">15</td>
@@ -448,7 +445,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
     <td data-value="0">0</td>
-    <td>Neutral, Swap</td>
+    <td>Neutral</td>
   </tr>
   <tr data-aspect="NULL">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_28.png" alt="Time Flip"></td>
@@ -457,7 +454,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
     <td data-value="0">0</td>
-    <td>Neutral, Utility</td>
+    <td>Neutral, Arena</td>
   </tr>
   <tr data-aspect="NULL">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_47.png" alt="Insult"></td>
@@ -475,12 +472,12 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
     <td data-value="0">0</td>
-    <td>Neutral, Reflect</td>
+    <td>Neutral</td>
   </tr>
   <tr data-aspect="NULL">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_23.png" alt="Aegis"></td>
     <td><strong>Aegis</strong></td>
-    <td>Place an aegis counter that prevents all damage under 40 base damage</td>
+    <td>Place an Aegis counter that prevents all damage under 50 base damage</td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
     <td data-value="0">0</td>
@@ -507,6 +504,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 </tbody>
 </table>
 
+
 <style>
 /* Filter Controls */
 .filter-controls {
@@ -518,8 +516,8 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   padding: 0.75rem 1rem;
   font-size: 1rem;
   border: 2px solid #FF7573;
-  border-radius: 10px;
-  background-color: rgba(0, 31, 37, 0.5);
+  border-radius: 25px;
+  background-color: #1f2a2b;
   color: #E6EBC5;
   margin-bottom: 1rem;
   font-family: 'Comfortaa', sans-serif;
@@ -536,11 +534,11 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 }
 
 .filter-btn {
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 1rem;
   border: 2px solid #FF7573;
   background-color: rgba(0, 31, 37, 0.5);
   color: #E6EBC5;
-  border-radius: 20px;
+  border-radius: 45px;
   cursor: pointer;
   font-family: 'Comfortaa', sans-serif;
   font-weight: 500;
@@ -560,33 +558,46 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 
 /* Stats Box */
 .stats-box {
-  background: linear-gradient(135deg, rgba(0, 31, 37, 0.8) 0%, rgba(0, 49, 58, 0.8) 100%);
+  background-color: #1f2a2b;
+  color: #E6EBC5;
   border: 2px solid #FF7573;
-  border-radius: 10px;
+  border-radius: 45px;
   padding: 1rem;
   margin: 1rem 0;
   text-align: center;
-  color: #E6EBC5;
 }
 
 /* Table Styles */
 .card-table {
   width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
   margin: 2rem 0;
-  font-size: 0.95rem;
+  font-size: 0.75rem;
+  table-layout: fixed;
 }
 
 .card-table thead th {
   background-color: #FF7573;
   color: #00313A;
-  padding: 1rem 0.75rem;
+  padding: 0.5rem 0.35rem;
   text-align: left;
   font-weight: 600;
   position: sticky;
   top: 0;
   z-index: 10;
+  font-size: 0.75rem;
+  line-height: 1.2;
 }
+
+/* Column widths - optimized to fit everything */
+.card-table thead th:nth-child(1) { width: 45px; }   /* Icon - smaller */
+.card-table thead th:nth-child(2) { width: 15%; }    /* Name */
+.card-table thead th:nth-child(3) { width: 30%; }    /* Description - largest */
+.card-table thead th:nth-child(4) { width: 10%; }     /* Aspect */
+.card-table thead th:nth-child(5) { width: 12%; }    /* Series */
+.card-table thead th:nth-child(6) { width: 8%; }     /* Damage - very small */
+.card-table thead th:nth-child(7) { width: 17%; }    /* Tags */
 
 .card-table thead th.sortable {
   cursor: pointer;
@@ -600,6 +611,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 .sort-arrow {
   float: right;
   opacity: 0.5;
+  font-size: 0.7rem;
 }
 
 .card-table thead th.sorted .sort-arrow {
@@ -616,87 +628,114 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 }
 
 .card-table tbody td {
-  padding: 0.75rem;
+  padding: 0.5rem 0.35rem;
   color: #E6EBC5;
+  vertical-align: middle;
+  font-size: 0.75rem;
+  line-height: 1.3;
+  word-wrap: break-word;
+}
+
+.card-icon {
+  width: 50px;
+  text-align: center;
+  padding: 0.3rem !important;
 }
 
 .card-icon img {
-  width: 48px;
-  height: 48px;
+  width: 35px;
+  height: 35px;
   object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
-/* Aspect Tags */
 .aspect-fire {
   background-color: #ff4444;
   color: white;
-  padding: 0.25rem 0.75rem;
-  border-radius: 15px;
-  font-size: 0.85rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 25px;
+  font-size: 0.7rem;
   font-weight: 600;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .aspect-earth {
   background-color: #8b4513;
   color: white;
-  padding: 0.25rem 0.75rem;
-  border-radius: 15px;
-  font-size: 0.85rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 25px;
+  font-size: 0.7rem;
   font-weight: 600;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .aspect-water {
   background-color: #4169e1;
   color: white;
-  padding: 0.25rem 0.75rem;
-  border-radius: 15px;
-  font-size: 0.85rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 25px;
+  font-size: 0.7rem;
   font-weight: 600;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .aspect-wind {
   background-color: #87ceeb;
   color: #00313A;
-  padding: 0.25rem 0.75rem;
-  border-radius: 15px;
-  font-size: 0.85rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 25px;
+  font-size: 0.7rem;
   font-weight: 600;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .aspect-null {
   background-color: #808080;
   color: white;
-  padding: 0.25rem 0.75rem;
-  border-radius: 15px;
-  font-size: 0.85rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 25px;
+  font-size: 0.7rem;
   font-weight: 600;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .aspect-lightning {
   background-color: #ffd700;
   color: #00313A;
-  padding: 0.25rem 0.75rem;
-  border-radius: 15px;
-  font-size: 0.85rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 25px;
+  font-size: 0.7rem;
   font-weight: 600;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .aspect-nature {
   background-color: #228b22;
   color: white;
-  padding: 0.25rem 0.75rem;
-  border-radius: 15px;
-  font-size: 0.85rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 25px;
+  font-size: 0.7rem;
   font-weight: 600;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .aspect-steam {
   background-color: #e0e0e0;
   color: #00313A;
-  padding: 0.25rem 0.75rem;
-  border-radius: 15px;
-  font-size: 0.85rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 25px;
+  font-size: 0.7rem;
   font-weight: 600;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 /* Hidden row class */
@@ -705,132 +744,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 }
 </style>
 
-<script>
-let currentAspectFilter = 'all';
-let sortDirection = {};
-
-// Initialize on page load
-document.addEventListener('DOMContentLoaded', function() {
-  updateCardCount();
-});
-
-// Filter by aspect
-function filterByAspect(aspect) {
-  currentAspectFilter = aspect;
-  
-  // Update button states
-  document.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.classList.remove('active');
-  });
-  event.target.classList.add('active');
-  
-  // Apply filter
-  filterCards();
-}
-
-// Combined filter function (search + aspect)
-function filterCards() {
-  const searchTerm = document.getElementById('card-search').value.toLowerCase();
-  const table = document.getElementById('card-table');
-  const rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
-  let visibleCount = 0;
-  
-  for (let row of rows) {
-    const aspect = row.getAttribute('data-aspect');
-    const text = row.textContent.toLowerCase();
-    
-    // Check aspect filter
-    const aspectMatch = currentAspectFilter === 'all' || aspect === currentAspectFilter;
-    
-    // Check search term
-    const searchMatch = searchTerm === '' || text.includes(searchTerm);
-    
-    // Show/hide row
-    if (aspectMatch && searchMatch) {
-      row.classList.remove('hidden-row');
-      visibleCount++;
-    } else {
-      row.classList.add('hidden-row');
-    }
-  }
-  
-  // Update count
-  document.getElementById('showing-cards').textContent = visibleCount;
-}
-
-// Sort table
-function sortTable(columnIndex) {
-  const table = document.getElementById('card-table');
-  const tbody = table.getElementsByTagName('tbody')[0];
-  const rows = Array.from(tbody.getElementsByTagName('tr'));
-  
-  // Determine sort direction
-  if (!sortDirection[columnIndex]) {
-    sortDirection[columnIndex] = 'asc';
-  } else {
-    sortDirection[columnIndex] = sortDirection[columnIndex] === 'asc' ? 'desc' : 'asc';
-  }
-  
-  const direction = sortDirection[columnIndex];
-  
-  // Sort rows
-  rows.sort((a, b) => {
-    let aValue = a.getElementsByTagName('td')[columnIndex].textContent.trim();
-    let bValue = b.getElementsByTagName('td')[columnIndex].textContent.trim();
-    
-    // Special handling for damage column (numeric sort)
-    if (columnIndex === 5) {
-      const aData = a.getElementsByTagName('td')[columnIndex].getAttribute('data-value');
-      const bData = b.getElementsByTagName('td')[columnIndex].getAttribute('data-value');
-      aValue = parseInt(aData) || 0;
-      bValue = parseInt(bData) || 0;
-    }
-    
-    // Numeric comparison
-    if (!isNaN(aValue) && !isNaN(bValue)) {
-      return direction === 'asc' ? aValue - bValue : bValue - aValue;
-    }
-    
-    // String comparison
-    if (direction === 'asc') {
-      return aValue.localeCompare(bValue);
-    } else {
-      return bValue.localeCompare(aValue);
-    }
-  });
-  
-  // Reorder rows in table
-  rows.forEach(row => tbody.appendChild(row));
-  
-  // Update visual indicators
-  updateSortIndicators(columnIndex, direction);
-}
-
-// Update sort arrow indicators
-function updateSortIndicators(activeColumn, direction) {
-  const headers = document.querySelectorAll('.card-table thead th');
-  headers.forEach((header, index) => {
-    const arrow = header.querySelector('.sort-arrow');
-    if (arrow) {
-      if (index === activeColumn) {
-        header.classList.add('sorted');
-        arrow.textContent = direction === 'asc' ? '↑' : '↓';
-      } else {
-        header.classList.remove('sorted');
-        arrow.textContent = '⇅';
-      }
-    }
-  });
-}
-
-// Update card count
-function updateCardCount() {
-  const table = document.getElementById('card-table');
-  const totalRows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr').length;
-  document.getElementById('total-cards').textContent = totalRows;
-  document.getElementById('showing-cards').textContent = totalRows;
-}
-</script>
+<script src="/assets/js/cardlist.js"></script>
 
 ## Want to Contribute?
 
