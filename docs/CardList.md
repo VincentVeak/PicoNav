@@ -105,7 +105,6 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td data-value="65">65</td>
     <td>Fire, Counter Removal</td>
   </tr>
-
   <!-- FIRE/LIGHTNING CARDS -->
   <tr data-aspect="Fire">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_11.png" alt="Lightning"></td>
@@ -152,7 +151,6 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td data-value="20">20</td>
     <td>Lightning, Heal</td>
   </tr>
-
   <!-- EARTH CARDS -->
   <tr data-aspect="Earth">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_01.png" alt="Stonewall"></td>
@@ -199,7 +197,6 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td data-value="40">40</td>
     <td>Earth, Arena</td>
   </tr>
-
   <!-- EARTH/NATURE CARDS -->
   <tr data-aspect="Earth">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_29.png" alt="Terraform"></td>
@@ -274,7 +271,6 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td data-value="2">20</td>
     <td>Water, Heal</td>
   </tr>
-
   <tr data-aspect="Water">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_37.png" alt="Undertow"></td>
     <td><strong>Undertow</strong></td>
@@ -311,9 +307,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td data-value="0">0</td>
     <td>Water, Defense, Arena</td>
   </tr>
-
   <!-- WATER/STEAM CARDS -->
-
   <tr data-aspect="Water">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_40.png" alt="Mistwalk"></td>
     <td><strong>Mistwalk</strong></td>
@@ -332,7 +326,6 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td data-value="60">60</td>
     <td>Water, Steam, Fire</td>
   </tr>
-
   <!-- WIND CARDS -->
   <tr data-aspect="Wind">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_03.png" alt="Tornado"></td>
