@@ -538,7 +538,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 }
 
 .filter-btn {
-  padding: 0.5rem .5rem;
+  padding: 0.25rem 1rem;
   border: 2px solid #FF7573;
   background-color: rgba(0, 31, 37, 0.5);
   color: #E6EBC5;
