@@ -14,15 +14,15 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 </div>
 
 <div class="filter-controls">
-  <input type="text" class="card-search" id="card-search" placeholder="🔍 Search cards by name, description, or tags..." onkeyup="filterCards()">
+  <input type="text" class="card-search" id="card-search" placeholder="🔍 Search cards by name, description, or tags...">
   
   <div class="filter-buttons">
-    <button class="filter-btn active" onclick="filterByAspect('all')">All</button>
-    <button class="filter-btn aspect-fire" onclick="filterByAspect('Fire')">Fire</button>
-    <button class="filter-btn aspect-earth" onclick="filterByAspect('Earth')">Earth</button>
-    <button class="filter-btn aspect-water" onclick="filterByAspect('Water')">Water</button>
-    <button class="filter-btn aspect-wind" onclick="filterByAspect('Wind')">Wind</button>
-    <button class="filter-btn aspect-null" onclick="filterByAspect('NULL')">Neutral</button>
+    <button class="filter-btn active">All</button>
+    <button class="filter-btn aspect-fire">Fire</button>
+    <button class="filter-btn aspect-earth">Earth</button>
+    <button class="filter-btn aspect-water">Water</button>
+    <button class="filter-btn aspect-wind">Wind</button>
+    <button class="filter-btn aspect-null">Neutral</button>
   </div>
 </div>
 
@@ -31,13 +31,13 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 <table class="card-table" id="card-table">
 <thead>
   <tr>
-    <th onclick="sortTable(0)" class="sortable">Icon <span class="sort-arrow">⇅</span></th>
-    <th onclick="sortTable(1)" class="sortable">Name <span class="sort-arrow">⇅</span></th>
-    <th onclick="sortTable(2)" class="sortable">Description <span class="sort-arrow">⇅</span></th>
-    <th onclick="sortTable(3)" class="sortable">Aspect <span class="sort-arrow">⇅</span></th>
-    <th onclick="sortTable(4)" class="sortable">Series <span class="sort-arrow">⇅</span></th>
-    <th onclick="sortTable(5)" class="sortable">Damage <span class="sort-arrow">⇅</span></th>
-    <th onclick="sortTable(6)" class="sortable">Tags <span class="sort-arrow">⇅</span></th>
+    <th class="sortable">Icon <span class="sort-arrow">⇅</span></th>
+    <th class="sortable">Name <span class="sort-arrow">⇅</span></th>
+    <th class="sortable">Description <span class="sort-arrow">⇅</span></th>
+    <th class="sortable">Aspect <span class="sort-arrow">⇅</span></th>
+    <th class="sortable">Series <span class="sort-arrow">⇅</span></th>
+    <th class="sortable">Damage <span class="sort-arrow">⇅</span></th>
+    <th class="sortable">Tags <span class="sort-arrow">⇅</span></th>
   </tr>
 </thead>
 <tbody>
@@ -574,21 +574,33 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 /* Table Styles */
 .card-table {
   width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
   margin: 2rem 0;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
+  table-layout: fixed;
 }
 
 .card-table thead th {
   background-color: #FF7573;
   color: #00313A;
-  padding: 1rem 0.75rem;
+  padding: 0.75rem 0.5rem;
   text-align: left;
   font-weight: 600;
   position: sticky;
   top: 0;
   z-index: 10;
+  font-size: 0.9rem;
 }
+
+/* Column widths */
+.card-table thead th:nth-child(1) { width: 60px; }  /* Icon */
+.card-table thead th:nth-child(2) { width: 12%; }   /* Name */
+.card-table thead th:nth-child(3) { width: 35%; }   /* Description */
+.card-table thead th:nth-child(4) { width: 10%; }   /* Aspect */
+.card-table thead th:nth-child(5) { width: 12%; }   /* Series */
+.card-table thead th:nth-child(6) { width: 8%; }    /* Damage */
+.card-table thead th:nth-child(7) { width: 18%; }   /* Tags */
 
 .card-table thead th.sortable {
   cursor: pointer;
@@ -602,6 +614,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 .sort-arrow {
   float: right;
   opacity: 0.5;
+  font-size: 0.8rem;
 }
 
 .card-table thead th.sorted .sort-arrow {
@@ -618,13 +631,19 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 }
 
 .card-table tbody td {
-  padding: 0.75rem;
+  padding: 0.75rem 0.5rem;
   color: #E6EBC5;
+  vertical-align: middle;
+}
+
+.card-icon {
+  width: 60px;
+  text-align: center;
 }
 
 .card-icon img {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
 }
 
@@ -714,17 +733,50 @@ let sortDirection = {};
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', function() {
   updateCardCount();
+  
+  // Attach event listeners to filter buttons
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const aspect = this.textContent.trim();
+      filterByAspect(aspect);
+    });
+  });
+  
+  // Attach event listener to search input
+  const searchInput = document.getElementById('card-search');
+  if (searchInput) {
+    searchInput.addEventListener('input', filterCards);
+  }
+  
+  // Attach event listeners to sortable headers
+  document.querySelectorAll('.sortable').forEach((header, index) => {
+    header.addEventListener('click', function() {
+      sortTable(index);
+    });
+  });
 });
 
 // Filter by aspect
 function filterByAspect(aspect) {
-  currentAspectFilter = aspect;
+  // Map button text to aspect values
+  const aspectMap = {
+    'All': 'all',
+    'Fire': 'Fire',
+    'Earth': 'Earth',
+    'Water': 'Water',
+    'Wind': 'Wind',
+    'Neutral': 'NULL'
+  };
+  
+  currentAspectFilter = aspectMap[aspect] || 'all';
   
   // Update button states
   document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.classList.remove('active');
+    if (btn.textContent.trim() === aspect) {
+      btn.classList.add('active');
+    }
   });
-  event.target.classList.add('active');
   
   // Apply filter
   filterCards();
@@ -732,9 +784,11 @@ function filterByAspect(aspect) {
 
 // Combined filter function (search + aspect)
 function filterCards() {
-  const searchTerm = document.getElementById('card-search').value.toLowerCase();
+  const searchInput = document.getElementById('card-search');
+  const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
   const table = document.getElementById('card-table');
-  const rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+  const tbody = table.getElementsByTagName('tbody')[0];
+  const rows = tbody.getElementsByTagName('tr');
   let visibleCount = 0;
   
   for (let row of rows) {
@@ -757,7 +811,10 @@ function filterCards() {
   }
   
   // Update count
-  document.getElementById('showing-cards').textContent = visibleCount;
+  const showingElement = document.getElementById('showing-cards');
+  if (showingElement) {
+    showingElement.textContent = visibleCount;
+  }
 }
 
 // Sort table
@@ -777,13 +834,16 @@ function sortTable(columnIndex) {
   
   // Sort rows
   rows.sort((a, b) => {
-    let aValue = a.getElementsByTagName('td')[columnIndex].textContent.trim();
-    let bValue = b.getElementsByTagName('td')[columnIndex].textContent.trim();
+    const aCells = a.getElementsByTagName('td');
+    const bCells = b.getElementsByTagName('td');
+    
+    let aValue = aCells[columnIndex].textContent.trim();
+    let bValue = bCells[columnIndex].textContent.trim();
     
     // Special handling for damage column (numeric sort)
     if (columnIndex === 5) {
-      const aData = a.getElementsByTagName('td')[columnIndex].getAttribute('data-value');
-      const bData = b.getElementsByTagName('td')[columnIndex].getAttribute('data-value');
+      const aData = aCells[columnIndex].getAttribute('data-value');
+      const bData = bCells[columnIndex].getAttribute('data-value');
       aValue = parseInt(aData) || 0;
       bValue = parseInt(bData) || 0;
     }
@@ -828,9 +888,14 @@ function updateSortIndicators(activeColumn, direction) {
 // Update card count
 function updateCardCount() {
   const table = document.getElementById('card-table');
-  const totalRows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr').length;
-  document.getElementById('total-cards').textContent = totalRows;
-  document.getElementById('showing-cards').textContent = totalRows;
+  const tbody = table.getElementsByTagName('tbody')[0];
+  const totalRows = tbody.getElementsByTagName('tr').length;
+  
+  const totalElement = document.getElementById('total-cards');
+  const showingElement = document.getElementById('showing-cards');
+  
+  if (totalElement) totalElement.textContent = totalRows;
+  if (showingElement) showingElement.textContent = totalRows;
 }
 </script>
 
