@@ -745,6 +745,3 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 </style>
 
 <script src="/assets/js/cardlist.js"></script>
-
-
-**Note:** Card stats and mechanics are subject to change with balance updates. Check the [Updates page](/docs/updates) for the latest patch notes.
