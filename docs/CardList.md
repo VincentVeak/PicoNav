@@ -538,7 +538,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 }
 
 .filter-btn {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem .5rem;
   border: 2px solid #FF7573;
   background-color: rgba(0, 31, 37, 0.5);
   color: #E6EBC5;
@@ -564,11 +564,11 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 .stats-box {
   background: linear-gradient(135deg, rgba(0, 31, 37, 0.8) 0%, rgba(0, 49, 58, 0.8) 100%);
   border: 2px solid #FF7573;
-  border-radius: 25px;
+  border-radius: 45px;
   padding: 1rem;
   margin: 1rem 0;
   text-align: center;
-  color: ##1f2a2b;
+  color: #1f2a2b;
 }
 
 /* Table Styles */
