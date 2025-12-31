@@ -293,7 +293,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   <tr data-aspect="Water">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_35.png" alt="Freeze"></td>
     <td><strong>Freeze</strong></td>
-    <td>Turns a Water counter on the opponent to an Ice counter, which blocks the effect of the next move/td>
+    <td>Turns a Water counter on the opponent to an Ice counter, which blocks the effect of the next move</td>
     <td><span class="aspect-water">Water</span></td>
     <td>Water</td>
     <td data-value="40">40</td>
@@ -745,3 +745,15 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 </style>
 
 <script src="/assets/js/cardlist.js"></script>
+
+## Want to Contribute?
+
+Found an error or have balance suggestions? 
+
+- [Edit this page on GitHub](https://github.com/VincentVeak/PicoNav/edit/main/docs/CardList.md)
+- [Open an issue](https://github.com/VincentVeak/PicoNav/issues)
+- [Discuss in community](https://github.com/VincentVeak/PicoNav/discussions)
+
+
+---
+**Note:** Card stats and mechanics are subject to change with balance updates. Check the [Updates page](/docs/updates) for the latest patch notes.
