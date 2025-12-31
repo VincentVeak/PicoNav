@@ -13,11 +13,9 @@ order: 2
 ## PicoNav Update Tool (PNUT)
 
 - [PicoNav Update Tool v1.1](link)
-- [PicoNav Configurator (macOS)](link)
-- [PicoNav Configurator (Linux)](link)
 
 
 ## Extras
 
-[PicoNav Accent Frame STL](link).
+[PicoNav Accent Frame STL](link)
 

@@ -2,7 +2,7 @@
 layout: home
 title: Home
 nav_order: 1
-description: "Welcome to PicoNav - Your virtual pet companion"
+description: "PicoNav - Tiny adventures and bite sized battles with a little menace"
 permalink: /
 ---
 
@@ -74,7 +74,7 @@ PicoNav is an innovative virtual pet device that combines the nostalgia of class
 
 ## Open Source
 
-PicoNav is an open-source project! View the code, contribute, and help improve PicoNav for everyone.
+PicoNav is an open-source project! View the code, contribute, and help improve the PicoNav for everyone.
 
 [View on GitHub](https://github.com/VincentVeak/PicoNav){: .btn .btn-primary }
 [Contribute](https://github.com/VincentVeak/PicoNav/blob/main/CONTRIBUTING.md){: .btn }

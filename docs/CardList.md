@@ -1,761 +1,508 @@
 ---
-layout: default
-title: Card Reference Database
-nav_order: 2
+layout: page
+icon: fas fa-book
+order: 2 
 ---
 
 # Card Reference Database
 
 Complete reference for all cards in PicoNav. Click column headers to sort, or use filters and search below.
 
+
 <div class="stats-box">
   <strong>Total Available Cards:</strong> <span id="total-cards">50</span> | 
-  <strong>Showing:</strong> <span id="showing-cards">50</span>
+  <strong>Future Planned Cards:</strong> <span id="showing-cards">33</span>
 </div>
 
-<div class="filter-controls">
-  <input type="text" class="card-search" id="card-search" placeholder="🔍 Search cards by name, description, or tags...">
-  
-  <div class="filter-buttons">
-    <button class="filter-btn active">All</button>
-    <button class="filter-btn aspect-fire">Fire</button>
-    <button class="filter-btn aspect-earth">Earth</button>
-    <button class="filter-btn aspect-water">Water</button>
-    <button class="filter-btn aspect-wind">Wind</button>
-    <button class="filter-btn aspect-null">Neutral</button>
-  </div>
-</div>
+<input type="text" class="card-search" id="card-search" placeholder="Search cards by name, description, or tags..." onkeyup="searchCards()">
 
 ---
 
 <table class="card-table" id="card-table">
 <thead>
   <tr>
-    <th class="sortable">Icon</th>
-    <th class="sortable">Name <span class="sort-arrow">⇅</span></th>
-    <th class="sortable">Description</th>
-    <th class="sortable">Aspect <span class="sort-arrow">⇅</span></th>
-    <th class="sortable">Series <span class="sort-arrow">⇅</span></th>
-    <th class="sortable">Base Power<span class="sort-arrow">⇅</span></th>
-    <th class="sortable">Tags<span class="sort-arrow">⇅</span></th>
+    <th onclick="sortTable(0)">Icon</th>
+    <th onclick="sortTable(1)">Name</th>
+    <th onclick="sortTable(2)">Description</th>
+    <th onclick="sortTable(3)">Aspect</th>
+    <th onclick="sortTable(4)">Series</th>
+    <th onclick="sortTable(5)">Damage</th>
+    <th onclick="sortTable(6)">Tags</th>
   </tr>
 </thead>
 <tbody>
   <!-- FIRE CARDS -->
   <tr data-aspect="Fire">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_00.png" alt="Fireball"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_00.png"></td>
     <td><strong>Fireball</strong></td>
     <td>Adds a Fire counter that deals 12.5% damage per turn</td>
     <td><span class="aspect-fire">Fire</span></td>
     <td>Fire</td>
-    <td data-value="70">70</td>
+    <td>70</td>
     <td>Fire, Burst Damage, DOT</td>
   </tr>
   <tr data-aspect="Fire">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_08.png" alt="Flare"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_08.png"></td>
     <td><strong>Flare</strong></td>
     <td>Removes Fire counter on opponent for 3x damage</td>
     <td><span class="aspect-fire">Fire</span></td>
     <td>Fire</td>
-    <td data-value="35">35</td>
+    <td>35</td>
     <td>Fire, Burst Damage</td>
   </tr>
   <tr data-aspect="Fire">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_21.png" alt="Inferno"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_21.png"></td>
     <td><strong>Inferno</strong></td>
-    <td>Adds a Blaze counter to the arena that replaces both player counters with Fire counters at the end of turn</td>
+    <td>Adds a Fire Counter to both players and a Blaze counter to the arena. All players with Fire counters take 2x damage</td>
     <td><span class="aspect-fire">Fire</span></td>
     <td>Fire</td>
-    <td data-value="50">50</td>
-    <td>Fire, Arena</td>
+    <td>50</td>
+    <td>Fire</td>
   </tr>
   <tr data-aspect="Fire">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_22.png" alt="Combustion"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_22.png"></td>
     <td><strong>Combustion</strong></td>
     <td>Does 4x damage if Blaze counter is active</td>
     <td><span class="aspect-fire">Fire</span></td>
     <td>Fire</td>
-    <td data-value="25">25</td>
+    <td>25</td>
     <td>Fire</td>
   </tr>
   <tr data-aspect="Fire">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_10.png" alt="Explosion"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_10.png"></td>
     <td><strong>Explosion</strong></td>
     <td>Removes Fire counter on self to deal 5x damage</td>
     <td><span class="aspect-fire">Fire</span></td>
     <td>Fire</td>
-    <td data-value="30">30</td>
+    <td>30</td>
     <td>Fire</td>
   </tr>
   <tr data-aspect="Fire">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_20.png" alt="Overheat"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_20.png"></td>
     <td><strong>Overheat</strong></td>
     <td>Lowers the user's defense stat by 2 stages</td>
     <td><span class="aspect-fire">Fire</span></td>
     <td>Fire</td>
-    <td data-value="100">100</td>
+    <td>100</td>
     <td>Fire</td>
   </tr>
   <tr data-aspect="Fire">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_19.png" alt="Incinerate"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_19.png"></td>
     <td><strong>Incinerate</strong></td>
     <td>Removes a counter on the opponent</td>
     <td><span class="aspect-fire">Fire</span></td>
     <td>Fire</td>
-    <td data-value="65">65</td>
-    <td>Fire, Counter Removal</td>
+    <td>55</td>
+    <td>Fire</td>
   </tr>
 
   <!-- FIRE/LIGHTNING CARDS -->
   <tr data-aspect="Fire">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_11.png" alt="Lightning"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_11.png"></td>
     <td><strong>Lightning</strong></td>
     <td>Adds or increases Lightning counter. Damage is multiplied by number of counters</td>
     <td><span class="aspect-fire">Fire</span></td>
     <td><span class="aspect-lightning">Lightning</span></td>
-    <td data-value="40">40</td>
-    <td>Lightning</td>
+    <td>40</td>
+    <td>Fire, Lightning</td>
   </tr>
   <tr data-aspect="Fire">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_16.png" alt="Discharge"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_16.png"></td>
     <td><strong>Discharge</strong></td>
     <td>Removes Lightning counters from opponent for 3x damage</td>
     <td><span class="aspect-fire">Fire</span></td>
     <td><span class="aspect-lightning">Lightning</span></td>
-    <td data-value="40">40</td>
-    <td>Lightning</td>
+    <td>40</td>
+    <td>Fire, Lightning</td>
   </tr>
   <tr data-aspect="Fire">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_17.png" alt="Storm"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_17.png"></td>
     <td><strong>Storm</strong></td>
     <td>Adds a Storm counter to the arena that adds or increases Lightning on both players</td>
     <td><span class="aspect-fire">Fire</span></td>
     <td><span class="aspect-lightning">Lightning</span></td>
-    <td data-value="25">25</td>
-    <td>Lightning, Arena</td>
+    <td>25</td>
+    <td>Fire, Lightning</td>
   </tr>
   <tr data-aspect="Fire">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_14.png" alt="Thunder"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_14.png"></td>
     <td><strong>Thunder</strong></td>
     <td>Does 4x damage if Storm counter is active</td>
     <td><span class="aspect-fire">Fire</span></td>
     <td><span class="aspect-lightning">Lightning</span></td>
-    <td data-value="25">25</td>
-    <td>Lightning</td>
+    <td>25</td>
+    <td>Fire, Lightning</td>
   </tr>
   <tr data-aspect="Fire">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_15.png" alt="Recharge"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_15.png"></td>
     <td><strong>Recharge</strong></td>
     <td>Removes Lightning counters from opponent to deal 3x damage and heal damage dealt</td>
     <td><span class="aspect-fire">Fire</span></td>
     <td><span class="aspect-lightning">Lightning</span></td>
-    <td data-value="20">20</td>
-    <td>Lightning, Heal</td>
+    <td>20</td>
+    <td>Fire, Lightning, Heal</td>
   </tr>
 
   <!-- EARTH CARDS -->
   <tr data-aspect="Earth">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_01.png" alt="Stonewall"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_01.png"></td>
     <td><strong>Stonewall</strong></td>
-    <td><b>Priority move.</b> Adds an Earth counter that reduces damage by 20%. Maximum of 3 stacks</td>
+    <td>Adds an Earth counter that reduces damage by 25%. Maximum of 3 stacks</td>
     <td><span class="aspect-earth">Earth</span></td>
     <td>Earth</td>
-    <td data-value="40">40</td>
-    <td>Earth, Defense, Priority</td>
-  </tr>
-  <tr data-aspect="Earth">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_04.png" alt="Fortify"></td>
-    <td><strong>Fortify</strong></td>
-    <td>Instantly maxes out Earth counter stacks to 3</td>
-    <td><span class="aspect-earth">Earth</span></td>
-    <td>Earth</td>
-    <td data-value="15">15</td>
+    <td>70</td>
     <td>Earth, Defense</td>
   </tr>
   <tr data-aspect="Earth">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_13.png" alt="Earthquake"></td>
-    <td><strong>Earthquake</strong></td>
-    <td>Damage is multiplied by the number of Earth counters on the user</td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_04.png"></td>
+    <td><strong>Fortify</strong></td>
+    <td><b>Priority move.</b> Upgrades Earth to Metal counter, which on removal grants an Earth counter. Instantly maxes out Earth counter stacks to 3</td>
     <td><span class="aspect-earth">Earth</span></td>
-	<td>Earth</td>
-    <td data-value="25">25</td>
     <td>Earth</td>
+    <td>15</td>
+    <td>Earth, Defense, Priority</td>
   </tr>
   <tr data-aspect="Earth">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_26.png" alt="Aftershock"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_26.png"></td>
     <td><strong>Aftershock</strong></td>
-    <td>Lower the opponent's speed by one stage if you have an Earth counter</td>
+    <td>Add a Slow counter to opponent if you have an Earth counter</td>
     <td><span class="aspect-earth">Earth</span></td>
     <td>Earth</td>
-    <td data-value="70">70</td>
-    <td>Earth, Debuff</td>
+    <td>70</td>
+    <td>Earth</td>
   </tr>
   <tr data-aspect="Earth">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_27.png" alt="Stone Rain"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_27.png"></td>
     <td><strong>Stone Rain</strong></td>
-    <td>Add a Sandstorm counter to the arena that deals 12.5% per turn to each player without an Earth or Nature counter</td>
+    <td>Add a Sandstorm counter to the arena. Does not damage Earth counter. Sandstorm deals 12.5% per turn</td>
     <td><span class="aspect-earth">Earth</span></td>
     <td>Earth</td>
-    <td data-value="40">40</td>
-    <td>Earth, Arena</td>
+    <td>40</td>
+    <td>Earth, DOT</td>
   </tr>
 
   <!-- EARTH/NATURE CARDS -->
   <tr data-aspect="Earth">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_29.png" alt="Terraform"></td>
-    <td><strong>Terraform</strong></td>
-    <td><b>Priority move.</b> Upgrades Earth Counter to Nature Counter, which heals 12.5% each turn</td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_29.png"></td>
+    <td><strong>Terraform</td>
+    <td><b>Priority move.</b>Upgrades Earth Counter to Nature Counter, which heals 12.5% each turn</td>
     <td><span class="aspect-earth">Earth</span></td>
     <td><span class="aspect-nature">Nature</span></td>
-    <td data-value="15">15</td>
+    <td>15</td>
     <td>Earth, Nature, Heal, Priority</td>
   </tr>
   <tr data-aspect="Earth">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_30.png" alt="Naturalize"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_30.png"></td>
     <td><strong>Naturalize</strong></td>
-    <td>Remove opponent counter and heal 12.5% of max HP. Doubles damage if counter is removed</td>
+    <td>Remove opponent counter and heal 12.5%. Doubles damage if counter is removed</td>
     <td><span class="aspect-earth">Earth</span></td>
     <td><span class="aspect-nature">Nature</span></td>
-    <td data-value="25">25</td>
-    <td>Nature, Heal, Counter Removal</td>
-  </tr>
-  <tr data-aspect="Earth">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_31.png" alt="Life Leech"></td>
-    <td><strong>Life Leech</strong></td>
-    <td>Heals 50% of the damage dealt. Damage is doubled if the user has a Nature counter</td>
-    <td><span class="aspect-earth">Earth</span></td>
-    <td><span class="aspect-nature">Nature</span></td>
-    <td data-value="45">45</td>
+    <td>50</td>
     <td>Earth, Nature, Heal</td>
   </tr>
   <tr data-aspect="Earth">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_32.png" alt="Erosion"></td>
-    <td><strong>Erosion</strong></td>
-    <td>Removes one Earth stack on the user. Damage is multiplied for each turn that has passed this battle</td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_31.png"></td>
+    <td><strong>Life Leech</strong></td>
+    <td>Deals damage and heals 50% of damage dealt. Deals 2x damage if user has Nature counter</td>
     <td><span class="aspect-earth">Earth</span></td>
-	<td>Earth</td>
-    <td data-value="15">15</td>
+    <td><span class="aspect-nature">Nature</span></td>
+    <td>45</td>
+    <td>Earth, Nature, Heal</td>
+  </tr>
+  <tr data-aspect="Earth">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_32.png"></td>
+    <td><strong>Erosion</strong></td>
+    <td>Damage is multiplied by the number of turns that have passed if Earth counter is spent</td>
+    <td><span class="aspect-earth">Earth</span></td>
+    <td>Earth</td>
+    <td>15</td>
     <td>Earth</td>
   </tr>
+  <tr data-aspect="Earth">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_13.png"></td>
+    <td><strong>Earthquake</strong></td>
+    <td>Deals damage, dealing extra damage while consuming earth counters</td>
+    <td><span class="aspect-earth">Earth</span></td>
+    <td>Earth</td>
+    <td>25 (50,75,100)</td>
+    <td>Earth</td>
+  </tr>
+
   <!-- WATER CARDS -->
   <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_02.png" alt="Tidal Wave"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_02.png"></td>
     <td><strong>Tidal Wave</strong></td>
-    <td>Place a Water counter on the opponent to reduce speed by 25%</td>
+    <td>Adds a Water counter to the opponent that reduces speed by 25% and removes the next counter placed on opponent</td>
     <td><span class="aspect-water">Water</span></td>
     <td>Water</td>
-    <td data-value="40">40</td>
+    <td>40</td>
     <td>Water</td>
   </tr>
   <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_34.png" alt="Icicle"></td>
-    <td><strong>Icicle</strong></td>
-    <td>Remove a Water counter on the user for 2x damage</td>
-    <td><span class="aspect-water">Water</span></td>
-	<td>Water</td>
-    <td data-value="50">50</td>
-    <td>Water</td>
-  </tr>
-  <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_06.png" alt="Torrent"></td>
-    <td><strong>Torrent</strong></td>
-    <td>Adds a Rain counter to the arena that replaces both player counters with Water counters at the end of turn</td>
-    <td><span class="aspect-water">Water</span></td>
-    <td>Water</td>
-    <td data-value="40">40</td>
-    <td>Water, Arena</td>
-  </tr>
-    <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_33.png" alt="Hydration"></td>
-    <td><strong>Hydration</strong></td>
-    <td>Places a Water counter on the user and heals for 25% of max HP</td>
-    <td><span class="aspect-water">Water</span></td>
-	<td>Water</td>
-    <td data-value="2">20</td>
-    <td>Water, Heal</td>
-  </tr>
-
-  <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_37.png" alt="Undertow"></td>
-    <td><strong>Undertow</strong></td>
-    <td>Replace existing opponent's counter to Water counter for 2x damage if replaced</td>
-    <td><span class="aspect-water">Water</span></td>
-    <td>Water</td>
-    <td data-value="30">30</td>
-    <td>Water</td>
-  </tr>
-  <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_38.png" alt="Life Steal"></td>
-    <td><strong>Life Steal</strong></td>
-    <td>Turn a Water counter on the user to a Life Steal counter, which heals HP equal to damage dealt</td>
-    <td><span class="aspect-water">Water</span></td>
-    <td>Water</td>
-    <td data-value="40">40</td>
-    <td>Water, Heal</td>
-  </tr>
-  <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_35.png" alt="Freeze"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_35.png"></td>
     <td><strong>Freeze</strong></td>
-    <td>Turns a Water counter on the opponent to an Ice counter, which blocks the effect of the next move/td>
+    <td>Turns Water counter into Ice counter, that prevents opponent's next move</td>
     <td><span class="aspect-water">Water</span></td>
     <td>Water</td>
-    <td data-value="40">40</td>
-    <td>Water</td>
+    <td>40</td>
+    <td>Water, Ice</td>
   </tr>
-    <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_25.png" alt="Ice Wall"></td>
-    <td><strong>Ice Wall</strong></td>
-    <td>Places a Wall counter on the Arena that nullifies any damage from the next three attacks from any player</td>
-    <td><span class="aspect-water">Water</span></td>
-    <td>Water</td>
-    <td data-value="0">0</td>
-    <td>Water, Defense, Arena</td>
-  </tr>
-
-  <!-- WATER/STEAM CARDS -->
-
   <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_40.png" alt="Mistwalk"></td>
-    <td><strong>Mistwalk</strong></td>
-    <td>Turns a Water counter on the user to a Mist counter, which blocks the damage of the next incoming move</td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_06.png"></td>
+    <td><strong>Torrent</strong></td>
+    <td>Places a Water counter on both players and Rain on arena. No other counters outside of Water and Ice can be added while raining</td>
+    <td><span class="aspect-water">Water</span></td>
+    <td>Water</td>
+    <td>25</td>
+    <td>Water</td>
+  </tr>
+  <tr data-aspect="Water">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_33.png"></td>
+    <td><strong>Hydration</strong></td>
+    <td>Places a Water counter on self and heals 12.5% Max HP</td>
+    <td><span class="aspect-water">Water</span></td>
+    <td>Water</td>
+    <td>20</td>
+    <td>Water, Heal</td>
+  </tr>
+  <tr data-aspect="Water">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_34.png"></td>
+    <td><strong>Icicle</strong></td>
+    <td>Removes Water counter on self to deal 2x damage</td>
+    <td><span class="aspect-water">Water</span></td>
+    <td>Water</td>
+    <td>50</td>
+    <td>Water</td>
+  </tr>
+  <tr data-aspect="Water">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_37.png"></td>
+    <td><strong>Undertow</strong></td>
+    <td>Replace opponent counter to Water counter if Water card is at the bottom of the deck</td>
+    <td><span class="aspect-water">Water</span></td>
+    <td>Water</td>
+    <td>30</td>
+    <td>Water</td>
+  </tr>
+  <tr data-aspect="Water">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_38.png"></td>
+    <td><strong>Life Steal</strong></td>
+    <td>Replace Water counter with a life steal counter that heals the amount of damage dealt while active</td>
+    <td><span class="aspect-water">Water</span></td>
+    <td><span class="aspect-drain">Drain</span></td>
+    <td>40</td>
+    <td>Water, Drain, Heal</td>
+  </tr>
+  <tr data-aspect="Water">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_39.png"></td>
+    <td><strong>Boil</strong></td>
+    <td>Replace all Water counters with Fire counters on both players</td>
     <td><span class="aspect-water">Water</span></td>
     <td><span class="aspect-steam">Steam</span></td>
-    <td data-value="10">10</td>
+    <td>60</td>
+    <td>Water, Steam, Fire</td>
+  </tr>
+  <tr data-aspect="Water">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_40.png"></td>
+    <td><strong>Mistwalk</strong></td>
+    <td>Convert a Water or Fire counter into a Mist counter, which nullifies the next hit done to the user</td>
+    <td><span class="aspect-water">Water</span></td>
+    <td><span class="aspect-steam">Steam</span></td>
+    <td>10</td>
     <td>Water, Steam, Defense</td>
   </tr>
-    <tr data-aspect="Water">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_39.png" alt="Boil"></td>
-    <td><strong>Boil</strong></td>
-    <td>Turn ALL Water counters to Fire counters</td>
+  <tr data-aspect="Water">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_25.png"></td>
+    <td><strong>Ice Wall</strong></td>
+    <td>Places a Wall counter on the Arena that nullifies any damage from any attack from any player once</td>
     <td><span class="aspect-water">Water</span></td>
-	<td><span class="aspect-steam">Steam</span></td>
-    <td data-value="60">60</td>
-    <td>Water, Steam, Fire</td>
+    <td>Water</td>
+    <td>0</td>
+    <td>Water, Defense</td>
   </tr>
 
   <!-- WIND CARDS -->
   <tr data-aspect="Wind">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_03.png" alt="Tornado"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_03.png"></td>
     <td><strong>Tornado</strong></td>
     <td>Shuffles your deck and grants a Wind counter that gives the next move priority</td>
     <td><span class="aspect-wind">Wind</span></td>
     <td>Wind</td>
-    <td data-value="50">50</td>
+    <td>50</td>
     <td>Wind, Utility</td>
   </tr>
   <tr data-aspect="Wind">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_42.png" alt="Windstorm"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_42.png"></td>
     <td><strong>Windstorm</strong></td>
     <td>Adds/Replaces a Gust counter to the arena. Removes counters on players at the end of turn</td>
     <td><span class="aspect-wind">Wind</span></td>
     <td>Wind</td>
-    <td data-value="30">30</td>
-    <td>Wind, Counter Removal</td>
+    <td>30</td>
+    <td>Wind</td>
   </tr>
   <tr data-aspect="Wind">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_05.png" alt="Air Slash"></td>
-    <td><strong>Air Slash</strong></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_05.png"></td>
+    <td><strong>Air Slash</td>
     <td><b>Priority move.</b> Remove Wind counter on self for 3x damage</td>
     <td><span class="aspect-wind">Wind</span></td>
     <td>Wind</td>
-    <td data-value="30">30</td>
+    <td>30</td>
     <td>Wind, Priority</td>
   </tr>
   <tr data-aspect="Wind">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_41.png" alt="Lucky Star"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_41.png"></td>
     <td><strong>Lucky Star</strong></td>
-    <td>Turn a Wind Counter on the user into a Luck Counter that increases crit chance by 25%</td>
+    <td>Remove Wind Counter for Luck Counter that increases crit chance by 25%</td>
     <td><span class="aspect-wind">Wind</span></td>
     <td>Wind</td>
-    <td data-value="40">40</td>
+    <td>40</td>
     <td>Wind, Buff</td>
   </tr>
   <tr data-aspect="Wind">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_45.png" alt="Sonicboom"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_45.png"></td>
     <td><strong>Sonicboom</strong></td>
     <td>25% chance to crit</td>
     <td><span class="aspect-wind">Wind</span></td>
     <td>Wind</td>
-    <td data-value="60">60</td>
+    <td>60</td>
     <td>Wind, Crit</td>
   </tr>
   <tr data-aspect="Wind">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_43.png" alt="Gale Force"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_43.png"></td>
     <td><strong>Gale Force</strong></td>
     <td>Removes counters from each player and arena. Multiplies damage per counter removed</td>
     <td><span class="aspect-wind">Wind</span></td>
     <td>Wind</td>
-    <td data-value="35">35</td>
-    <td>Wind, Counter Removal</td>
+    <td>35</td>
+    <td>Wind</td>
   </tr>
   <tr data-aspect="Wind">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_44.png" alt="Force Rush"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_44.png"></td>
     <td><strong>Force Rush</strong></td>
     <td>Damage is divided by number of turns that passed and grants a Wind counter</td>
     <td><span class="aspect-wind">Wind</span></td>
     <td>Wind</td>
-    <td data-value="90">90</td>
+    <td>90</td>
     <td>Wind</td>
   </tr>
   <tr data-aspect="Wind">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_46.png" alt="Pressure"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_46.png"></td>
     <td><strong>Pressure</strong></td>
     <td>Damage is multiplied by the number of times this ability was used this game</td>
     <td><span class="aspect-wind">Wind</span></td>
     <td>Wind</td>
-    <td data-value="35">35</td>
+    <td>35</td>
     <td>Wind</td>
   </tr>
 
   <!-- NEUTRAL/NULL CARDS -->
   <tr data-aspect="NULL">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_07.png" alt="Pierce"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_07.png"></td>
     <td><strong>Pierce</strong></td>
     <td>Ignore the effects of counters from both players</td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
-    <td data-value="50">50</td>
-    <td>Neutral</td>
+    <td>30</td>
+    <td>Neutral, Ignore Counter</td>
   </tr>
   <tr data-aspect="NULL">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_09.png" alt="Lunge"></td>
-    <td><strong>Lunge</strong></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_09.png"></td>
+    <td><strong>Lunge</td>
     <td><b>Priority move.</b></td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
-    <td data-value="50">50</td>
+    <td>40</td>
     <td>Neutral, Priority</td>
   </tr>
   <tr data-aspect="NULL">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_12.png" alt="Block"></td>
-    <td><strong>Block</strong></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_12.png"></td>
+    <td><strong>Block</td>
     <td><b>Priority move.</b> Prevent all damage from opponent's move if Block was not used last turn</td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
-    <td data-value="0">0</td>
+    <td>0</td>
     <td>Neutral, Defense, Priority</td>
   </tr>
   <tr data-aspect="NULL">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_36.png" alt="Payout"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_36.png"></td>
     <td><strong>Payout</strong></td>
-    <td>Increases the total credit reward at the end of the battle by 50% if used. This effect cannot be stacked</td>
+    <td>Grants extra money if this is the killing move</td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
-    <td data-value="15">15</td>
+    <td>15</td>
     <td>Neutral, Reward</td>
   </tr>
   <tr data-aspect="NULL">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_48.png" alt="Juxtapose"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_48.png"></td>
     <td><strong>Juxtapose</strong></td>
     <td>Switch counters with opponent</td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
-    <td data-value="0">0</td>
-    <td>Neutral</td>
+    <td>0</td>
+    <td>Neutral, Swap</td>
   </tr>
   <tr data-aspect="NULL">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_28.png" alt="Time Flip"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_28.png"></td>
     <td><strong>Time Flip</strong></td>
     <td>Place a Reversal arena counter that allows the slower Pico to attack first</td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
-    <td data-value="0">0</td>
-    <td>Neutral, Arena</td>
+    <td>0</td>
+    <td>Neutral, Utility</td>
   </tr>
   <tr data-aspect="NULL">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_47.png" alt="Insult"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_47.png"></td>
     <td><strong>Insult</strong></td>
     <td>Lower the opponent's defense stage by 1</td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
-    <td data-value="0">0</td>
+    <td>0</td>
     <td>Neutral, Debuff</td>
   </tr>
   <tr data-aspect="NULL">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_24.png" alt="Curse"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_24.png"></td>
     <td><strong>Curse</strong></td>
     <td>Places a curse counter on opponent that deals 30% of their moves back to them</td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
-    <td data-value="0">0</td>
-    <td>Neutral</td>
+    <td>0</td>
+    <td>Neutral, Reflect</td>
   </tr>
   <tr data-aspect="NULL">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_23.png" alt="Aegis"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_23.png"></td>
     <td><strong>Aegis</strong></td>
-    <td>Place an Aegis counter that prevents all damage under 50 base damage</td>
+    <td>Place an aegis counter that prevents all damage under 40 base damage</td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
-    <td data-value="0">0</td>
+    <td>0</td>
     <td>Neutral, Defense</td>
   </tr>
   <tr data-aspect="NULL">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_49.png" alt="Blood Moon"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_49.png"></td>
     <td><strong>Blood Moon</strong></td>
     <td>Place a Blood Moon arena counter that turns healing into damage</td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
-    <td data-value="0">0</td>
+    <td>0</td>
     <td>Neutral, Arena</td>
   </tr>
   <tr data-aspect="NULL">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_18.png" alt="Recover"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_18.png"></td>
     <td><strong>Recover</strong></td>
     <td>Heal 35% of max HP</td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
-    <td data-value="0">0</td>
+    <td>0</td>
     <td>Neutral, Heal</td>
   </tr>
 </tbody>
 </table>
 
-<style>
-/* Filter Controls */
-.filter-controls {
-  margin: 2rem 0;
-}
-
-.card-search {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  border: 2px solid #FF7573;
-  border-radius: 25px;
-  background-color: #1f2a2b;
-  color: #E6EBC5;
-  margin-bottom: 1rem;
-  font-family: 'Comfortaa', sans-serif;
-}
-
-.card-search::placeholder {
-  color: rgba(230, 235, 197, 0.5);
-}
-
-.filter-buttons {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.filter-btn {
-  padding: 0.25rem 1rem;
-  border: 2px solid #FF7573;
-  background-color: rgba(0, 31, 37, 0.5);
-  color: #E6EBC5;
-  border-radius: 45px;
-  cursor: pointer;
-  font-family: 'Comfortaa', sans-serif;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.filter-btn:hover {
-  background-color: #FF7573;
-  color: #00313A;
-  transform: translateY(-2px);
-}
-
-.filter-btn.active {
-  background-color: #FF7573;
-  color: #00313A;
-}
-
-/* Stats Box */
-.stats-box {
-  background-color: #1f2a2b;
-  color: #E6EBC5;
-  border: 2px solid #FF7573;
-  border-radius: 45px;
-  padding: 1rem;
-  margin: 1rem 0;
-  text-align: center;
-}
-
-/* Table Styles */
-.card-table {
-  width: 100%;
-  max-width: 100%;
-  border-collapse: collapse;
-  margin: 2rem 0;
-  font-size: 0.75rem;
-  table-layout: fixed;
-}
-
-.card-table thead th {
-  background-color: #FF7573;
-  color: #00313A;
-  padding: 0.5rem 0.35rem;
-  text-align: left;
-  font-weight: 600;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  font-size: 0.75rem;
-  line-height: 1.2;
-}
-
-/* Column widths - optimized to fit everything */
-.card-table thead th:nth-child(1) { width: 45px; }   /* Icon - smaller */
-.card-table thead th:nth-child(2) { width: 15%; }    /* Name */
-.card-table thead th:nth-child(3) { width: 30%; }    /* Description - largest */
-.card-table thead th:nth-child(4) { width: 10%; }     /* Aspect */
-.card-table thead th:nth-child(5) { width: 12%; }    /* Series */
-.card-table thead th:nth-child(6) { width: 8%; }     /* Damage - very small */
-.card-table thead th:nth-child(7) { width: 17%; }    /* Tags */
-
-.card-table thead th.sortable {
-  cursor: pointer;
-  user-select: none;
-}
-
-.card-table thead th.sortable:hover {
-  background-color: #E6EBC5;
-}
-
-.sort-arrow {
-  float: right;
-  opacity: 0.5;
-  font-size: 0.7rem;
-}
-
-.card-table thead th.sorted .sort-arrow {
-  opacity: 1;
-}
-
-.card-table tbody tr {
-  border-bottom: 1px solid rgba(255, 117, 115, 0.2);
-  transition: all 0.2s ease;
-}
-
-.card-table tbody tr:hover {
-  background-color: rgba(255, 117, 115, 0.1);
-}
-
-.card-table tbody td {
-  padding: 0.5rem 0.35rem;
-  color: #E6EBC5;
-  vertical-align: middle;
-  font-size: 0.75rem;
-  line-height: 1.3;
-  word-wrap: break-word;
-}
-
-.card-icon {
-  width: 50px;
-  text-align: center;
-  padding: 0.3rem !important;
-}
-
-.card-icon img {
-  width: 35px;
-  height: 35px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
-}
-
-.aspect-fire {
-  background-color: #ff4444;
-  color: white;
-  padding: 0.2rem 0.5rem;
-  border-radius: 25px;
-  font-size: 0.7rem;
-  font-weight: 600;
-  display: inline-block;
-  white-space: nowrap;
-}
-
-.aspect-earth {
-  background-color: #8b4513;
-  color: white;
-  padding: 0.2rem 0.5rem;
-  border-radius: 25px;
-  font-size: 0.7rem;
-  font-weight: 600;
-  display: inline-block;
-  white-space: nowrap;
-}
-
-.aspect-water {
-  background-color: #4169e1;
-  color: white;
-  padding: 0.2rem 0.5rem;
-  border-radius: 25px;
-  font-size: 0.7rem;
-  font-weight: 600;
-  display: inline-block;
-  white-space: nowrap;
-}
-
-.aspect-wind {
-  background-color: #87ceeb;
-  color: #00313A;
-  padding: 0.2rem 0.5rem;
-  border-radius: 25px;
-  font-size: 0.7rem;
-  font-weight: 600;
-  display: inline-block;
-  white-space: nowrap;
-}
-
-.aspect-null {
-  background-color: #808080;
-  color: white;
-  padding: 0.2rem 0.5rem;
-  border-radius: 25px;
-  font-size: 0.7rem;
-  font-weight: 600;
-  display: inline-block;
-  white-space: nowrap;
-}
-
-.aspect-lightning {
-  background-color: #ffd700;
-  color: #00313A;
-  padding: 0.2rem 0.5rem;
-  border-radius: 25px;
-  font-size: 0.7rem;
-  font-weight: 600;
-  display: inline-block;
-  white-space: nowrap;
-}
-
-.aspect-nature {
-  background-color: #228b22;
-  color: white;
-  padding: 0.2rem 0.5rem;
-  border-radius: 25px;
-  font-size: 0.7rem;
-  font-weight: 600;
-  display: inline-block;
-  white-space: nowrap;
-}
-
-.aspect-steam {
-  background-color: #e0e0e0;
-  color: #00313A;
-  padding: 0.2rem 0.5rem;
-  border-radius: 25px;
-  font-size: 0.7rem;
-  font-weight: 600;
-  display: inline-block;
-  white-space: nowrap;
-}
-
-/* Hidden row class */
-.hidden-row {
-  display: none !important;
-}
-</style>
-
-<script src="/assets/js/cardlist.js"></script>
 
 ## Want to Contribute?
 
 Found an error or have balance suggestions? 
 
-- [Edit this page on GitHub](https://github.com/VincentVeak/PicoNav/edit/main/docs/CardList.md)
+- [Edit this page on GitHub](https://github.com/VincentVeak/PicoNav/edit/main/docs/cards.md)
 - [Open an issue](https://github.com/VincentVeak/PicoNav/issues)
 - [Discuss in community](https://github.com/VincentVeak/PicoNav/discussions)
 
