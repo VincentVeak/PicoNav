@@ -79,7 +79,7 @@ The PicoNav features a notification LED on the top right of the system that disp
 | <span style="color: green;">**Green**</span> | Battery is charging |
 | <span style="color: white;">**White**</span> | Random event |
 
-**Note:** LED brightness can be adjusted or turned off entirely in the [Options](#options) menu. Do Not Disturb mode canbe quickly toggled by pressing and holding both the A and B buttons in the main menu.
+**Note:** LED brightness can be adjusted or turned off entirely in the [Options](#options) menu. <b>Do Not Disturb</b> mode can be quickly toggled by pressing and holding both the A and B buttons in the main menu.
 
 ## Status Screen
 
