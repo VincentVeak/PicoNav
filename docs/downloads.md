@@ -17,5 +17,5 @@ order: 2
 
 ## Extras
 
-[PicoNav Accent Frame STL](link)
+- [PicoNav Accent Frame STL](https://github.com/VincentVeak/PicoNav/blob/main/extras/Frame.stl)
 

@@ -19,11 +19,6 @@ footer_content: 'Copyright &copy; 2025 <a href="https://veak.design">Veak Design
 back_to_top: true
 back_to_top_text: "Back to top"
 
-# Navigation - Shop button in header
-aux_links:
-  "Shop PicoNav":
-    - "https://veak.design/collections/piconav"
-
 aux_links_new_tab: true
 
 # Enable search
