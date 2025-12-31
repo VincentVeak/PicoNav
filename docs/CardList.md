@@ -36,8 +36,8 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <th class="sortable">Description</th>
     <th class="sortable">Aspect <span class="sort-arrow">⇅</span></th>
     <th class="sortable">Series <span class="sort-arrow">⇅</span></th>
-    <th class="sortable">Damage <span class="sort-arrow">⇅</span></th>
-    <th class="sortable">Tags <span class="sort-arrow">⇅</span></th>
+    <th class="sortable">Base Power<span class="sort-arrow">⇅</span></th>
+    <th class="sortable">Tags<span class="sort-arrow">⇅</span></th>
   </tr>
 </thead>
 <tbody>
@@ -150,7 +150,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><span class="aspect-fire">Fire</span></td>
     <td><span class="aspect-lightning">Lightning</span></td>
     <td data-value="20">20</td>
-    <td>Fire, Lightning, Heal</td>
+    <td>Lightning, Heal</td>
   </tr>
 
   <!-- EARTH CARDS -->
@@ -188,7 +188,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><span class="aspect-earth">Earth</span></td>
     <td>Earth</td>
     <td data-value="70">70</td>
-    <td>Earth</td>
+    <td>Earth, Debuff</td>
   </tr>
   <tr data-aspect="Earth">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_27.png" alt="Stone Rain"></td>
@@ -286,12 +286,12 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   </tr>
   <tr data-aspect="Water">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_38.png" alt="Life Steal"></td>
-    <td><strong>Tidal Wave</strong></td>
+    <td><strong>Life Steal</strong></td>
     <td>Turn a Water counter on the user to a Life Steal counter, which heals HP equal to damage dealt</td>
     <td><span class="aspect-water">Water</span></td>
     <td>Water</td>
     <td data-value="40">40</td>
-    <td>Water</td>
+    <td>Water, Heal</td>
   </tr>
   <tr data-aspect="Water">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_35.png" alt="Freeze"></td>
@@ -451,7 +451,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
     <td data-value="0">0</td>
-    <td>Neutral, Swap</td>
+    <td>Neutral</td>
   </tr>
   <tr data-aspect="NULL">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_28.png" alt="Time Flip"></td>
@@ -460,7 +460,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
     <td data-value="0">0</td>
-    <td>Neutral, Utility</td>
+    <td>Neutral, Arena</td>
   </tr>
   <tr data-aspect="NULL">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_47.png" alt="Insult"></td>
@@ -478,7 +478,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
     <td data-value="0">0</td>
-    <td>Neutral, Reflect</td>
+    <td>Neutral</td>
   </tr>
   <tr data-aspect="NULL">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_23.png" alt="Aegis"></td>
