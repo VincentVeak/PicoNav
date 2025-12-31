@@ -521,8 +521,8 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   font-size: 1rem;
   border: 2px solid #FF7573;
   border-radius: 25px;
-  background-color: rgba(0, 31, 37, 0.5);
-  color: ##1f2a2b;
+  background-color: #1f2a2b;
+  color: #E6EBC5;
   margin-bottom: 1rem;
   font-family: 'Comfortaa', sans-serif;
 }
@@ -562,13 +562,13 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 
 /* Stats Box */
 .stats-box {
-  background: linear-gradient(135deg, rgba(0, 31, 37, 0.8) 0%, rgba(0, 49, 58, 0.8) 100%);
+  background-color: #1f2a2b;
+  color: #E6EBC5;
   border: 2px solid #FF7573;
   border-radius: 45px;
   padding: 1rem;
   margin: 1rem 0;
   text-align: center;
-  color: #1f2a2b;
 }
 
 /* Table Styles */
