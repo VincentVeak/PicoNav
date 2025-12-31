@@ -520,9 +520,9 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   padding: 0.75rem 1rem;
   font-size: 1rem;
   border: 2px solid #FF7573;
-  border-radius: 10px;
+  border-radius: 25px;
   background-color: rgba(0, 31, 37, 0.5);
-  color: #E6EBC5;
+  color: ##1f2a2b;
   margin-bottom: 1rem;
   font-family: 'Comfortaa', sans-serif;
 }
@@ -542,7 +542,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   border: 2px solid #FF7573;
   background-color: rgba(0, 31, 37, 0.5);
   color: #E6EBC5;
-  border-radius: 20px;
+  border-radius: 25px;
   cursor: pointer;
   font-family: 'Comfortaa', sans-serif;
   font-weight: 500;
@@ -564,11 +564,11 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 .stats-box {
   background: linear-gradient(135deg, rgba(0, 31, 37, 0.8) 0%, rgba(0, 49, 58, 0.8) 100%);
   border: 2px solid #FF7573;
-  border-radius: 10px;
+  border-radius: 25px;
   padding: 1rem;
   margin: 1rem 0;
   text-align: center;
-  color: #E6EBC5;
+  color: ##1f2a2b;
 }
 
 /* Table Styles */
@@ -595,11 +595,11 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 }
 
 /* Column widths - optimized to fit everything */
-.card-table thead th:nth-child(1) { width: 50px; }   /* Icon - smaller */
+.card-table thead th:nth-child(1) { width: 45px; }   /* Icon - smaller */
 .card-table thead th:nth-child(2) { width: 10%; }    /* Name */
 .card-table thead th:nth-child(3) { width: 38%; }    /* Description - largest */
-.card-table thead th:nth-child(4) { width: 9%; }     /* Aspect */
-.card-table thead th:nth-child(5) { width: 10%; }    /* Series */
+.card-table thead th:nth-child(4) { width: 10%; }     /* Aspect */
+.card-table thead th:nth-child(5) { width: 12%; }    /* Series */
 .card-table thead th:nth-child(6) { width: 6%; }     /* Damage - very small */
 .card-table thead th:nth-child(7) { width: 17%; }    /* Tags */
 
