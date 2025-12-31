@@ -750,9 +750,8 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 
 Found an error or have balance suggestions? 
 
-- [Edit this page on GitHub](https://github.com/VincentVeak/PicoNav/edit/main/docs/CardList.md)
 - [Open an issue](https://github.com/VincentVeak/PicoNav/issues)
-- [Discuss in community](https://github.com/VincentVeak/PicoNav/discussions)
+- [Discuss in the community Discord](https://discord.gg/79x5fdQMWX
 
 
 ---
