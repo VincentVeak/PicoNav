@@ -174,10 +174,9 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   </tr>
   <tr data-aspect="Earth">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_13.png" alt="Earthquake"></td>
-    <td><strong>Gust</strong></td>
+    <td><strong>Earthquake</strong></td>
     <td>Damage is multiplied by the number of Earth counters on the user</td>
-    <td><span class="aspect-water">Earth</span></td>
-    <td><span class="aspect-steam">Earth</span></td>
+    <td><span class="aspect-earth">Earth</span></td>
     <td data-value="25">25</td>
     <td>Earth</td>
   </tr>
@@ -233,7 +232,6 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><strong>Erosion</strong></td>
     <td>Removes one Earth stack on the user. Damage is multiplied for each turn that has passed this battle</td>
     <td><span class="aspect-earth">Earth</span></td>
-    <td><span class="aspect-earth">Earth</span></td>
     <td data-value="15">15</td>
     <td>Earth</td>
   </tr>
@@ -252,7 +250,6 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><strong>Icicle</strong></td>
     <td>Remove a Water counter on the user for 2x damage</td>
     <td><span class="aspect-water">Water</span></td>
-    <td><span class="aspect-water">Water</span></td>
     <td data-value="50">50</td>
     <td>Water</td>
   </tr>
@@ -269,8 +266,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_33.png" alt="Hydration"></td>
     <td><strong>Hydration</strong></td>
     <td>Places a Water counter on the user and heals for 25% of max HP</td>
-    <td><span class="aspect-Water">Water</span></td>
-    <td><span class="aspect-Water">Water</span></td>
+    <td><span class="aspect-water">Water</span></td>
     <td data-value="2">20</td>
     <td>Water, Heal</td>
   </tr>
@@ -329,7 +325,6 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td>Turn ALL Water counters to Fire counters</td>
     <td><span class="aspect-water">Water</span></td>
 	<td><span class="aspect-steam">Steam</span></td>
-    <td>Water</td>
     <td data-value="60">60</td>
     <td>Water, Steam, Fire</td>
   </tr>
