@@ -31,9 +31,9 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 <table class="card-table" id="card-table">
 <thead>
   <tr>
-    <th class="sortable">Icon <span class="sort-arrow">⇅</span></th>
+    <th class="sortable">Icon</th>
     <th class="sortable">Name <span class="sort-arrow">⇅</span></th>
-    <th class="sortable">Description <span class="sort-arrow">⇅</span></th>
+    <th class="sortable">Description</th>
     <th class="sortable">Aspect <span class="sort-arrow">⇅</span></th>
     <th class="sortable">Series <span class="sort-arrow">⇅</span></th>
     <th class="sortable">Damage <span class="sort-arrow">⇅</span></th>
@@ -542,7 +542,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   border: 2px solid #FF7573;
   background-color: rgba(0, 31, 37, 0.5);
   color: #E6EBC5;
-  border-radius: 25px;
+  border-radius: 45px;
   cursor: pointer;
   font-family: 'Comfortaa', sans-serif;
   font-weight: 500;
@@ -596,11 +596,11 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 
 /* Column widths - optimized to fit everything */
 .card-table thead th:nth-child(1) { width: 45px; }   /* Icon - smaller */
-.card-table thead th:nth-child(2) { width: 10%; }    /* Name */
-.card-table thead th:nth-child(3) { width: 38%; }    /* Description - largest */
+.card-table thead th:nth-child(2) { width: 15%; }    /* Name */
+.card-table thead th:nth-child(3) { width: 30%; }    /* Description - largest */
 .card-table thead th:nth-child(4) { width: 10%; }     /* Aspect */
 .card-table thead th:nth-child(5) { width: 12%; }    /* Series */
-.card-table thead th:nth-child(6) { width: 6%; }     /* Damage - very small */
+.card-table thead th:nth-child(6) { width: 8%; }     /* Damage - very small */
 .card-table thead th:nth-child(7) { width: 17%; }    /* Tags */
 
 .card-table thead th.sortable {
