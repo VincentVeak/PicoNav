@@ -26,6 +26,8 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   </div>
 </div>
 
+---
+
 <table class="card-table" id="card-table">
 <thead>
   <tr>
@@ -744,14 +746,5 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
 
 <script src="/assets/js/cardlist.js"></script>
 
-## Want to Contribute?
-
-Found an error or have balance suggestions? 
-
-- [Edit this page on GitHub](https://github.com/VincentVeak/PicoNav/edit/main/docs/CardList.md)
-- [Open an issue](https://github.com/VincentVeak/PicoNav/issues)
-- [Discuss in community](https://github.com/VincentVeak/PicoNav/discussions)
-
----
 
 **Note:** Card stats and mechanics are subject to change with balance updates. Check the [Updates page](/docs/updates) for the latest patch notes.
