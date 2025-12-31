@@ -13,7 +13,7 @@ The PicoNav is a different take on virtual pets with a focus on adventure and ba
 <div style="background: #1e1e1e; padding: 20px; border-radius: 8px; margin: 20px 0;">
   <h2 style="margin-top: 0;">✨ New to PicoNav?</h2>
   <p>Check out the User Manual to get started!</p>
-  <a href="/docs/getting-started" style="background: #FF7573; color: #E6EBC5; padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-block;"><b>Read the Manual →</b></a>
+  <a href="/docs/manual.md" style="background: #FF7573; color: #E6EBC5; padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-block;"><b>Read the Manual →</b></a>
 </div>
 
 ---
