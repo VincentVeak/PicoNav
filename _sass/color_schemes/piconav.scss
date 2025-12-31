@@ -1,0 +1,35 @@
+// PicoNav Custom Color Scheme for Just the Docs
+// Based on dark theme with PicoNav colors
+
+@import "./color_schemes/dark";
+
+// PicoNav Color Palette
+$pink: #FF7573;
+$cream: #E6EBC5;
+$peach: #FFCE94;
+$teal: #00313A;
+
+// Override link colors (replace blue with pink)
+$link-color: $pink;
+$btn-primary-color: $pink;
+
+// Override body colors (replace white with cream)
+$body-text-color: $cream;
+$body-heading-color: $cream;
+
+// Keep dark background
+$body-background-color: $teal;
+$sidebar-color: darken($teal, 5%);
+
+// Navigation colors
+$nav-child-link-color: $cream;
+$search-background-color: darken($teal, 5%);
+
+// Button colors
+$btn-primary-color: $pink;
+
+// Border colors
+$border-color: rgba($pink, 0.3);
+
+// Code blocks
+$code-background-color: darken($teal, 5%);

@@ -7,10 +7,10 @@ url: "https://piconav.com"
 remote_theme: just-the-docs/just-the-docs
 
 # Color scheme (can be: light, dark, or custom)
-color_scheme: dark
+color_scheme: piconav
 
 # Logo
-logo: "/assets/images/piconav-logo.png"
+logo: "/assets/images/PNUT.png"
 
 # Footer
 footer_content: 'Copyright &copy; 2025 <a href="https://veak.design">Veak Designs</a>. Open source project on <a href="https://github.com/VincentVeak/PicoNav">GitHub</a>.'
@@ -42,16 +42,16 @@ heading_anchors: true
 
 # External navigation links
 nav_external_links:
-  - title: Buy PicoNav
+  - title: Buy a PicoNav
     url: https://veak.design/collections/piconav
     hide_icon: false
 
 # Enable "Edit this page" on GitHub
-gh_edit_link: true
-gh_edit_link_text: "Edit this page on GitHub"
-gh_edit_repository: "https://github.com/VincentVeak/PicoNav"
-gh_edit_branch: "main"
-gh_edit_view_mode: "edit"
+#gh_edit_link: true
+#gh_edit_link_text: "Edit this page on GitHub"
+#gh_edit_repository: "https://github.com/VincentVeak/PicoNav"
+#gh_edit_branch: "main"
+#gh_edit_view_mode: "edit"
 
 # Plugins
 plugins:
