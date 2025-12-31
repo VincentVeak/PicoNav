@@ -31,7 +31,7 @@ The PicoNav is a different take on virtual pets with a focus on adventure and ba
 <div style="background: #2a2a2a; padding: 20px; border-radius: 8px;">
   <h3>❓ FAQ</h3>
   <p>Frequently asked questions and answers</p>
-  <a href="/docs/faq">Browse FAQ →</a>
+  <a href="/docs/faq">Browse FAQ → (Coming Soon)</a>
 </div>
 
 <div style="background: #2a2a2a; padding: 20px; border-radius: 8px;">
