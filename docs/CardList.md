@@ -26,8 +26,6 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   </div>
 </div>
 
----
-
 <table class="card-table" id="card-table">
 <thead>
   <tr>
