@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Card Reference Database
-nav_order: 2
+nav_order: 3
 ---
 
 # Card Reference Database
@@ -477,7 +477,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   <tr data-aspect="NULL">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_23.png" alt="Aegis"></td>
     <td><strong>Aegis</strong></td>
-    <td>Place an Aegis counter that prevents all damage under 50 base damage</td>
+    <td>Place an Aegis counter that prevents all damage 50 base power and below</td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
     <td data-value="0">0</td>
