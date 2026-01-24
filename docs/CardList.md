@@ -401,7 +401,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td>Wind</td>
   </tr>
   <tr data-aspect="Wind">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_46.png" alt="Updraft"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_55.png" alt="Updraft"></td>
     <td><strong>Updraft</strong></td>
     <td>Replace the current counter on the user with a Wind counter</td>
     <td><span class="aspect-wind">Wind</span></td>
