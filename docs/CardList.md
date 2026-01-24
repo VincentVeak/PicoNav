@@ -99,11 +99,11 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   <tr data-aspect="Fire">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_19.png" alt="Incinerate"></td>
     <td><strong>Incinerate</strong></td>
-    <td>Removes a counter on the opponent</td>
+    <td>Replaces the opponent’s existing counter with a Fire counter</td>
     <td><span class="aspect-fire">Fire</span></td>
     <td>Fire</td>
-    <td data-value="65">65</td>
-    <td>Fire, Counter Removal</td>
+    <td data-value="30">30</td>
+    <td>Fire, Counter Replacement</td>
   </tr>
 
   <!-- FIRE/LIGHTNING CARDS -->
@@ -156,20 +156,20 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   <tr data-aspect="Earth">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_01.png" alt="Stonewall"></td>
     <td><strong>Stonewall</strong></td>
-    <td><b>Priority move.</b> Adds an Earth counter that reduces damage by 20%. Maximum of 3 stacks</td>
+    <td>Adds an Earth counter that reduces damage by 20%. Maximum of 3 stacks</td>
     <td><span class="aspect-earth">Earth</span></td>
     <td>Earth</td>
     <td data-value="40">40</td>
-    <td>Earth, Defense, Priority</td>
+    <td>Earth, Defense</td>
   </tr>
   <tr data-aspect="Earth">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_04.png" alt="Fortify"></td>
     <td><strong>Fortify</strong></td>
-    <td>Instantly maxes out Earth counter stacks to 3</td>
+    <td><b>Priority move.</b> Instantly maxes out Earth counter stacks to 3</td>
     <td><span class="aspect-earth">Earth</span></td>
     <td>Earth</td>
-    <td data-value="15">15</td>
-    <td>Earth, Defense</td>
+    <td data-value="30">30</td>
+    <td>Earth, Defense, Priority</td>
   </tr>
   <tr data-aspect="Earth">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_13.png" alt="Earthquake"></td>
@@ -242,7 +242,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td>Place a Water counter on the opponent to reduce speed by 25%</td>
     <td><span class="aspect-water">Water</span></td>
     <td>Water</td>
-    <td data-value="40">40</td>
+    <td data-value="60">60</td>
     <td>Water</td>
   </tr>
   <tr data-aspect="Water">
@@ -257,7 +257,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   <tr data-aspect="Water">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_06.png" alt="Torrent"></td>
     <td><strong>Torrent</strong></td>
-    <td>Adds a Rain counter to the arena that replaces both player counters with Water counters at the end of turn</td>
+    <td>Adds a Rain counter to the arena that replaces non-Water aspect counters at the end of turn</td>
     <td><span class="aspect-water">Water</span></td>
     <td>Water</td>
     <td data-value="40">40</td>
@@ -279,7 +279,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td><span class="aspect-water">Water</span></td>
     <td>Water</td>
     <td data-value="30">30</td>
-    <td>Water</td>
+    <td>Water, Counter Replacement</td>
   </tr>
   <tr data-aspect="Water">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_38.png" alt="Life Steal"></td>
@@ -340,7 +340,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   <tr data-aspect="Wind">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_42.png" alt="Windstorm"></td>
     <td><strong>Windstorm</strong></td>
-    <td>Adds/Replaces a Gust counter to the arena. Removes counters on players at the end of turn</td>
+    <td>Adds/Replaces a Gust counter to the arena. Removes non-Wind counters on players at the end of turn</td>
     <td><span class="aspect-wind">Wind</span></td>
     <td>Wind</td>
     <td data-value="30">30</td>
@@ -400,6 +400,15 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td data-value="35">35</td>
     <td>Wind</td>
   </tr>
+  <tr data-aspect="Wind">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_46.png" alt="Updraft"></td>
+    <td><strong>Updraft</strong></td>
+    <td>Replace the current counter on the user with a Wind counter</td>
+    <td><span class="aspect-wind">Wind</span></td>
+    <td>Wind</td>
+    <td data-value="40">40</td>
+    <td>Wind,Counter Replacement</td>
+  </tr>
 
   <!-- NEUTRAL/NULL CARDS -->
   <tr data-aspect="NULL">
@@ -423,7 +432,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   <tr data-aspect="NULL">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_12.png" alt="Block"></td>
     <td><strong>Block</strong></td>
-    <td><b>Priority move.</b> Prevent all damage from opponent's move if Block was not used last turn</td>
+    <td><b>Priority move.</b> Prevent all damage and effects from opponent's next move</td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
     <td data-value="0">0</td>
@@ -500,6 +509,51 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td>Neutral</td>
     <td data-value="0">0</td>
     <td>Neutral, Heal</td>
+  </tr>
+  <tr data-aspect="NULL">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_51.png" alt="Disarm"></td>
+    <td><strong>Disarm</strong></td>
+    <td><b>Priority move.</b> Removes the counter on the target</td>
+    <td><span class="aspect-null">Neutral</span></td>
+    <td>Neutral</td>
+    <td data-value="20">20</td>
+    <td>Neutral, Priority, Counter Removal</td>
+  </tr>
+  <tr data-aspect="NULL">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_50.png" alt="Channel"></td>
+    <td><strong>Channel</strong></td>
+    <td>Raises attack by one stage and shuffles the user’s deck</td>
+    <td><span class="aspect-null">Neutral</span></td>
+    <td>Neutral</td>
+    <td data-value="0">0</td>
+    <td>Neutral, Utility</td>
+  </tr>
+  <tr data-aspect="NULL">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_52.png" alt="Refresh"></td>
+    <td><strong>Refresh</strong></td>
+    <td>Removes counter from the user and heals 1/8th of their maximum HP</td>
+    <td><span class="aspect-null">Neutral</span></td>
+    <td>Neutral</td>
+    <td data-value="0">0</td>
+    <td>Neutral, Counter Removal, Heal</td>
+  </tr>
+  <tr data-aspect="NULL">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_53.png" alt="Desolation"></td>
+    <td><strong>Desolation</strong></td>
+    <td>Remove the arena counter and raise the user’s attack by one stage</td>
+    <td><span class="aspect-null">Neutral</span></td>
+    <td>Neutral</td>
+    <td data-value="40">40</td>
+    <td>Neutral, Counter Removal, Utility</td>
+  </tr>
+  <tr data-aspect="NULL">
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_53.png" alt="Overdrive"></td>
+    <td><strong>Overdrive</strong></td>
+    <td>Increases the Attack and Speed of the user by one stage, but decreases the defense by one stage</td>
+    <td><span class="aspect-null">Neutral</span></td>
+    <td>Neutral</td>
+    <td data-value="40">40</td>
+    <td>Neutral, Utility</td>
   </tr>
 </tbody>
 </table>
