@@ -477,7 +477,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
   <tr data-aspect="NULL">
     <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_24.png" alt="Curse"></td>
     <td><strong>Curse</strong></td>
-    <td>Places a curse counter on opponent that deals 30% of their moves back to them</td>
+    <td>Places a curse counter on opponent that deals 50% of their moves back to them</td>
     <td><span class="aspect-null">Neutral</span></td>
     <td>Neutral</td>
     <td data-value="0">0</td>
@@ -547,7 +547,7 @@ Complete reference for all cards in PicoNav. Click column headers to sort, or us
     <td>Neutral, Counter Removal, Utility</td>
   </tr>
   <tr data-aspect="NULL">
-    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_53.png" alt="Overdrive"></td>
+    <td class="card-icon"><img src="/assets/images/cards/Card Icons_All_54.png" alt="Overdrive"></td>
     <td><strong>Overdrive</strong></td>
     <td>Increases the Attack and Speed of the user by one stage, but decreases the defense by one stage</td>
     <td><span class="aspect-null">Neutral</span></td>
