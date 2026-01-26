@@ -74,10 +74,11 @@ The PicoNav features a notification LED on the top right of the system that disp
 | <span style="color: purple;">**Purple**</span> | Your Pico is tired (STAM is low) |
 | <span style="color: hotpink;">**Pink**</span> | Your Pico is both hungry and tired |
 | <span style="color: turquoise;">**Turquoise**</span> | Planted crops are ready for harvest |
+| <span style="color: white;">**White**</span> | Random event is active |
+| <span style="color: red;">**Red**</span> | Injured Pico is ready to revive |
 | <span style="background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">**Rainbow**</span> | Venture encounter is ready |
 | <span style="color: red;">**Red (Blinking)**</span> | Low battery |
 | <span style="color: green;">**Green (One Pulse)**</span> | Battery is charging |
-| <span style="color: white;">**White**</span> | Random event |
 
 **Note:** LED brightness can be adjusted or turned off entirely in the [Options](#options) menu. <b>Do Not Disturb</b> mode can be quickly toggled by pressing and holding both the A and B buttons in the main menu.
 
@@ -275,6 +276,7 @@ At the start of the battle players will choose the card they wish to use. During
 - **Pressing the B button** selects the hovered card to use in battle for the upcoming turn
 - **Holding the A button** changes context from Card view to Counter view.
 - **Holding the B button** gives more information about the particular card or counter selected and their effects
+- **Holding both the A and B buttons** gives you the option to concede the battle. Conceding is still considered a loss and your Pico's mood will decrease as well as lose some credits, but you will not have to worry about the injury timer or losing more HP.
 
 Once the card has been selected, the faster Pico attacks first. Some cards have priority assigned to them, which increases the speed calculation for the turn and will often times go first. The turn order goes as follows:
 
