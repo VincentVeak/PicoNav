@@ -1576,7 +1576,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "WIND MOVES GAIN MOVE PRIORITY"
+          "description": "Wind aspect cards gain priority "
         }
       ]
     },
@@ -1587,7 +1587,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "WATER MOVES HEAL 20% OF DAMAGE DEALT"
+          "description": "Water cards heal 20% of the damage dealt"
         }
       ]
     },
@@ -1598,7 +1598,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "FIRE MOVES +25% IF FOE HAS Fire"
+          "description": "Fire cards deal an additional 25% damage if the enemy has a Fire counter"
         }
       ]
     },
@@ -1609,7 +1609,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "EARTH MOVES +10% PER Earth COUNTER"
+          "description": "Earth cards deal an additional 10% per Earth counter stacked"
         }
       ]
     },
@@ -1620,7 +1620,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "LIGHTNING MOVES ADD +1 Lightning COUNTER"
+          "description": "Lightning moves add an additional Lightning counter"
         }
       ]
     },
@@ -1631,7 +1631,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "FIRE MOVES DEAL +10% DAMAGE"
+          "description": "Your Fire cards deal an additional 10% damage"
         }
       ]
     },
@@ -1642,7 +1642,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "WATER MOVES DEAL +10% DAMAGE"
+          "description": "Your Water cards deal an additional 10% damage"
         }
       ]
     },
@@ -1653,7 +1653,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "WIND MOVES DEAL +10% DAMAGE"
+          "description": "Your Wind cards deal an additional 10% damage"
         }
       ]
     },
@@ -1664,7 +1664,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "EARTH MOVES DEAL +10% DAMAGE"
+          "description": "Your Earth cards deal an additional 10% damage"
         }
       ]
     },
@@ -1675,7 +1675,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "FIRE MOVES +15% CRIT CHANCE"
+          "description": "Fire cards have an additional 15% chance to crit"
         }
       ]
     },
@@ -1686,7 +1686,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "WATER MOVES +15% CRIT CHANCE"
+          "description": "Water cards have an additional 15% chance to crit"
         }
       ]
     },
@@ -1697,7 +1697,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "WIND MOVES +15% CRIT CHANCE"
+          "description": "Wind cards have an additional 15% chance to crit"
         }
       ]
     },
@@ -1708,51 +1708,51 @@
       "history": [
         {
           "version": "2.0",
-          "description": "EARTH MOVES +15% CRIT CHANCE"
+          "description": "Earth cards have an additional 15% chance to crit"
         }
       ]
     },
     {
       "index": 13,
       "id": "fire-td",
-      "name": "Fire Td",
+      "name": "Fire True Damage",
       "history": [
         {
           "version": "2.0",
-          "description": "FIRE MOVES GAIN +2 TRUE DMG"
+          "description": "Fire cards deal an additional 2 points of damage after base damage calculation"
         }
       ]
     },
     {
       "index": 14,
       "id": "water-td",
-      "name": "Water Td",
+      "name": "Water True Damage",
       "history": [
         {
           "version": "2.0",
-          "description": "WATER MOVES GAIN +2 TRUE DMG"
+          "description": "Water cards deal an additional 2 points of damage after base damage calculation"
         }
       ]
     },
     {
       "index": 15,
       "id": "wind-td",
-      "name": "Wind Td",
+      "name": "Wind True Damage",
       "history": [
         {
           "version": "2.0",
-          "description": "WIND MOVES GAIN +2 TRUE DMG"
+          "description": "Wind cards deal an additional 2 points of damage after base damage calculation"
         }
       ]
     },
     {
       "index": 16,
       "id": "earth-td",
-      "name": "Earth Td",
+      "name": "Earth True Damage",
       "history": [
         {
           "version": "2.0",
-          "description": "EARTH MOVES GAIN +2 TRUE DMG"
+          "description": "Earth cards deal an additional 2 points of damage after base damage calculation"
         }
       ]
     },
@@ -1763,7 +1763,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "STACKING MOVES ADD +1 EXTRA STACK"
+          "description": "Stacking moves add 1 additional stack"
         }
       ]
     },
@@ -1774,7 +1774,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "FIRST STACK MOVE APPLIES MAX STACKS"
+          "description": "Stacking moves add maximum stacks"
         }
       ]
     },
@@ -1785,7 +1785,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "+50% DAMAGE TO FOES BELOW 25% HP"
+          "description": "Deal an additional 50% damage to foes with 25% HP or less"
         }
       ]
     },
@@ -1796,7 +1796,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "AFTER A CRIT NEXT MOVE GETS PRIORITY"
+          "description": "Your next card used will gain priority after landing a critical hit"
         }
       ]
     },
@@ -1807,7 +1807,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "CRITS HEAL 10% OF MAX HP"
+          "description": "Criital hits heal 10% of your maximum HP"
         }
       ]
     },
@@ -1818,7 +1818,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "ALL MOVES GAIN +2 TRUE DAMAGE"
+          "description": "All of your cards deal an additional 2 points of damage after base damage calculation"
         }
       ]
     },
@@ -1829,7 +1829,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "ATTACK AND DEFENSE UP BY 10%"
+          "description": "Attack and Defense are increased by 10%"
         }
       ]
     },
@@ -1840,7 +1840,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "ATTACK AND DEFENSE UP BY 25%"
+          "description": "Attack and Defense are increased by 25%"
         }
       ]
     },
@@ -1851,7 +1851,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "SPEED RAISED BY 20%"
+          "description": "Speed is increased by 20%"
         }
       ]
     },
@@ -1862,7 +1862,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "CRIT CHANCE RAISED BY 20%"
+          "description": "Critical hit chance increased by 20%"
         }
       ]
     },
@@ -1873,7 +1873,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "ATTACKS HEAL 20% OF DAMAGE DEALT"
+          "description": "Attacks heal 20% of the damage dealt to the opponent"
         }
       ]
     },
@@ -1884,7 +1884,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "+1% ATTACK PER 1% HP MISSING"
+          "description": "Attacks deal an additional 1% damage per 1% of your total missing HP"
         }
       ]
     },
@@ -1895,7 +1895,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "STATS +1% PER CARD MAX +25%"
+          "description": "Attack, Defense, and Speed are increased by +1% per card owned to a maximum of +25%"
         }
       ]
     },
@@ -1906,7 +1906,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "UNDER 50% HP +25% CRIT & DAMAGE"
+          "description": "+25% Crit chance & damage increased when HP is at or below 50%"
         }
       ]
     },
@@ -1917,7 +1917,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "+15% ATTACK COUNTER IS ON SELF"
+          "description": "Gain an additional 15% Attack if there is a counter placed on your Pico"
         }
       ]
     },
@@ -1928,7 +1928,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "MOVES UNDER 50 DMG DEAL +50%"
+          "description": "Cards that deal 50 base damage or less deal an additional 50%"
         }
       ]
     },
@@ -1939,7 +1939,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "SPEED RISES ONE STAGE EACH TURN"
+          "description": "Speed increases one additional stage each turn"
         }
       ]
     },
@@ -1950,7 +1950,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "HEAL 25% HP AFTER EACH BATTLE"
+          "description": "Heal 25% of max HP at the end of each battle"
         }
       ]
     },
@@ -1961,7 +1961,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "HEAL 10% HP AT THE END OF EACH TURN"
+          "description": "Heal 10% of max HP at the end of each turn"
         }
       ]
     },
@@ -1972,7 +1972,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "MAX HP RAISED BY 25%"
+          "description": "Maximum HP is increased by 25%"
         }
       ]
     },
@@ -1983,7 +1983,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "REFLECT 25% OF DAMAGE TAKEN"
+          "description": "25% of the damage received is dealt back to the opponent"
         }
       ]
     },
@@ -1994,7 +1994,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "ENEMY STARTS EACH FIGHT AT 75% HP"
+          "description": "Enemy Pico starts the battle with 75% of their max HP"
         }
       ]
     },
@@ -2005,7 +2005,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "START WITH Mirror NULLIFY NEXT HIT"
+          "description": "Start each battle with a Mistwalker counter that prevents damage from the next hit"
         }
       ]
     },
@@ -2016,7 +2016,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "ENEMY Ice SKIPS THEIR FIRST TURN"
+          "description": "Enemy starts with an ice counter that skips their next turn"
         }
       ]
     },
@@ -2027,7 +2027,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "START WITH Aegis BLOCKS DMG UNDER 50"
+          "description": "Start each battle with an Aegis counter that blocks cards with base damage 50 and under"
         }
       ]
     },
@@ -2038,7 +2038,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "START WITH Lens FOR +25% CRIT CHANCE"
+          "description": "Start with a Lucky Star counter for a base 25% chance to crit"
         }
       ]
     },
@@ -2049,7 +2049,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "START WITH Frost UP EACH BATTLE"
+          "description": "Start with an Ice Wall counter in the arena each battle"
         }
       ]
     },
@@ -2060,7 +2060,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "LOWER ENEMY DEFENSE ONE STAGE"
+          "description": "Lower enemy attack by one stage"
         }
       ]
     },
@@ -2071,7 +2071,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "START EACH BATTLE WITH RANDOM CARDS"
+          "description": "Start each battle with a random deck"
         }
       ]
     },
@@ -2082,7 +2082,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "FIRST CARD USED IS NOT SHUFFLED"
+          "description": "The first card used each battle is not shuffled to the bottom of the deck"
         }
       ]
     },
@@ -2093,7 +2093,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "DROP RATE INCREASED BY 5%"
+          "description": "Increase your drop rate by an additional 5%"
         }
       ]
     },
@@ -2104,7 +2104,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "EARN BONUS CREDITS ON EACH WIN"
+          "description": "Each win grants an additional 1-3 credits"
         }
       ]
     },
@@ -2115,7 +2115,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "ONCE HEAL TO FULL WHEN BELOW 25%"
+          "description": "Heal one time to max HP when HP is at or below 25%. Merit is removed upon use"
         }
       ]
     },
@@ -2126,7 +2126,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "SURVIVE ONE LETHAL HIT AT 1 HP"
+          "description": "Survive a lethal blow with 1 HP once. Merit is removed upon use."
         }
       ]
     },
@@ -2137,7 +2137,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "REMOVE RANDOM AFFLICTION ON ENEMY"
+          "description": "Remove a random affliction on the enemy at the start of each battle"
         }
       ]
     },
@@ -2148,7 +2148,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "NEXT BATTLE DROPS ARE GUARANTEED"
+          "description": "Drops are guaranteed for the next battle. Merit is removed upon use"
         }
       ]
     }
@@ -2161,7 +2161,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "ENEMY ATTACK RISES +10% EACH LEVEL"
+          "description": "Enemy attack increased an additional 10% for each level"
         }
       ]
     },
@@ -2172,7 +2172,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "ENEMY DEFENSE RISES +10% EACH LEVEL"
+          "description": "Enemy defense increased an additional 10% for each level"
         }
       ]
     },
@@ -2183,7 +2183,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "ENEMY MAX HP RISES +3HP EACH LEVEL"
+          "description": "Enemy HP increased an additional 3 points for each level"
         }
       ]
     },
@@ -2194,7 +2194,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "ENEMY CRIT RISES +10% EACH LEVEL"
+          "description": "Enemy critical hit chance increased an additional 10% for each level"
         }
       ]
     },
@@ -2205,7 +2205,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "ENEMY SPEED RISES +10% EACH LEVEL"
+          "description": "Enemy speed increased an additional 10% for each level"
         }
       ]
     },
@@ -2216,7 +2216,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "ENEMY GAINS ATTACK STAGE OVER TIME"
+          "description": "Enemy gains an additional attack stage over time. Interval increases with every level"
         }
       ]
     },
@@ -2227,7 +2227,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "ENEMY HEALS +5% EACH LV PER TURN"
+          "description": "Enemy heals an additional 5% of their max HP each level per turn"
         }
       ]
     },
@@ -2238,7 +2238,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "ENEMY HEALS +10% OF DMG EACH LEVEL"
+          "description": "Enemy heals 10% of damage dealt for each level"
         }
       ]
     },
@@ -2249,7 +2249,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "REMOVES YOUR COUNTER MORE EACH LEVEL"
+          "description": "Enemy removes your counter over time. Interval increases with every level"
         }
       ]
     },
@@ -2260,7 +2260,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "LOSE 4% HP EACH TURN +4% PER LV"
+          "description": "You lose 4% of your max HP per level each turn"
         }
       ]
     },
@@ -2271,7 +2271,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "YOUR SPEED DROPS +1 EACH LEVEL"
+          "description": "Your speed decreases by 1 stage per level"
         }
       ]
     },
@@ -2282,7 +2282,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "DAMAGE DEALT HURTS YOU +10% EACH LV"
+          "description": "Damage you deal is dealt back to you by an additional 10% per level"
         }
       ]
     },
@@ -2293,7 +2293,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "YOUR HEALING CUT BY 25% EACH LEVEL"
+          "description": "Your healing is reduced by 15% per level"
         }
       ]
     },
@@ -2304,7 +2304,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "YOUR CRIT DROPS -10% EACH LEVEL"
+          "description": "Your critical hit rate is reduce by 5% each level"
         }
       ]
     },
@@ -2315,7 +2315,7 @@
       "history": [
         {
           "version": "2.0",
-          "description": "ON FOE DEATH TAKE +5% HP EACH LEVEL"
+          "description": "When the opponent is defeated it deals an additional 5% of its max HP to you per level"
         }
       ]
     }
@@ -2325,11 +2325,11 @@
       "index": 0,
       "id": "prospect",
       "name": "PROSPECT",
-      "icon": "Gems_All_00.png",
+      "icon": "Gems_All_04.png",
       "history": [
         {
           "version": "2.0",
-          "description": "RARE DROPS +12.5% DEF -25%"
+          "description": "Drop rate is increased by 12.5%, but defense is lowered by 25%"
         }
       ]
     },
@@ -2337,11 +2337,11 @@
       "index": 1,
       "id": "bloodlust",
       "name": "BLOODLUST",
-      "icon": "Gems_All_01.png",
+      "icon": "Gems_All_07.png",
       "history": [
         {
           "version": "2.0",
-          "description": "ATTACK +25% MAX HP -33%"
+          "description": "Attack is increased by 25%, but max HP is decreased by 33%"
         }
       ]
     },
@@ -2349,11 +2349,11 @@
       "index": 2,
       "id": "revive",
       "name": "REVIVE",
-      "icon": "Gems_All_02.png",
+      "icon": "Gems_All_10.png",
       "history": [
         {
           "version": "2.0",
-          "description": "REVIVE ONCE AT 50% HP"
+          "description": "Grants a one-time use revive that heals the Pico 50% HP and keeps the run going after a loss"
         }
       ]
     },
@@ -2361,11 +2361,11 @@
       "index": 3,
       "id": "relic",
       "name": "RELIC",
-      "icon": "Gems_All_03.png",
+      "icon": "Gems_All_01.png",
       "history": [
         {
           "version": "2.0",
-          "description": "FIRST CARD IN EQUIPPED DECK IN NEXT DRAFT"
+          "description": "The first card in your equipped deck will appear on your first card Deep Dungeon draft"
         }
       ]
     },
@@ -2373,11 +2373,11 @@
       "index": 4,
       "id": "glass",
       "name": "GLASS",
-      "icon": "Gems_All_04.png",
+      "icon": "Gems_All_05.png",
       "history": [
         {
           "version": "2.0",
-          "description": "ATTACK +30% NO PASSIVE HP REGEN"
+          "description": "Attack is increased by 30%, but your Pico does not regenerate HP out of combat"
         }
       ]
     },
@@ -2385,11 +2385,11 @@
       "index": 5,
       "id": "gamble",
       "name": "GAMBLE",
-      "icon": "Gems_All_05.png",
+      "icon": "Gems_All_06.png",
       "history": [
         {
           "version": "2.0",
-          "description": "DROP ROLLS DOUBLED ENEMY +1 AFL"
+          "description": "Drop rate is doubled, but enemies begin with one affliction"
         }
       ]
     },
@@ -2397,11 +2397,11 @@
       "index": 6,
       "id": "overload",
       "name": "OVERLOAD",
-      "icon": "Gems_All_06.png",
+      "icon": "Gems_All_08.png",
       "history": [
         {
           "version": "2.0",
-          "description": "MAX MERIT & AFFLICT CAP SET TO 9"
+          "description": "The maximum amount of both merits and afflictions are increased to 9"
         }
       ]
     },
@@ -2409,11 +2409,11 @@
       "index": 7,
       "id": "marathon",
       "name": "MARATHON",
-      "icon": "Gems_All_07.png",
+      "icon": "Gems_All_03.png",
       "history": [
         {
           "version": "2.0",
-          "description": "2X HP REGEN BUT DAMAGE DEALT -20%"
+          "description": "Double your out of combat HP regeneration, but Attack is decreased by 20%"
         }
       ]
     },
@@ -2421,11 +2421,11 @@
       "index": 8,
       "id": "crit",
       "name": "CRIT",
-      "icon": "Gems_All_08.png",
+      "icon": "Gems_All_09.png",
       "history": [
         {
           "version": "2.0",
-          "description": "CRIT CHANCE TO BOTH PICOS SET TO 25%"
+          "description": "The critical hit rate for BOTH Picos begins at 25%"
         }
       ]
     }
