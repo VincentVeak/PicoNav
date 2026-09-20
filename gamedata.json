@@ -5,7 +5,8 @@
     "cards": "assets/images/cards/",
     "headGear": "assets/images/headGear/icons/",
     "bodyGear": "assets/images/bodyGear/icons/",
-    "counters": "assets/images/counters/icons/"
+    "counters": "assets/images/counters/icons/",
+    "gems": "assets/images/gems/icons/"
   },
   "cards": [
     {
@@ -15,7 +16,7 @@
       "icon": "Card Icons_All_00.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Fire",
           "series": "Fire",
           "power": 70,
@@ -35,7 +36,7 @@
       "icon": "Card Icons_All_01.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Earth",
           "series": "Earth",
           "power": 40,
@@ -54,7 +55,7 @@
       "icon": "Card Icons_All_02.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Water",
           "series": "Water",
           "power": 60,
@@ -72,7 +73,7 @@
       "icon": "Card Icons_All_03.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Wind",
           "series": "Wind",
           "power": 50,
@@ -91,7 +92,7 @@
       "icon": "Card Icons_All_04.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Earth",
           "series": "Earth",
           "power": 30,
@@ -111,7 +112,7 @@
       "icon": "Card Icons_All_05.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Wind",
           "series": "Wind",
           "power": 30,
@@ -130,7 +131,7 @@
       "icon": "Card Icons_All_06.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Water",
           "series": "Water",
           "power": 40,
@@ -149,7 +150,7 @@
       "icon": "Card Icons_All_07.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 50,
@@ -167,7 +168,7 @@
       "icon": "Card Icons_All_08.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Fire",
           "series": "Fire",
           "power": 35,
@@ -186,7 +187,7 @@
       "icon": "Card Icons_All_09.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 50,
@@ -205,7 +206,7 @@
       "icon": "Card Icons_All_10.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Fire",
           "series": "Fire",
           "power": 30,
@@ -223,7 +224,7 @@
       "icon": "Card Icons_All_11.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Fire",
           "series": "Lightning",
           "power": 40,
@@ -241,7 +242,7 @@
       "icon": "Card Icons_All_12.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 0,
@@ -261,7 +262,7 @@
       "icon": "Card Icons_All_13.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Earth",
           "series": "Earth",
           "power": 25,
@@ -279,7 +280,7 @@
       "icon": "Card Icons_All_14.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Fire",
           "series": "Lightning",
           "power": 25,
@@ -297,7 +298,7 @@
       "icon": "Card Icons_All_15.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Fire",
           "series": "Lightning",
           "power": 20,
@@ -316,7 +317,7 @@
       "icon": "Card Icons_All_16.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Fire",
           "series": "Lightning",
           "power": 40,
@@ -334,7 +335,7 @@
       "icon": "Card Icons_All_17.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Fire",
           "series": "Lightning",
           "power": 25,
@@ -353,7 +354,7 @@
       "icon": "Card Icons_All_18.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 0,
@@ -372,7 +373,7 @@
       "icon": "Card Icons_All_19.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Fire",
           "series": "Fire",
           "power": 30,
@@ -391,7 +392,7 @@
       "icon": "Card Icons_All_20.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Fire",
           "series": "Fire",
           "power": 100,
@@ -409,7 +410,7 @@
       "icon": "Card Icons_All_21.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Fire",
           "series": "Fire",
           "power": 50,
@@ -428,7 +429,7 @@
       "icon": "Card Icons_All_22.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Fire",
           "series": "Fire",
           "power": 25,
@@ -446,7 +447,7 @@
       "icon": "Card Icons_All_23.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 0,
@@ -465,7 +466,7 @@
       "icon": "Card Icons_All_24.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 0,
@@ -483,7 +484,7 @@
       "icon": "Card Icons_All_25.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Water",
           "series": "Water",
           "power": 0,
@@ -503,7 +504,7 @@
       "icon": "Card Icons_All_26.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Earth",
           "series": "Earth",
           "power": 70,
@@ -522,7 +523,7 @@
       "icon": "Card Icons_All_27.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Earth",
           "series": "Earth",
           "power": 40,
@@ -541,7 +542,7 @@
       "icon": "Card Icons_All_28.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 0,
@@ -560,7 +561,7 @@
       "icon": "Card Icons_All_29.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Earth",
           "series": "Nature",
           "power": 15,
@@ -581,7 +582,7 @@
       "icon": "Card Icons_All_30.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Earth",
           "series": "Nature",
           "power": 25,
@@ -601,7 +602,7 @@
       "icon": "Card Icons_All_31.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Earth",
           "series": "Nature",
           "power": 45,
@@ -621,7 +622,7 @@
       "icon": "Card Icons_All_32.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Earth",
           "series": "Earth",
           "power": 15,
@@ -639,7 +640,7 @@
       "icon": "Card Icons_All_33.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Water",
           "series": "Water",
           "power": 2,
@@ -658,7 +659,7 @@
       "icon": "Card Icons_All_34.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Water",
           "series": "Water",
           "power": 50,
@@ -676,7 +677,7 @@
       "icon": "Card Icons_All_35.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Water",
           "series": "Water",
           "power": 40,
@@ -694,7 +695,7 @@
       "icon": "Card Icons_All_36.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 15,
@@ -713,7 +714,7 @@
       "icon": "Card Icons_All_37.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Water",
           "series": "Water",
           "power": 30,
@@ -732,7 +733,7 @@
       "icon": "Card Icons_All_38.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Water",
           "series": "Water",
           "power": 40,
@@ -751,7 +752,7 @@
       "icon": "Card Icons_All_39.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Water",
           "series": "Steam",
           "power": 60,
@@ -771,7 +772,7 @@
       "icon": "Card Icons_All_40.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Water",
           "series": "Steam",
           "power": 10,
@@ -791,7 +792,7 @@
       "icon": "Card Icons_All_41.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Wind",
           "series": "Wind",
           "power": 40,
@@ -810,7 +811,7 @@
       "icon": "Card Icons_All_42.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Wind",
           "series": "Wind",
           "power": 30,
@@ -829,7 +830,7 @@
       "icon": "Card Icons_All_43.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Wind",
           "series": "Wind",
           "power": 35,
@@ -848,7 +849,7 @@
       "icon": "Card Icons_All_44.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Wind",
           "series": "Wind",
           "power": 90,
@@ -866,7 +867,7 @@
       "icon": "Card Icons_All_45.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Wind",
           "series": "Wind",
           "power": 60,
@@ -885,7 +886,7 @@
       "icon": "Card Icons_All_46.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Wind",
           "series": "Wind",
           "power": 35,
@@ -903,7 +904,7 @@
       "icon": "Card Icons_All_47.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 0,
@@ -922,7 +923,7 @@
       "icon": "Card Icons_All_48.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 0,
@@ -940,7 +941,7 @@
       "icon": "Card Icons_All_49.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 0,
@@ -959,7 +960,7 @@
       "icon": "Card Icons_All_50.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 0,
@@ -978,7 +979,7 @@
       "icon": "Card Icons_All_51.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 20,
@@ -998,7 +999,7 @@
       "icon": "Card Icons_All_52.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 0,
@@ -1018,7 +1019,7 @@
       "icon": "Card Icons_All_53.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 40,
@@ -1038,7 +1039,7 @@
       "icon": "Card Icons_All_54.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 40,
@@ -1057,7 +1058,7 @@
       "icon": "Card Icons_All_55.png",
       "history": [
         {
-          "version": "2.0.0",
+          "version": "2.0",
           "aspect": "Wind",
           "series": "Wind",
           "power": 40,
@@ -1566,5 +1567,867 @@
       "icon": "Bodygear_Icons_All_30.png"
     }
   ],
-  "counters": []
+  "counters": [],
+  "merits": [
+    {
+      "index": 0,
+      "id": "windrider",
+      "name": "WINDRIDER",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "WIND MOVES GAIN MOVE PRIORITY"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "id": "inflow",
+      "name": "INFLOW",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "WATER MOVES HEAL 20% OF DAMAGE DEALT"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "id": "scorching",
+      "name": "SCORCHING",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "FIRE MOVES +25% IF FOE HAS Fire"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "id": "tectonics",
+      "name": "TECTONICS",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "EARTH MOVES +10% PER Earth COUNTER"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "id": "high-voltage",
+      "name": "HIGH VOLTAGE",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "LIGHTNING MOVES ADD +1 Lightning COUNTER"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "id": "fire-amp",
+      "name": "FIRE AMP",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "FIRE MOVES DEAL +10% DAMAGE"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "id": "water-amp",
+      "name": "WATER AMP",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "WATER MOVES DEAL +10% DAMAGE"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "id": "wind-amp",
+      "name": "WIND AMP",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "WIND MOVES DEAL +10% DAMAGE"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "id": "earth-amp",
+      "name": "EARTH AMP",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "EARTH MOVES DEAL +10% DAMAGE"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "id": "fire-surge",
+      "name": "FIRE SURGE",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "FIRE MOVES +15% CRIT CHANCE"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "id": "water-surge",
+      "name": "WATER SURGE",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "WATER MOVES +15% CRIT CHANCE"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "id": "wind-surge",
+      "name": "WIND SURGE",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "WIND MOVES +15% CRIT CHANCE"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "id": "earth-surge",
+      "name": "EARTH SURGE",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "EARTH MOVES +15% CRIT CHANCE"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "id": "fire-td",
+      "name": "FIRE TD",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "FIRE MOVES GAIN +2 TRUE DMG"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "id": "water-td",
+      "name": "WATER TD",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "WATER MOVES GAIN +2 TRUE DMG"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "id": "wind-td",
+      "name": "WIND TD",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "WIND MOVES GAIN +2 TRUE DMG"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "id": "earth-td",
+      "name": "EARTH TD",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "EARTH MOVES GAIN +2 TRUE DMG"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "id": "conduit",
+      "name": "CONDUIT",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "STACKING MOVES ADD +1 EXTRA STACK"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "id": "overcharge",
+      "name": "OVERCHARGE",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "FIRST STACK MOVE APPLIES MAX STACKS"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "id": "execute",
+      "name": "EXECUTE",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "+50% DAMAGE TO FOES BELOW 25% HP"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "id": "whiplash",
+      "name": "WHIPLASH",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "AFTER A CRIT NEXT MOVE GETS PRIORITY"
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "id": "bloodrush",
+      "name": "BLOODRUSH",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "CRITS HEAL 10% OF MAX HP"
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "id": "sharpen",
+      "name": "SHARPEN",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "ALL MOVES GAIN +2 TRUE DAMAGE"
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "id": "bolster",
+      "name": "BOLSTER",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "ATTACK AND DEFENSE UP BY 10%"
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "id": "temper",
+      "name": "TEMPER",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "ATTACK AND DEFENSE UP BY 25%"
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "id": "haste",
+      "name": "HASTE",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "SPEED RAISED BY 20%"
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "id": "keen-eye",
+      "name": "KEEN EYE",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "CRIT CHANCE RAISED BY 20%"
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "id": "leech",
+      "name": "LEECH",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "ATTACKS HEAL 20% OF DAMAGE DEALT"
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "id": "desperation",
+      "name": "DESPERATION",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "+1% ATTACK PER 1% HP MISSING"
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "id": "scholar",
+      "name": "SCHOLAR",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "STATS +1% PER CARD MAX +25%"
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "id": "berserk",
+      "name": "BERSERK",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "UNDER 50% HP +25% CRIT & DAMAGE"
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "id": "guts",
+      "name": "GUTS",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "+15% ATTACK COUNTER IS ON SELF"
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "id": "technician",
+      "name": "TECHNICIAN",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "MOVES UNDER 50 DMG DEAL +50%"
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "id": "speed-boost",
+      "name": "SPEED BOOST",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "SPEED RISES ONE STAGE EACH TURN"
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "id": "second-wind",
+      "name": "SECOND WIND",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "HEAL 25% HP AFTER EACH BATTLE"
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "id": "regen",
+      "name": "REGEN",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "HEAL 10% HP AT THE END OF EACH TURN"
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "id": "vitality",
+      "name": "VITALITY",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "MAX HP RAISED BY 25%"
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "id": "spikes",
+      "name": "SPIKES",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "REFLECT 25% OF DAMAGE TAKEN"
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "id": "ambush",
+      "name": "AMBUSH",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "ENEMY STARTS EACH FIGHT AT 75% HP"
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "id": "phantom",
+      "name": "PHANTOM",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "START WITH Mirror NULLIFY NEXT HIT"
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "id": "deep-freeze",
+      "name": "DEEP FREEZE",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "ENEMY Ice SKIPS THEIR FIRST TURN"
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "id": "ward",
+      "name": "WARD",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "START WITH Aegis BLOCKS DMG UNDER 50"
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "id": "omen",
+      "name": "OMEN",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "START WITH Lens FOR +25% CRIT CHANCE"
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "id": "frostguard",
+      "name": "FROSTGUARD",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "START WITH Frost UP EACH BATTLE"
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "id": "intimidate",
+      "name": "INTIMIDATE",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "LOWER ENEMY DEFENSE ONE STAGE"
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "id": "reforge",
+      "name": "REFORGE",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "START EACH BATTLE WITH RANDOM CARDS"
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "id": "stacked-deck",
+      "name": "STACKED DECK",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "FIRST CARD USED IS NOT SHUFFLED"
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "id": "scavenge",
+      "name": "SCAVENGE",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "DROP RATE INCREASED BY 5%"
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "id": "bounty",
+      "name": "BOUNTY",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "EARN BONUS CREDITS ON EACH WIN"
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "id": "reprieve",
+      "name": "REPRIEVE",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "ONCE HEAL TO FULL WHEN BELOW 25%"
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "id": "moxie",
+      "name": "MOXIE",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "SURVIVE ONE LETHAL HIT AT 1 HP"
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "id": "purge",
+      "name": "PURGE",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "REMOVE RANDOM AFFLICTION ON ENEMY"
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "id": "windfall",
+      "name": "WINDFALL",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "NEXT BATTLE DROPS ARE GUARANTEED"
+        }
+      ]
+    }
+  ],
+  "afflictions": [
+    {
+      "index": 0,
+      "id": "ferocity",
+      "name": "FEROCITY",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "ENEMY ATTACK RISES +10% EACH LEVEL"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "id": "stalwart",
+      "name": "STALWART",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "ENEMY DEFENSE RISES +10% EACH LEVEL"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "id": "vigor",
+      "name": "VIGOR",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "ENEMY MAX HP RISES +3HP EACH LEVEL"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "id": "frenzy",
+      "name": "FRENZY",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "ENEMY CRIT RISES +10% EACH LEVEL"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "id": "rush",
+      "name": "RUSH",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "ENEMY SPEED RISES +10% EACH LEVEL"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "id": "enrage",
+      "name": "ENRAGE",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "ENEMY GAINS ATTACK STAGE OVER TIME"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "id": "renew",
+      "name": "RENEW",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "ENEMY HEALS +5% EACH LV PER TURN"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "id": "drain",
+      "name": "DRAIN",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "ENEMY HEALS +10% OF DMG EACH LEVEL"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "id": "dispel",
+      "name": "DISPEL",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "REMOVES YOUR COUNTER MORE EACH LEVEL"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "id": "toxic",
+      "name": "TOXIC",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "LOSE 4% HP EACH TURN +4% PER LV"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "id": "sloth",
+      "name": "SLOTH",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "YOUR SPEED DROPS +1 EACH LEVEL"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "id": "recoil",
+      "name": "RECOIL",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "DAMAGE DEALT HURTS YOU +10% EACH LV"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "id": "blight",
+      "name": "BLIGHT",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "YOUR HEALING CUT BY 25% EACH LEVEL"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "id": "dread",
+      "name": "DREAD",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "YOUR CRIT DROPS -10% EACH LEVEL"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "id": "volatile",
+      "name": "VOLATILE",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "ON FOE DEATH TAKE +5% HP EACH LEVEL"
+        }
+      ]
+    }
+  ],
+  "gems": [
+    {
+      "index": 0,
+      "id": "prospect",
+      "name": "PROSPECT",
+      "icon": "Gem_Icons_All_00.png",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "RARE DROPS +12.5% DEF -25%"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "id": "bloodlust",
+      "name": "BLOODLUST",
+      "icon": "Gem_Icons_All_01.png",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "ATTACK +25% MAX HP -33%"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "id": "revive",
+      "name": "REVIVE",
+      "icon": "Gem_Icons_All_02.png",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "REVIVE ONCE AT 50% HP"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "id": "relic",
+      "name": "RELIC",
+      "icon": "Gem_Icons_All_03.png",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "FIRST CARD IN EQUIPPED DECK IN NEXT DRAFT"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "id": "glass",
+      "name": "GLASS",
+      "icon": "Gem_Icons_All_04.png",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "ATTACK +30% NO PASSIVE HP REGEN"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "id": "gamble",
+      "name": "GAMBLE",
+      "icon": "Gem_Icons_All_05.png",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "DROP ROLLS DOUBLED ENEMY +1 AFL"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "id": "overload",
+      "name": "OVERLOAD",
+      "icon": "Gem_Icons_All_06.png",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "MAX MERIT & AFFLICT CAP SET TO 9"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "id": "marathon",
+      "name": "MARATHON",
+      "icon": "Gem_Icons_All_07.png",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "2X HP REGEN BUT DAMAGE DEALT -20%"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "id": "crit",
+      "name": "CRIT",
+      "icon": "Gem_Icons_All_08.png",
+      "history": [
+        {
+          "version": "2.0",
+          "description": "CRIT CHANCE TO BOTH PICOS SET TO 25%"
+        }
+      ]
+    }
+  ]
 }

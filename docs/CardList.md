@@ -27,7 +27,7 @@ Complete reference for all cards in PicoNav. Pick a game version to see stats as
     <button class="filter-btn aspect-earth" data-aspect="Earth">Earth</button>
     <button class="filter-btn aspect-water" data-aspect="Water">Water</button>
     <button class="filter-btn aspect-wind" data-aspect="Wind">Wind</button>
-    <button class="filter-btn aspect-null" data-aspect="Neutral">Neutral</button>
+    <button class="filter-btn aspect-neutral" data-aspect="Neutral">Neutral</button>
   </div>
 </div>
 
@@ -114,11 +114,19 @@ Complete reference for all cards in PicoNav. Pick a game version to see stats as
 .card-table {
   width: 100%;
   max-width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid rgba(255, 117, 115, 0.3);
+  border-radius: 12px;
   margin: 2rem 0;
   font-size: 0.75rem;
   table-layout: fixed;
 }
+
+.card-table thead th:first-child { border-top-left-radius: 11px; }
+.card-table thead th:last-child { border-top-right-radius: 11px; }
+.card-table tbody tr:last-child td:first-child { border-bottom-left-radius: 11px; }
+.card-table tbody tr:last-child td:last-child { border-bottom-right-radius: 11px; }
 
 .card-table thead th {
   background-color: #FF7573;
@@ -162,8 +170,15 @@ Complete reference for all cards in PicoNav. Pick a game version to see stats as
 }
 
 .card-table tbody tr {
-  border-bottom: 1px solid rgba(255, 117, 115, 0.2);
   transition: all 0.2s ease;
+}
+
+.card-table tbody td {
+  border-bottom: 1px solid rgba(255, 117, 115, 0.2);
+}
+
+.card-table tbody tr:last-child td {
+  border-bottom: none;
 }
 
 .card-table tbody tr:hover {
@@ -194,7 +209,7 @@ Complete reference for all cards in PicoNav. Pick a game version to see stats as
 }
 
 .aspect-fire {
-  background-color: #ff4444;
+  background-color: #FF5A33;
   color: white;
   padding: 0.2rem 0.5rem;
   border-radius: 25px;
@@ -205,7 +220,7 @@ Complete reference for all cards in PicoNav. Pick a game version to see stats as
 }
 
 .aspect-earth {
-  background-color: #8b4513;
+  background-color: #4CAF50;
   color: white;
   padding: 0.2rem 0.5rem;
   border-radius: 25px;
@@ -216,7 +231,7 @@ Complete reference for all cards in PicoNav. Pick a game version to see stats as
 }
 
 .aspect-water {
-  background-color: #4169e1;
+  background-color: #29A8E0;
   color: white;
   padding: 0.2rem 0.5rem;
   border-radius: 25px;
@@ -227,8 +242,8 @@ Complete reference for all cards in PicoNav. Pick a game version to see stats as
 }
 
 .aspect-wind {
-  background-color: #87ceeb;
-  color: #00313A;
+  background-color: #9370DB;
+  color: white;
   padding: 0.2rem 0.5rem;
   border-radius: 25px;
   font-size: 0.7rem;
@@ -237,7 +252,7 @@ Complete reference for all cards in PicoNav. Pick a game version to see stats as
   white-space: nowrap;
 }
 
-.aspect-null {
+.aspect-neutral {
   background-color: #808080;
   color: white;
   padding: 0.2rem 0.5rem;
