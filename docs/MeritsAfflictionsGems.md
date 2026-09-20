@@ -61,7 +61,7 @@ Deep Dungeon merits, afflictions, and gems. Pick a version to see descriptions a
 <script>
 (function(){
   var RAW = 'https://raw.githubusercontent.com/VincentVeak/PicoNav/main/gamedata.json';
-  var GEMICON = '/assets/images/gems/icons/';
+  var GEMBASE = '/assets/images/gems/';
   var DATA = null, VERSION = null;
 
   function cmpVer(a, b){ var pa = String(a).split('.').map(Number), pb = String(b).split('.').map(Number); for (var i = 0; i < 3; i++){ var x = pa[i]||0, y = pb[i]||0; if (x !== y) return x - y; } return 0; }
@@ -70,13 +70,15 @@ Deep Dungeon merits, afflictions, and gems. Pick a version to see descriptions a
   function q(){ return (document.getElementById('mag-search').value || '').toLowerCase(); }
   function match(name, desc){ var s = q(); return !s || (name + ' ' + desc).toLowerCase().indexOf(s) >= 0; }
 
-  function renderList(list, bodyId, withIcon, cols){
+  function renderList(list, bodyId, withIcon, cols, sortByName){
     var body = document.getElementById(bodyId); if (!body) return;
-    var html = list.map(function(it){
+    var arr = list.slice();
+    if (sortByName) arr.sort(function(a, b){ return a.name.localeCompare(b.name); });
+    var html = arr.map(function(it){
       var h = resolve(it, VERSION); var desc = h.description || '';
       if (!match(it.name, desc)) return '';
       var row = '<tr>';
-      if (withIcon) row += '<td class="gem-icon"><img src="' + GEMICON + encodeURI(it.icon || '') + '" alt="" onerror="this.style.display=\'none\'"></td>';
+      if (withIcon) row += '<td class="gem-icon"><img src="' + GEMBASE + encodeURI(it.icon || '') + '" alt="" onerror="this.style.display=\'none\'"></td>';
       row += '<td><strong>' + esc(it.name) + '</strong></td><td>' + esc(desc) + '</td></tr>';
       return row;
     }).join('');
@@ -84,13 +86,14 @@ Deep Dungeon merits, afflictions, and gems. Pick a version to see descriptions a
     body.innerHTML = html;
   }
   function render(){
-    renderList(DATA.gems || [], 'gems-body', true, 3);
-    renderList(DATA.merits || [], 'merits-body', false, 2);
-    renderList(DATA.afflictions || [], 'affl-body', false, 2);
+    renderList(DATA.gems || [], 'gems-body', true, 3, false);
+    renderList(DATA.merits || [], 'merits-body', false, 2, true);
+    renderList(DATA.afflictions || [], 'affl-body', false, 2, true);
   }
 
   fetch(RAW).then(function(r){ return r.json(); }).then(function(d){
     DATA = d;
+    if (d.iconPaths && d.iconPaths.gems) GEMBASE = '/' + d.iconPaths.gems;
     var vers = {};
     ['cards', 'merits', 'afflictions', 'gems'].forEach(function(k){ (d[k] || []).forEach(function(it){ (it.history || []).forEach(function(h){ vers[h.version] = 1; }); }); });
     var sorted = Object.keys(vers).sort(cmpVer);

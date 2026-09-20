@@ -6,7 +6,7 @@
     "headGear": "assets/images/headGear/icons/",
     "bodyGear": "assets/images/bodyGear/icons/",
     "counters": "assets/images/counters/icons/",
-    "gems": "assets/images/gems/icons/"
+    "gems": "assets/images/gems/"
   },
   "cards": [
     {
@@ -1572,7 +1572,7 @@
     {
       "index": 0,
       "id": "windrider",
-      "name": "WINDRIDER",
+      "name": "Windrider",
       "history": [
         {
           "version": "2.0",
@@ -1583,7 +1583,7 @@
     {
       "index": 1,
       "id": "inflow",
-      "name": "INFLOW",
+      "name": "Inflow",
       "history": [
         {
           "version": "2.0",
@@ -1594,7 +1594,7 @@
     {
       "index": 2,
       "id": "scorching",
-      "name": "SCORCHING",
+      "name": "Scorching",
       "history": [
         {
           "version": "2.0",
@@ -1605,7 +1605,7 @@
     {
       "index": 3,
       "id": "tectonics",
-      "name": "TECTONICS",
+      "name": "Tectonics",
       "history": [
         {
           "version": "2.0",
@@ -1616,7 +1616,7 @@
     {
       "index": 4,
       "id": "high-voltage",
-      "name": "HIGH VOLTAGE",
+      "name": "High Voltage",
       "history": [
         {
           "version": "2.0",
@@ -1627,7 +1627,7 @@
     {
       "index": 5,
       "id": "fire-amp",
-      "name": "FIRE AMP",
+      "name": "Fire Amp",
       "history": [
         {
           "version": "2.0",
@@ -1638,7 +1638,7 @@
     {
       "index": 6,
       "id": "water-amp",
-      "name": "WATER AMP",
+      "name": "Water Amp",
       "history": [
         {
           "version": "2.0",
@@ -1649,7 +1649,7 @@
     {
       "index": 7,
       "id": "wind-amp",
-      "name": "WIND AMP",
+      "name": "Wind Amp",
       "history": [
         {
           "version": "2.0",
@@ -1660,7 +1660,7 @@
     {
       "index": 8,
       "id": "earth-amp",
-      "name": "EARTH AMP",
+      "name": "Earth Amp",
       "history": [
         {
           "version": "2.0",
@@ -1671,7 +1671,7 @@
     {
       "index": 9,
       "id": "fire-surge",
-      "name": "FIRE SURGE",
+      "name": "Fire Surge",
       "history": [
         {
           "version": "2.0",
@@ -1682,7 +1682,7 @@
     {
       "index": 10,
       "id": "water-surge",
-      "name": "WATER SURGE",
+      "name": "Water Surge",
       "history": [
         {
           "version": "2.0",
@@ -1693,7 +1693,7 @@
     {
       "index": 11,
       "id": "wind-surge",
-      "name": "WIND SURGE",
+      "name": "Wind Surge",
       "history": [
         {
           "version": "2.0",
@@ -1704,7 +1704,7 @@
     {
       "index": 12,
       "id": "earth-surge",
-      "name": "EARTH SURGE",
+      "name": "Earth Surge",
       "history": [
         {
           "version": "2.0",
@@ -1715,7 +1715,7 @@
     {
       "index": 13,
       "id": "fire-td",
-      "name": "FIRE TD",
+      "name": "Fire Td",
       "history": [
         {
           "version": "2.0",
@@ -1726,7 +1726,7 @@
     {
       "index": 14,
       "id": "water-td",
-      "name": "WATER TD",
+      "name": "Water Td",
       "history": [
         {
           "version": "2.0",
@@ -1737,7 +1737,7 @@
     {
       "index": 15,
       "id": "wind-td",
-      "name": "WIND TD",
+      "name": "Wind Td",
       "history": [
         {
           "version": "2.0",
@@ -1748,7 +1748,7 @@
     {
       "index": 16,
       "id": "earth-td",
-      "name": "EARTH TD",
+      "name": "Earth Td",
       "history": [
         {
           "version": "2.0",
@@ -1759,7 +1759,7 @@
     {
       "index": 17,
       "id": "conduit",
-      "name": "CONDUIT",
+      "name": "Conduit",
       "history": [
         {
           "version": "2.0",
@@ -1770,7 +1770,7 @@
     {
       "index": 18,
       "id": "overcharge",
-      "name": "OVERCHARGE",
+      "name": "Overcharge",
       "history": [
         {
           "version": "2.0",
@@ -1781,7 +1781,7 @@
     {
       "index": 19,
       "id": "execute",
-      "name": "EXECUTE",
+      "name": "Execute",
       "history": [
         {
           "version": "2.0",
@@ -1792,7 +1792,7 @@
     {
       "index": 20,
       "id": "whiplash",
-      "name": "WHIPLASH",
+      "name": "Whiplash",
       "history": [
         {
           "version": "2.0",
@@ -1803,7 +1803,7 @@
     {
       "index": 21,
       "id": "bloodrush",
-      "name": "BLOODRUSH",
+      "name": "Bloodrush",
       "history": [
         {
           "version": "2.0",
@@ -1814,7 +1814,7 @@
     {
       "index": 22,
       "id": "sharpen",
-      "name": "SHARPEN",
+      "name": "Sharpen",
       "history": [
         {
           "version": "2.0",
@@ -1825,7 +1825,7 @@
     {
       "index": 23,
       "id": "bolster",
-      "name": "BOLSTER",
+      "name": "Bolster",
       "history": [
         {
           "version": "2.0",
@@ -1836,7 +1836,7 @@
     {
       "index": 24,
       "id": "temper",
-      "name": "TEMPER",
+      "name": "Temper",
       "history": [
         {
           "version": "2.0",
@@ -1847,7 +1847,7 @@
     {
       "index": 25,
       "id": "haste",
-      "name": "HASTE",
+      "name": "Haste",
       "history": [
         {
           "version": "2.0",
@@ -1858,7 +1858,7 @@
     {
       "index": 26,
       "id": "keen-eye",
-      "name": "KEEN EYE",
+      "name": "Keen Eye",
       "history": [
         {
           "version": "2.0",
@@ -1869,7 +1869,7 @@
     {
       "index": 27,
       "id": "leech",
-      "name": "LEECH",
+      "name": "Leech",
       "history": [
         {
           "version": "2.0",
@@ -1880,7 +1880,7 @@
     {
       "index": 28,
       "id": "desperation",
-      "name": "DESPERATION",
+      "name": "Desperation",
       "history": [
         {
           "version": "2.0",
@@ -1891,7 +1891,7 @@
     {
       "index": 29,
       "id": "scholar",
-      "name": "SCHOLAR",
+      "name": "Scholar",
       "history": [
         {
           "version": "2.0",
@@ -1902,7 +1902,7 @@
     {
       "index": 30,
       "id": "berserk",
-      "name": "BERSERK",
+      "name": "Berserk",
       "history": [
         {
           "version": "2.0",
@@ -1913,7 +1913,7 @@
     {
       "index": 31,
       "id": "guts",
-      "name": "GUTS",
+      "name": "Guts",
       "history": [
         {
           "version": "2.0",
@@ -1924,7 +1924,7 @@
     {
       "index": 32,
       "id": "technician",
-      "name": "TECHNICIAN",
+      "name": "Technician",
       "history": [
         {
           "version": "2.0",
@@ -1935,7 +1935,7 @@
     {
       "index": 33,
       "id": "speed-boost",
-      "name": "SPEED BOOST",
+      "name": "Speed Boost",
       "history": [
         {
           "version": "2.0",
@@ -1946,7 +1946,7 @@
     {
       "index": 34,
       "id": "second-wind",
-      "name": "SECOND WIND",
+      "name": "Second Wind",
       "history": [
         {
           "version": "2.0",
@@ -1957,7 +1957,7 @@
     {
       "index": 35,
       "id": "regen",
-      "name": "REGEN",
+      "name": "Regen",
       "history": [
         {
           "version": "2.0",
@@ -1968,7 +1968,7 @@
     {
       "index": 36,
       "id": "vitality",
-      "name": "VITALITY",
+      "name": "Vitality",
       "history": [
         {
           "version": "2.0",
@@ -1979,7 +1979,7 @@
     {
       "index": 37,
       "id": "spikes",
-      "name": "SPIKES",
+      "name": "Spikes",
       "history": [
         {
           "version": "2.0",
@@ -1990,7 +1990,7 @@
     {
       "index": 38,
       "id": "ambush",
-      "name": "AMBUSH",
+      "name": "Ambush",
       "history": [
         {
           "version": "2.0",
@@ -2001,7 +2001,7 @@
     {
       "index": 39,
       "id": "phantom",
-      "name": "PHANTOM",
+      "name": "Phantom",
       "history": [
         {
           "version": "2.0",
@@ -2012,7 +2012,7 @@
     {
       "index": 40,
       "id": "deep-freeze",
-      "name": "DEEP FREEZE",
+      "name": "Deep Freeze",
       "history": [
         {
           "version": "2.0",
@@ -2023,7 +2023,7 @@
     {
       "index": 41,
       "id": "ward",
-      "name": "WARD",
+      "name": "Ward",
       "history": [
         {
           "version": "2.0",
@@ -2034,7 +2034,7 @@
     {
       "index": 42,
       "id": "omen",
-      "name": "OMEN",
+      "name": "Omen",
       "history": [
         {
           "version": "2.0",
@@ -2045,7 +2045,7 @@
     {
       "index": 43,
       "id": "frostguard",
-      "name": "FROSTGUARD",
+      "name": "Frostguard",
       "history": [
         {
           "version": "2.0",
@@ -2056,7 +2056,7 @@
     {
       "index": 44,
       "id": "intimidate",
-      "name": "INTIMIDATE",
+      "name": "Intimidate",
       "history": [
         {
           "version": "2.0",
@@ -2067,7 +2067,7 @@
     {
       "index": 45,
       "id": "reforge",
-      "name": "REFORGE",
+      "name": "Reforge",
       "history": [
         {
           "version": "2.0",
@@ -2078,7 +2078,7 @@
     {
       "index": 46,
       "id": "stacked-deck",
-      "name": "STACKED DECK",
+      "name": "Stacked Deck",
       "history": [
         {
           "version": "2.0",
@@ -2089,7 +2089,7 @@
     {
       "index": 47,
       "id": "scavenge",
-      "name": "SCAVENGE",
+      "name": "Scavenge",
       "history": [
         {
           "version": "2.0",
@@ -2100,7 +2100,7 @@
     {
       "index": 48,
       "id": "bounty",
-      "name": "BOUNTY",
+      "name": "Bounty",
       "history": [
         {
           "version": "2.0",
@@ -2111,7 +2111,7 @@
     {
       "index": 49,
       "id": "reprieve",
-      "name": "REPRIEVE",
+      "name": "Reprieve",
       "history": [
         {
           "version": "2.0",
@@ -2122,7 +2122,7 @@
     {
       "index": 50,
       "id": "moxie",
-      "name": "MOXIE",
+      "name": "Moxie",
       "history": [
         {
           "version": "2.0",
@@ -2133,7 +2133,7 @@
     {
       "index": 51,
       "id": "purge",
-      "name": "PURGE",
+      "name": "Purge",
       "history": [
         {
           "version": "2.0",
@@ -2144,7 +2144,7 @@
     {
       "index": 52,
       "id": "windfall",
-      "name": "WINDFALL",
+      "name": "Windfall",
       "history": [
         {
           "version": "2.0",
@@ -2157,7 +2157,7 @@
     {
       "index": 0,
       "id": "ferocity",
-      "name": "FEROCITY",
+      "name": "Ferocity",
       "history": [
         {
           "version": "2.0",
@@ -2168,7 +2168,7 @@
     {
       "index": 1,
       "id": "stalwart",
-      "name": "STALWART",
+      "name": "Stalwart",
       "history": [
         {
           "version": "2.0",
@@ -2179,7 +2179,7 @@
     {
       "index": 2,
       "id": "vigor",
-      "name": "VIGOR",
+      "name": "Vigor",
       "history": [
         {
           "version": "2.0",
@@ -2190,7 +2190,7 @@
     {
       "index": 3,
       "id": "frenzy",
-      "name": "FRENZY",
+      "name": "Frenzy",
       "history": [
         {
           "version": "2.0",
@@ -2201,7 +2201,7 @@
     {
       "index": 4,
       "id": "rush",
-      "name": "RUSH",
+      "name": "Rush",
       "history": [
         {
           "version": "2.0",
@@ -2212,7 +2212,7 @@
     {
       "index": 5,
       "id": "enrage",
-      "name": "ENRAGE",
+      "name": "Enrage",
       "history": [
         {
           "version": "2.0",
@@ -2223,7 +2223,7 @@
     {
       "index": 6,
       "id": "renew",
-      "name": "RENEW",
+      "name": "Renew",
       "history": [
         {
           "version": "2.0",
@@ -2234,7 +2234,7 @@
     {
       "index": 7,
       "id": "drain",
-      "name": "DRAIN",
+      "name": "Drain",
       "history": [
         {
           "version": "2.0",
@@ -2245,7 +2245,7 @@
     {
       "index": 8,
       "id": "dispel",
-      "name": "DISPEL",
+      "name": "Dispel",
       "history": [
         {
           "version": "2.0",
@@ -2256,7 +2256,7 @@
     {
       "index": 9,
       "id": "toxic",
-      "name": "TOXIC",
+      "name": "Toxic",
       "history": [
         {
           "version": "2.0",
@@ -2267,7 +2267,7 @@
     {
       "index": 10,
       "id": "sloth",
-      "name": "SLOTH",
+      "name": "Sloth",
       "history": [
         {
           "version": "2.0",
@@ -2278,7 +2278,7 @@
     {
       "index": 11,
       "id": "recoil",
-      "name": "RECOIL",
+      "name": "Recoil",
       "history": [
         {
           "version": "2.0",
@@ -2289,7 +2289,7 @@
     {
       "index": 12,
       "id": "blight",
-      "name": "BLIGHT",
+      "name": "Blight",
       "history": [
         {
           "version": "2.0",
@@ -2300,7 +2300,7 @@
     {
       "index": 13,
       "id": "dread",
-      "name": "DREAD",
+      "name": "Dread",
       "history": [
         {
           "version": "2.0",
@@ -2311,7 +2311,7 @@
     {
       "index": 14,
       "id": "volatile",
-      "name": "VOLATILE",
+      "name": "Volatile",
       "history": [
         {
           "version": "2.0",
@@ -2325,7 +2325,7 @@
       "index": 0,
       "id": "prospect",
       "name": "PROSPECT",
-      "icon": "Gem_Icons_All_00.png",
+      "icon": "Gems_All_00.png",
       "history": [
         {
           "version": "2.0",
@@ -2337,7 +2337,7 @@
       "index": 1,
       "id": "bloodlust",
       "name": "BLOODLUST",
-      "icon": "Gem_Icons_All_01.png",
+      "icon": "Gems_All_01.png",
       "history": [
         {
           "version": "2.0",
@@ -2349,7 +2349,7 @@
       "index": 2,
       "id": "revive",
       "name": "REVIVE",
-      "icon": "Gem_Icons_All_02.png",
+      "icon": "Gems_All_02.png",
       "history": [
         {
           "version": "2.0",
@@ -2361,7 +2361,7 @@
       "index": 3,
       "id": "relic",
       "name": "RELIC",
-      "icon": "Gem_Icons_All_03.png",
+      "icon": "Gems_All_03.png",
       "history": [
         {
           "version": "2.0",
@@ -2373,7 +2373,7 @@
       "index": 4,
       "id": "glass",
       "name": "GLASS",
-      "icon": "Gem_Icons_All_04.png",
+      "icon": "Gems_All_04.png",
       "history": [
         {
           "version": "2.0",
@@ -2385,7 +2385,7 @@
       "index": 5,
       "id": "gamble",
       "name": "GAMBLE",
-      "icon": "Gem_Icons_All_05.png",
+      "icon": "Gems_All_05.png",
       "history": [
         {
           "version": "2.0",
@@ -2397,7 +2397,7 @@
       "index": 6,
       "id": "overload",
       "name": "OVERLOAD",
-      "icon": "Gem_Icons_All_06.png",
+      "icon": "Gems_All_06.png",
       "history": [
         {
           "version": "2.0",
@@ -2409,7 +2409,7 @@
       "index": 7,
       "id": "marathon",
       "name": "MARATHON",
-      "icon": "Gem_Icons_All_07.png",
+      "icon": "Gems_All_07.png",
       "history": [
         {
           "version": "2.0",
@@ -2421,7 +2421,7 @@
       "index": 8,
       "id": "crit",
       "name": "CRIT",
-      "icon": "Gem_Icons_All_08.png",
+      "icon": "Gems_All_08.png",
       "history": [
         {
           "version": "2.0",

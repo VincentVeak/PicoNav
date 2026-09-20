@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Body Gear Reference
-nav_order: 5
+nav_order: 6
 ---
 
 # Body Gear Reference
