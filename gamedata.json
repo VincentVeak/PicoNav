@@ -3,9 +3,9 @@
   "repoRaw": "https://raw.githubusercontent.com/VincentVeak/PicoNav/main",
   "iconPaths": {
     "cards": "assets/images/cards/",
-    "headGear": "assets/images/headGear/",
-    "bodyGear": "assets/images/bodyGear/",
-    "counters": "assets/images/counters/"
+    "headGear": "assets/images/headGear/icons/",
+    "bodyGear": "assets/images/bodyGear/icons/",
+    "counters": "assets/images/counters/icons/"
   },
   "cards": [
     {
@@ -15,7 +15,7 @@
       "icon": "Card Icons_All_00.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Fire",
           "series": "Fire",
           "power": 70,
@@ -35,7 +35,7 @@
       "icon": "Card Icons_All_01.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Earth",
           "series": "Earth",
           "power": 40,
@@ -54,7 +54,7 @@
       "icon": "Card Icons_All_02.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Water",
           "series": "Water",
           "power": 60,
@@ -72,7 +72,7 @@
       "icon": "Card Icons_All_03.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Wind",
           "series": "Wind",
           "power": 50,
@@ -91,7 +91,7 @@
       "icon": "Card Icons_All_04.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Earth",
           "series": "Earth",
           "power": 30,
@@ -111,7 +111,7 @@
       "icon": "Card Icons_All_05.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Wind",
           "series": "Wind",
           "power": 30,
@@ -130,7 +130,7 @@
       "icon": "Card Icons_All_06.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Water",
           "series": "Water",
           "power": 40,
@@ -149,7 +149,7 @@
       "icon": "Card Icons_All_07.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 50,
@@ -167,7 +167,7 @@
       "icon": "Card Icons_All_08.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Fire",
           "series": "Fire",
           "power": 35,
@@ -186,7 +186,7 @@
       "icon": "Card Icons_All_09.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 50,
@@ -205,7 +205,7 @@
       "icon": "Card Icons_All_10.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Fire",
           "series": "Fire",
           "power": 30,
@@ -223,7 +223,7 @@
       "icon": "Card Icons_All_11.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Fire",
           "series": "Lightning",
           "power": 40,
@@ -241,7 +241,7 @@
       "icon": "Card Icons_All_12.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 0,
@@ -261,7 +261,7 @@
       "icon": "Card Icons_All_13.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Earth",
           "series": "Earth",
           "power": 25,
@@ -279,7 +279,7 @@
       "icon": "Card Icons_All_14.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Fire",
           "series": "Lightning",
           "power": 25,
@@ -297,7 +297,7 @@
       "icon": "Card Icons_All_15.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Fire",
           "series": "Lightning",
           "power": 20,
@@ -316,7 +316,7 @@
       "icon": "Card Icons_All_16.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Fire",
           "series": "Lightning",
           "power": 40,
@@ -334,7 +334,7 @@
       "icon": "Card Icons_All_17.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Fire",
           "series": "Lightning",
           "power": 25,
@@ -353,7 +353,7 @@
       "icon": "Card Icons_All_18.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 0,
@@ -372,7 +372,7 @@
       "icon": "Card Icons_All_19.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Fire",
           "series": "Fire",
           "power": 30,
@@ -391,7 +391,7 @@
       "icon": "Card Icons_All_20.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Fire",
           "series": "Fire",
           "power": 100,
@@ -409,7 +409,7 @@
       "icon": "Card Icons_All_21.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Fire",
           "series": "Fire",
           "power": 50,
@@ -428,7 +428,7 @@
       "icon": "Card Icons_All_22.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Fire",
           "series": "Fire",
           "power": 25,
@@ -446,7 +446,7 @@
       "icon": "Card Icons_All_23.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 0,
@@ -465,7 +465,7 @@
       "icon": "Card Icons_All_24.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 0,
@@ -483,7 +483,7 @@
       "icon": "Card Icons_All_25.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Water",
           "series": "Water",
           "power": 0,
@@ -503,7 +503,7 @@
       "icon": "Card Icons_All_26.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Earth",
           "series": "Earth",
           "power": 70,
@@ -522,7 +522,7 @@
       "icon": "Card Icons_All_27.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Earth",
           "series": "Earth",
           "power": 40,
@@ -541,7 +541,7 @@
       "icon": "Card Icons_All_28.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 0,
@@ -560,7 +560,7 @@
       "icon": "Card Icons_All_29.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Earth",
           "series": "Nature",
           "power": 15,
@@ -581,7 +581,7 @@
       "icon": "Card Icons_All_30.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Earth",
           "series": "Nature",
           "power": 25,
@@ -601,7 +601,7 @@
       "icon": "Card Icons_All_31.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Earth",
           "series": "Nature",
           "power": 45,
@@ -621,7 +621,7 @@
       "icon": "Card Icons_All_32.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Earth",
           "series": "Earth",
           "power": 15,
@@ -639,7 +639,7 @@
       "icon": "Card Icons_All_33.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Water",
           "series": "Water",
           "power": 2,
@@ -658,7 +658,7 @@
       "icon": "Card Icons_All_34.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Water",
           "series": "Water",
           "power": 50,
@@ -676,7 +676,7 @@
       "icon": "Card Icons_All_35.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Water",
           "series": "Water",
           "power": 40,
@@ -694,7 +694,7 @@
       "icon": "Card Icons_All_36.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 15,
@@ -713,7 +713,7 @@
       "icon": "Card Icons_All_37.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Water",
           "series": "Water",
           "power": 30,
@@ -732,7 +732,7 @@
       "icon": "Card Icons_All_38.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Water",
           "series": "Water",
           "power": 40,
@@ -751,7 +751,7 @@
       "icon": "Card Icons_All_39.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Water",
           "series": "Steam",
           "power": 60,
@@ -771,7 +771,7 @@
       "icon": "Card Icons_All_40.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Water",
           "series": "Steam",
           "power": 10,
@@ -791,7 +791,7 @@
       "icon": "Card Icons_All_41.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Wind",
           "series": "Wind",
           "power": 40,
@@ -810,7 +810,7 @@
       "icon": "Card Icons_All_42.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Wind",
           "series": "Wind",
           "power": 30,
@@ -829,7 +829,7 @@
       "icon": "Card Icons_All_43.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Wind",
           "series": "Wind",
           "power": 35,
@@ -848,7 +848,7 @@
       "icon": "Card Icons_All_44.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Wind",
           "series": "Wind",
           "power": 90,
@@ -866,7 +866,7 @@
       "icon": "Card Icons_All_45.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Wind",
           "series": "Wind",
           "power": 60,
@@ -885,7 +885,7 @@
       "icon": "Card Icons_All_46.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Wind",
           "series": "Wind",
           "power": 35,
@@ -903,7 +903,7 @@
       "icon": "Card Icons_All_47.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 0,
@@ -922,7 +922,7 @@
       "icon": "Card Icons_All_48.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 0,
@@ -940,7 +940,7 @@
       "icon": "Card Icons_All_49.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 0,
@@ -959,7 +959,7 @@
       "icon": "Card Icons_All_50.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 0,
@@ -978,7 +978,7 @@
       "icon": "Card Icons_All_51.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 20,
@@ -998,7 +998,7 @@
       "icon": "Card Icons_All_52.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 0,
@@ -1018,7 +1018,7 @@
       "icon": "Card Icons_All_53.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 40,
@@ -1038,7 +1038,7 @@
       "icon": "Card Icons_All_54.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Neutral",
           "series": "Neutral",
           "power": 40,
@@ -1057,7 +1057,7 @@
       "icon": "Card Icons_All_55.png",
       "history": [
         {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "aspect": "Wind",
           "series": "Wind",
           "power": 40,
@@ -1074,414 +1074,496 @@
     {
       "index": 0,
       "id": "none",
-      "name": "None"
+      "name": "None",
+      "icon": "Headgear_Icons_All_00.png"
     },
     {
       "index": 1,
       "id": "wizard-hat",
-      "name": "Wizard Hat"
+      "name": "Wizard Hat",
+      "icon": "Headgear_Icons_All_01.png"
     },
     {
       "index": 2,
       "id": "headband",
-      "name": "Headband"
+      "name": "Headband",
+      "icon": "Headgear_Icons_All_02.png"
     },
     {
       "index": 3,
       "id": "pointed-ears",
-      "name": "Pointed Ears"
+      "name": "Pointed Ears",
+      "icon": "Headgear_Icons_All_03.png"
     },
     {
       "index": 4,
       "id": "tv-head",
-      "name": "TV Head"
+      "name": "TV Head",
+      "icon": "Headgear_Icons_All_04.png"
     },
     {
       "index": 5,
       "id": "hooded-robe",
-      "name": "Hooded Robe"
+      "name": "Hooded Robe",
+      "icon": "Headgear_Icons_All_05.png"
     },
     {
       "index": 6,
       "id": "night-cap",
-      "name": "Night Cap"
+      "name": "Night Cap",
+      "icon": "Headgear_Icons_All_06.png"
     },
     {
       "index": 7,
       "id": "banana",
-      "name": "Banana"
+      "name": "Banana",
+      "icon": "Headgear_Icons_All_07.png"
     },
     {
       "index": 8,
       "id": "boba-tea",
-      "name": "Boba Tea"
+      "name": "Boba Tea",
+      "icon": "Headgear_Icons_All_08.png"
     },
     {
       "index": 9,
       "id": "cactus",
-      "name": "Cactus"
+      "name": "Cactus",
+      "icon": "Headgear_Icons_All_09.png"
     },
     {
       "index": 10,
       "id": "chef-s-hat",
-      "name": "Chef's Hat"
+      "name": "Chef's Hat",
+      "icon": "Headgear_Icons_All_10.png"
     },
     {
       "index": 11,
       "id": "mimic-chest",
-      "name": "Mimic Chest"
+      "name": "Mimic Chest",
+      "icon": "Headgear_Icons_All_11.png"
     },
     {
       "index": 12,
       "id": "soda-pop",
-      "name": "Soda Pop"
+      "name": "Soda Pop",
+      "icon": "Headgear_Icons_All_12.png"
     },
     {
       "index": 13,
       "id": "cowboy-hat",
-      "name": "Cowboy Hat"
+      "name": "Cowboy Hat",
+      "icon": "Headgear_Icons_All_13.png"
     },
     {
       "index": 14,
       "id": "demon-helm",
-      "name": "Demon Helm"
+      "name": "Demon Helm",
+      "icon": "Headgear_Icons_All_14.png"
     },
     {
       "index": 15,
       "id": "dragon-skull",
-      "name": "Dragon Skull"
+      "name": "Dragon Skull",
+      "icon": "Headgear_Icons_All_15.png"
     },
     {
       "index": 16,
       "id": "egg-shell",
-      "name": "Egg Shell"
+      "name": "Egg Shell",
+      "icon": "Headgear_Icons_All_16.png"
     },
     {
       "index": 17,
       "id": "evil-eye",
-      "name": "Evil Eye"
+      "name": "Evil Eye",
+      "icon": "Headgear_Icons_All_17.png"
     },
     {
       "index": 18,
       "id": "fairy-wings",
-      "name": "Fairy Wings"
+      "name": "Fairy Wings",
+      "icon": "Headgear_Icons_All_18.png"
     },
     {
       "index": 19,
       "id": "frog",
-      "name": "Frog"
+      "name": "Frog",
+      "icon": "Headgear_Icons_All_19.png"
     },
     {
       "index": 20,
       "id": "flame-skull",
-      "name": "Flame Skull"
+      "name": "Flame Skull",
+      "icon": "Headgear_Icons_All_20.png"
     },
     {
       "index": 21,
       "id": "goblin",
-      "name": "Goblin"
+      "name": "Goblin",
+      "icon": "Headgear_Icons_All_21.png"
     },
     {
       "index": 22,
       "id": "egg-yolk",
-      "name": "Egg Yolk"
+      "name": "Egg Yolk",
+      "icon": "Headgear_Icons_All_22.png"
     },
     {
       "index": 23,
       "id": "halo",
-      "name": "Halo"
+      "name": "Halo",
+      "icon": "Headgear_Icons_All_23.png"
     },
     {
       "index": 24,
       "id": "hero-goggles",
-      "name": "Hero Goggles"
+      "name": "Hero Goggles",
+      "icon": "Headgear_Icons_All_24.png"
     },
     {
       "index": 25,
       "id": "horn-helm",
-      "name": "Horn Helm"
+      "name": "Horn Helm",
+      "icon": "Headgear_Icons_All_25.png"
     },
     {
       "index": 26,
       "id": "ram-horns",
-      "name": "Ram Horns"
+      "name": "Ram Horns",
+      "icon": "Headgear_Icons_All_26.png"
     },
     {
       "index": 27,
       "id": "insect-horns",
-      "name": "Insect Horns"
+      "name": "Insect Horns",
+      "icon": "Headgear_Icons_All_27.png"
     },
     {
       "index": 28,
       "id": "tilted-band",
-      "name": "Tilted Band"
+      "name": "Tilted Band",
+      "icon": "Headgear_Icons_All_28.png"
     },
     {
       "index": 29,
       "id": "star-ride",
-      "name": "Star Ride"
+      "name": "Star Ride",
+      "icon": "Headgear_Icons_All_29.png"
     },
     {
       "index": 30,
       "id": "knight-helmet",
-      "name": "Knight Helmet"
+      "name": "Knight Helmet",
+      "icon": "Headgear_Icons_All_30.png"
     },
     {
       "index": 31,
       "id": "big-bull",
-      "name": "Big Bull"
+      "name": "Big Bull",
+      "icon": "Headgear_Icons_All_31.png"
     },
     {
       "index": 32,
       "id": "magic-hair",
-      "name": "Magic Hair"
+      "name": "Magic Hair",
+      "icon": "Headgear_Icons_All_32.png"
     },
     {
       "index": 33,
       "id": "shroom-cap",
-      "name": "Shroom Cap"
+      "name": "Shroom Cap",
+      "icon": "Headgear_Icons_All_33.png"
     },
     {
       "index": 34,
       "id": "paper-bag",
-      "name": "Paper Bag"
+      "name": "Paper Bag",
+      "icon": "Headgear_Icons_All_34.png"
     },
     {
       "index": 35,
       "id": "chili-pepper",
-      "name": "Chili Pepper"
+      "name": "Chili Pepper",
+      "icon": "Headgear_Icons_All_35.png"
     },
     {
       "index": 36,
       "id": "pirate-hat",
-      "name": "Pirate Hat"
+      "name": "Pirate Hat",
+      "icon": "Headgear_Icons_All_36.png"
     },
     {
       "index": 37,
       "id": "plague-doctor",
-      "name": "Plague Doctor"
+      "name": "Plague Doctor",
+      "icon": "Headgear_Icons_All_37.png"
     },
     {
       "index": 38,
       "id": "rabbit-ears",
-      "name": "Rabbit Ears"
+      "name": "Rabbit Ears",
+      "icon": "Headgear_Icons_All_38.png"
     },
     {
       "index": 39,
       "id": "robo-signal",
-      "name": "Robo Signal"
+      "name": "Robo Signal",
+      "icon": "Headgear_Icons_All_39.png"
     },
     {
       "index": 40,
       "id": "safety-helmet",
-      "name": "Safety Helmet"
+      "name": "Safety Helmet",
+      "icon": "Headgear_Icons_All_40.png"
     },
     {
       "index": 41,
       "id": "skeleton",
-      "name": "Skeleton"
+      "name": "Skeleton",
+      "icon": "Headgear_Icons_All_41.png"
     },
     {
       "index": 42,
       "id": "snake-head",
-      "name": "Snake Head"
+      "name": "Snake Head",
+      "icon": "Headgear_Icons_All_42.png"
     },
     {
       "index": 43,
       "id": "snorkle-mask",
-      "name": "Snorkle Mask"
+      "name": "Snorkle Mask",
+      "icon": "Headgear_Icons_All_43.png"
     },
     {
       "index": 44,
       "id": "spacesuit",
-      "name": "Spacesuit"
+      "name": "Spacesuit",
+      "icon": "Headgear_Icons_All_44.png"
     },
     {
       "index": 45,
       "id": "spikey-quills",
-      "name": "Spikey Quills"
+      "name": "Spikey Quills",
+      "icon": "Headgear_Icons_All_45.png"
     },
     {
       "index": 46,
       "id": "sprout",
-      "name": "Sprout"
+      "name": "Sprout",
+      "icon": "Headgear_Icons_All_46.png"
     },
     {
       "index": 47,
       "id": "stand",
-      "name": "Stand"
+      "name": "Stand",
+      "icon": "Headgear_Icons_All_47.png"
     },
     {
       "index": 48,
       "id": "teacup",
-      "name": "Teacup"
+      "name": "Teacup",
+      "icon": "Headgear_Icons_All_48.png"
     },
     {
       "index": 49,
       "id": "top-hat",
-      "name": "Top Hat"
+      "name": "Top Hat",
+      "icon": "Headgear_Icons_All_49.png"
     },
     {
       "index": 50,
       "id": "festive-tree",
-      "name": "Festive Tree"
+      "name": "Festive Tree",
+      "icon": "Headgear_Icons_All_50.png"
     }
   ],
   "bodyGear": [
     {
       "index": 0,
       "id": "none",
-      "name": "None"
+      "name": "None",
+      "icon": "Bodygear_Icons_All_00.png"
     },
     {
       "index": 1,
       "id": "staff",
-      "name": "Staff"
+      "name": "Staff",
+      "icon": "Bodygear_Icons_All_01.png"
     },
     {
       "index": 2,
       "id": "sword-shield",
-      "name": "Sword/Shield"
+      "name": "Sword/Shield",
+      "icon": "Bodygear_Icons_All_02.png"
     },
     {
       "index": 3,
       "id": "dual-blades",
-      "name": "Dual Blades"
+      "name": "Dual Blades",
+      "icon": "Bodygear_Icons_All_03.png"
     },
     {
       "index": 4,
       "id": "hero-s-cape",
-      "name": "Hero's Cape"
+      "name": "Hero's Cape",
+      "icon": "Bodygear_Icons_All_04.png"
     },
     {
       "index": 5,
       "id": "spear",
-      "name": "Spear"
+      "name": "Spear",
+      "icon": "Bodygear_Icons_All_05.png"
     },
     {
       "index": 6,
       "id": "giant-key",
-      "name": "Giant Key"
+      "name": "Giant Key",
+      "icon": "Bodygear_Icons_All_06.png"
     },
     {
       "index": 7,
       "id": "balloon",
-      "name": "Balloon"
+      "name": "Balloon",
+      "icon": "Bodygear_Icons_All_07.png"
     },
     {
       "index": 8,
       "id": "bow",
-      "name": "Bow"
+      "name": "Bow",
+      "icon": "Bodygear_Icons_All_08.png"
     },
     {
       "index": 9,
       "id": "eepy",
-      "name": "Eepy"
+      "name": "Eepy",
+      "icon": "Bodygear_Icons_All_09.png"
     },
     {
       "index": 10,
       "id": "chef-s-jacket",
-      "name": "Chef's Jacket"
+      "name": "Chef's Jacket",
+      "icon": "Bodygear_Icons_All_10.png"
     },
     {
       "index": 11,
       "id": "ghost-skull",
-      "name": "Ghost Skull"
+      "name": "Ghost Skull",
+      "icon": "Bodygear_Icons_All_11.png"
     },
     {
       "index": 12,
       "id": "hammer",
-      "name": "Hammer"
+      "name": "Hammer",
+      "icon": "Bodygear_Icons_All_12.png"
     },
     {
       "index": 13,
       "id": "lamia",
-      "name": "Lamia"
+      "name": "Lamia",
+      "icon": "Bodygear_Icons_All_13.png"
     },
     {
       "index": 14,
       "id": "lollipop",
-      "name": "Lollipop"
+      "name": "Lollipop",
+      "icon": "Bodygear_Icons_All_14.png"
     },
     {
       "index": 15,
       "id": "mage-book",
-      "name": "Mage Book"
+      "name": "Mage Book",
+      "icon": "Bodygear_Icons_All_15.png"
     },
     {
       "index": 16,
       "id": "magic-dress",
-      "name": "Magic Dress"
+      "name": "Magic Dress",
+      "icon": "Bodygear_Icons_All_16.png"
     },
     {
       "index": 17,
       "id": "knight-armor",
-      "name": "Knight Armor"
+      "name": "Knight Armor",
+      "icon": "Bodygear_Icons_All_17.png"
     },
     {
       "index": 18,
       "id": "moon-staff",
-      "name": "Moon Staff"
+      "name": "Moon Staff",
+      "icon": "Bodygear_Icons_All_18.png"
     },
     {
       "index": 19,
       "id": "poncho",
-      "name": "Poncho"
+      "name": "Poncho",
+      "icon": "Bodygear_Icons_All_19.png"
     },
     {
       "index": 20,
       "id": "scarf",
-      "name": "Scarf"
+      "name": "Scarf",
+      "icon": "Bodygear_Icons_All_20.png"
     },
     {
       "index": 21,
       "id": "ornate-staff",
-      "name": "Ornate Staff"
+      "name": "Ornate Staff",
+      "icon": "Bodygear_Icons_All_21.png"
     },
     {
       "index": 22,
       "id": "star-wand",
-      "name": "Star Wand"
+      "name": "Star Wand",
+      "icon": "Bodygear_Icons_All_22.png"
     },
     {
       "index": 23,
       "id": "briefcase",
-      "name": "Briefcase"
+      "name": "Briefcase",
+      "icon": "Bodygear_Icons_All_23.png"
     },
     {
       "index": 24,
       "id": "umbrella",
-      "name": "Umbrella"
+      "name": "Umbrella",
+      "icon": "Bodygear_Icons_All_24.png"
     },
     {
       "index": 25,
       "id": "vest",
-      "name": "Vest"
+      "name": "Vest",
+      "icon": "Bodygear_Icons_All_25.png"
     },
     {
       "index": 26,
       "id": "greatsword",
-      "name": "Greatsword"
+      "name": "Greatsword",
+      "icon": "Bodygear_Icons_All_26.png"
     },
     {
       "index": 27,
       "id": "fishing-pole",
-      "name": "Fishing Pole"
+      "name": "Fishing Pole",
+      "icon": "Bodygear_Icons_All_27.png"
     },
     {
       "index": 28,
       "id": "pickaxe",
-      "name": "Pickaxe"
+      "name": "Pickaxe",
+      "icon": "Bodygear_Icons_All_28.png"
     },
     {
       "index": 29,
       "id": "tank",
-      "name": "Tank"
+      "name": "Tank",
+      "icon": "Bodygear_Icons_All_29.png"
     },
     {
       "index": 30,
       "id": "gift-box",
-      "name": "Gift Box"
+      "name": "Gift Box",
+      "icon": "Bodygear_Icons_All_30.png"
     }
   ],
   "counters": []
