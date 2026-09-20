@@ -1,0 +1,1488 @@
+{
+  "schemaVersion": 1,
+  "repoRaw": "https://raw.githubusercontent.com/VincentVeak/PicoNav/main",
+  "iconPaths": {
+    "cards": "assets/images/cards/",
+    "headGear": "assets/images/headGear/",
+    "bodyGear": "assets/images/bodyGear/",
+    "counters": "assets/images/counters/"
+  },
+  "cards": [
+    {
+      "index": 0,
+      "id": "fireball",
+      "name": "Fireball",
+      "icon": "Card Icons_All_00.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Fire",
+          "series": "Fire",
+          "power": 70,
+          "tags": [
+            "Fire",
+            "Burst Damage",
+            "DOT"
+          ],
+          "description": "Adds a Fire counter that deals 12.5% damage per turn"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "id": "stonewall",
+      "name": "Stonewall",
+      "icon": "Card Icons_All_01.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Earth",
+          "series": "Earth",
+          "power": 40,
+          "tags": [
+            "Earth",
+            "Defense"
+          ],
+          "description": "Adds an Earth counter that reduces damage by 20%. Maximum of 3 stacks"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "id": "tidal-wave",
+      "name": "Tidal Wave",
+      "icon": "Card Icons_All_02.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Water",
+          "series": "Water",
+          "power": 60,
+          "tags": [
+            "Water"
+          ],
+          "description": "Place a Water counter on the opponent to reduce speed by 25%"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "id": "tornado",
+      "name": "Tornado",
+      "icon": "Card Icons_All_03.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Wind",
+          "series": "Wind",
+          "power": 50,
+          "tags": [
+            "Wind",
+            "Utility"
+          ],
+          "description": "Shuffles your deck and grants a Wind counter that gives the next move priority"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "id": "fortify",
+      "name": "Fortify",
+      "icon": "Card Icons_All_04.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Earth",
+          "series": "Earth",
+          "power": 30,
+          "tags": [
+            "Earth",
+            "Defense",
+            "Priority"
+          ],
+          "description": "Priority move. Instantly maxes out Earth counter stacks to 3"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "id": "air-slash",
+      "name": "Air Slash",
+      "icon": "Card Icons_All_05.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Wind",
+          "series": "Wind",
+          "power": 30,
+          "tags": [
+            "Wind",
+            "Priority"
+          ],
+          "description": "Priority move. Remove Wind counter on self for 3x damage"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "id": "torrent",
+      "name": "Torrent",
+      "icon": "Card Icons_All_06.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Water",
+          "series": "Water",
+          "power": 40,
+          "tags": [
+            "Water",
+            "Arena"
+          ],
+          "description": "Adds a Rain counter to the arena that replaces non-Water aspect counters at the end of turn"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "id": "pierce",
+      "name": "Pierce",
+      "icon": "Card Icons_All_07.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Neutral",
+          "series": "Neutral",
+          "power": 50,
+          "tags": [
+            "Neutral"
+          ],
+          "description": "Ignore the effects of counters from both players"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "id": "flare",
+      "name": "Flare",
+      "icon": "Card Icons_All_08.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Fire",
+          "series": "Fire",
+          "power": 35,
+          "tags": [
+            "Fire",
+            "Burst Damage"
+          ],
+          "description": "Removes Fire counter on opponent for 3x damage"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "id": "lunge",
+      "name": "Lunge",
+      "icon": "Card Icons_All_09.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Neutral",
+          "series": "Neutral",
+          "power": 50,
+          "tags": [
+            "Neutral",
+            "Priority"
+          ],
+          "description": "Priority move."
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "id": "explosion",
+      "name": "Explosion",
+      "icon": "Card Icons_All_10.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Fire",
+          "series": "Fire",
+          "power": 30,
+          "tags": [
+            "Fire"
+          ],
+          "description": "Removes Fire counter on self to deal 5x damage"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "id": "lightning",
+      "name": "Lightning",
+      "icon": "Card Icons_All_11.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Fire",
+          "series": "Lightning",
+          "power": 40,
+          "tags": [
+            "Lightning"
+          ],
+          "description": "Adds or increases Lightning counter. Damage is multiplied by number of counters"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "id": "block",
+      "name": "Block",
+      "icon": "Card Icons_All_12.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Neutral",
+          "series": "Neutral",
+          "power": 0,
+          "tags": [
+            "Neutral",
+            "Defense",
+            "Priority"
+          ],
+          "description": "Priority move. Prevent all damage and effects from opponent's next move"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "id": "earthquake",
+      "name": "Earthquake",
+      "icon": "Card Icons_All_13.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Earth",
+          "series": "Earth",
+          "power": 25,
+          "tags": [
+            "Earth"
+          ],
+          "description": "Damage is multiplied by the number of Earth counters on the user"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "id": "thunder",
+      "name": "Thunder",
+      "icon": "Card Icons_All_14.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Fire",
+          "series": "Lightning",
+          "power": 25,
+          "tags": [
+            "Lightning"
+          ],
+          "description": "Does 4x damage if Storm counter is active"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "id": "recharge",
+      "name": "Recharge",
+      "icon": "Card Icons_All_15.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Fire",
+          "series": "Lightning",
+          "power": 20,
+          "tags": [
+            "Lightning",
+            "Heal"
+          ],
+          "description": "Removes Lightning counters from opponent to deal 3x damage and heal damage dealt"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "id": "discharge",
+      "name": "Discharge",
+      "icon": "Card Icons_All_16.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Fire",
+          "series": "Lightning",
+          "power": 40,
+          "tags": [
+            "Lightning"
+          ],
+          "description": "Removes Lightning counters from opponent for 3x damage"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "id": "storm",
+      "name": "Storm",
+      "icon": "Card Icons_All_17.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Fire",
+          "series": "Lightning",
+          "power": 25,
+          "tags": [
+            "Lightning",
+            "Arena"
+          ],
+          "description": "Adds a Storm counter to the arena that adds or increases Lightning on both players"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "id": "recover",
+      "name": "Recover",
+      "icon": "Card Icons_All_18.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Neutral",
+          "series": "Neutral",
+          "power": 0,
+          "tags": [
+            "Neutral",
+            "Heal"
+          ],
+          "description": "Heal 35% of max HP"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "id": "incinerate",
+      "name": "Incinerate",
+      "icon": "Card Icons_All_19.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Fire",
+          "series": "Fire",
+          "power": 30,
+          "tags": [
+            "Fire",
+            "Counter Replacement"
+          ],
+          "description": "Replaces the opponent’s existing counter with a Fire counter"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "id": "overheat",
+      "name": "Overheat",
+      "icon": "Card Icons_All_20.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Fire",
+          "series": "Fire",
+          "power": 100,
+          "tags": [
+            "Fire"
+          ],
+          "description": "Lowers the user's defense stat by 2 stages"
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "id": "inferno",
+      "name": "Inferno",
+      "icon": "Card Icons_All_21.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Fire",
+          "series": "Fire",
+          "power": 50,
+          "tags": [
+            "Fire",
+            "Arena"
+          ],
+          "description": "Adds a Blaze counter to the arena that replaces both player counters with Fire counters at the end of turn"
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "id": "combustion",
+      "name": "Combustion",
+      "icon": "Card Icons_All_22.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Fire",
+          "series": "Fire",
+          "power": 25,
+          "tags": [
+            "Fire"
+          ],
+          "description": "Does 4x damage if Blaze counter is active"
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "id": "aegis",
+      "name": "Aegis",
+      "icon": "Card Icons_All_23.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Neutral",
+          "series": "Neutral",
+          "power": 0,
+          "tags": [
+            "Neutral",
+            "Defense"
+          ],
+          "description": "Place an Aegis counter that prevents all damage 50 base power and below"
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "id": "curse",
+      "name": "Curse",
+      "icon": "Card Icons_All_24.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Neutral",
+          "series": "Neutral",
+          "power": 0,
+          "tags": [
+            "Neutral"
+          ],
+          "description": "Places a curse counter on opponent that deals 50% of their moves back to them"
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "id": "ice-wall",
+      "name": "Ice Wall",
+      "icon": "Card Icons_All_25.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Water",
+          "series": "Water",
+          "power": 0,
+          "tags": [
+            "Water",
+            "Defense",
+            "Arena"
+          ],
+          "description": "Places a Wall counter on the Arena that nullifies any damage from the next three attacks from any player"
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "id": "aftershock",
+      "name": "Aftershock",
+      "icon": "Card Icons_All_26.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Earth",
+          "series": "Earth",
+          "power": 70,
+          "tags": [
+            "Earth",
+            "Debuff"
+          ],
+          "description": "Lower the opponent's speed by one stage if you have an Earth counter"
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "id": "stone-rain",
+      "name": "Stone Rain",
+      "icon": "Card Icons_All_27.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Earth",
+          "series": "Earth",
+          "power": 40,
+          "tags": [
+            "Earth",
+            "Arena"
+          ],
+          "description": "Add a Sandstorm counter to the arena that deals 12.5% per turn to each player without an Earth or Nature counter"
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "id": "time-flip",
+      "name": "Time Flip",
+      "icon": "Card Icons_All_28.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Neutral",
+          "series": "Neutral",
+          "power": 0,
+          "tags": [
+            "Neutral",
+            "Arena"
+          ],
+          "description": "Place a Reversal arena counter that allows the slower Pico to attack first"
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "id": "terraform",
+      "name": "Terraform",
+      "icon": "Card Icons_All_29.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Earth",
+          "series": "Nature",
+          "power": 15,
+          "tags": [
+            "Earth",
+            "Nature",
+            "Heal",
+            "Priority"
+          ],
+          "description": "Priority move. Upgrades Earth Counter to Nature Counter, which heals 12.5% each turn"
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "id": "naturalize",
+      "name": "Naturalize",
+      "icon": "Card Icons_All_30.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Earth",
+          "series": "Nature",
+          "power": 25,
+          "tags": [
+            "Nature",
+            "Heal",
+            "Counter Removal"
+          ],
+          "description": "Remove opponent counter and heal 12.5% of max HP. Doubles damage if counter is removed"
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "id": "life-leech",
+      "name": "Life Leech",
+      "icon": "Card Icons_All_31.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Earth",
+          "series": "Nature",
+          "power": 45,
+          "tags": [
+            "Earth",
+            "Nature",
+            "Heal"
+          ],
+          "description": "Heals 50% of the damage dealt. Damage is doubled if the user has a Nature counter"
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "id": "erosion",
+      "name": "Erosion",
+      "icon": "Card Icons_All_32.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Earth",
+          "series": "Earth",
+          "power": 15,
+          "tags": [
+            "Earth"
+          ],
+          "description": "Removes one Earth stack on the user. Damage is multiplied for each turn that has passed this battle"
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "id": "hydration",
+      "name": "Hydration",
+      "icon": "Card Icons_All_33.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Water",
+          "series": "Water",
+          "power": 2,
+          "tags": [
+            "Water",
+            "Heal"
+          ],
+          "description": "Places a Water counter on the user and heals for 25% of max HP"
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "id": "icicle",
+      "name": "Icicle",
+      "icon": "Card Icons_All_34.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Water",
+          "series": "Water",
+          "power": 50,
+          "tags": [
+            "Water"
+          ],
+          "description": "Remove a Water counter on the user for 2x damage"
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "id": "freeze",
+      "name": "Freeze",
+      "icon": "Card Icons_All_35.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Water",
+          "series": "Water",
+          "power": 40,
+          "tags": [
+            "Water"
+          ],
+          "description": "Turns a Water counter on the opponent to an Ice counter, which blocks the effect of the next move"
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "id": "payout",
+      "name": "Payout",
+      "icon": "Card Icons_All_36.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Neutral",
+          "series": "Neutral",
+          "power": 15,
+          "tags": [
+            "Neutral",
+            "Reward"
+          ],
+          "description": "Increases the total credit reward at the end of the battle by 50% if used. This effect cannot be stacked"
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "id": "undertow",
+      "name": "Undertow",
+      "icon": "Card Icons_All_37.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Water",
+          "series": "Water",
+          "power": 30,
+          "tags": [
+            "Water",
+            "Counter Replacement"
+          ],
+          "description": "Replace existing opponent's counter to Water counter for 2x damage if replaced"
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "id": "life-steal",
+      "name": "Life Steal",
+      "icon": "Card Icons_All_38.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Water",
+          "series": "Water",
+          "power": 40,
+          "tags": [
+            "Water",
+            "Heal"
+          ],
+          "description": "Turn a Water counter on the user to a Life Steal counter, which heals HP equal to damage dealt"
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "id": "boil",
+      "name": "Boil",
+      "icon": "Card Icons_All_39.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Water",
+          "series": "Steam",
+          "power": 60,
+          "tags": [
+            "Water",
+            "Steam",
+            "Fire"
+          ],
+          "description": "Turn ALL Water counters to Fire counters"
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "id": "mistwalk",
+      "name": "Mistwalk",
+      "icon": "Card Icons_All_40.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Water",
+          "series": "Steam",
+          "power": 10,
+          "tags": [
+            "Water",
+            "Steam",
+            "Defense"
+          ],
+          "description": "Turns a Water counter on the user to a Mist counter, which blocks the damage of the next incoming move"
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "id": "lucky-star",
+      "name": "Lucky Star",
+      "icon": "Card Icons_All_41.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Wind",
+          "series": "Wind",
+          "power": 40,
+          "tags": [
+            "Wind",
+            "Buff"
+          ],
+          "description": "Turn a Wind Counter on the user into a Luck Counter that increases crit chance by 25%"
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "id": "windstorm",
+      "name": "Windstorm",
+      "icon": "Card Icons_All_42.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Wind",
+          "series": "Wind",
+          "power": 30,
+          "tags": [
+            "Wind",
+            "Counter Removal"
+          ],
+          "description": "Adds/Replaces a Gust counter to the arena. Removes non-Wind counters on players at the end of turn"
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "id": "gale-force",
+      "name": "Gale Force",
+      "icon": "Card Icons_All_43.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Wind",
+          "series": "Wind",
+          "power": 35,
+          "tags": [
+            "Wind",
+            "Counter Removal"
+          ],
+          "description": "Removes counters from each player and arena. Multiplies damage per counter removed"
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "id": "force-rush",
+      "name": "Force Rush",
+      "icon": "Card Icons_All_44.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Wind",
+          "series": "Wind",
+          "power": 90,
+          "tags": [
+            "Wind"
+          ],
+          "description": "Damage is divided by number of turns that passed and grants a Wind counter"
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "id": "sonicboom",
+      "name": "Sonicboom",
+      "icon": "Card Icons_All_45.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Wind",
+          "series": "Wind",
+          "power": 60,
+          "tags": [
+            "Wind",
+            "Crit"
+          ],
+          "description": "25% chance to crit"
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "id": "pressure",
+      "name": "Pressure",
+      "icon": "Card Icons_All_46.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Wind",
+          "series": "Wind",
+          "power": 35,
+          "tags": [
+            "Wind"
+          ],
+          "description": "Damage is multiplied by the number of times this ability was used this game"
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "id": "insult",
+      "name": "Insult",
+      "icon": "Card Icons_All_47.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Neutral",
+          "series": "Neutral",
+          "power": 0,
+          "tags": [
+            "Neutral",
+            "Debuff"
+          ],
+          "description": "Lower the opponent's defense stage by 1"
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "id": "juxtapose",
+      "name": "Juxtapose",
+      "icon": "Card Icons_All_48.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Neutral",
+          "series": "Neutral",
+          "power": 0,
+          "tags": [
+            "Neutral"
+          ],
+          "description": "Switch counters with opponent"
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "id": "blood-moon",
+      "name": "Blood Moon",
+      "icon": "Card Icons_All_49.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Neutral",
+          "series": "Neutral",
+          "power": 0,
+          "tags": [
+            "Neutral",
+            "Arena"
+          ],
+          "description": "Place a Blood Moon arena counter that turns healing into damage"
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "id": "channel",
+      "name": "Channel",
+      "icon": "Card Icons_All_50.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Neutral",
+          "series": "Neutral",
+          "power": 0,
+          "tags": [
+            "Neutral",
+            "Utility"
+          ],
+          "description": "Raises attack by one stage and shuffles the user’s deck"
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "id": "disarm",
+      "name": "Disarm",
+      "icon": "Card Icons_All_51.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Neutral",
+          "series": "Neutral",
+          "power": 20,
+          "tags": [
+            "Neutral",
+            "Priority",
+            "Counter Removal"
+          ],
+          "description": "Priority move. Removes the counter on the target"
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "id": "refresh",
+      "name": "Refresh",
+      "icon": "Card Icons_All_52.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Neutral",
+          "series": "Neutral",
+          "power": 0,
+          "tags": [
+            "Neutral",
+            "Counter Removal",
+            "Heal"
+          ],
+          "description": "Removes counter from the user and heals 1/8th of their maximum HP"
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "id": "desolation",
+      "name": "Desolation",
+      "icon": "Card Icons_All_53.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Neutral",
+          "series": "Neutral",
+          "power": 40,
+          "tags": [
+            "Neutral",
+            "Counter Removal",
+            "Utility"
+          ],
+          "description": "Remove the arena counter and raise the user’s attack by one stage"
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "id": "overdrive",
+      "name": "Overdrive",
+      "icon": "Card Icons_All_54.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Neutral",
+          "series": "Neutral",
+          "power": 40,
+          "tags": [
+            "Neutral",
+            "Utility"
+          ],
+          "description": "Increases the Attack and Speed of the user by one stage, but decreases the defense by one stage"
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "id": "updraft",
+      "name": "Updraft",
+      "icon": "Card Icons_All_55.png",
+      "history": [
+        {
+          "version": "1.0.0",
+          "aspect": "Wind",
+          "series": "Wind",
+          "power": 40,
+          "tags": [
+            "Wind",
+            "Counter Replacement"
+          ],
+          "description": "Replace the current counter on the user with a Wind counter"
+        }
+      ]
+    }
+  ],
+  "headGear": [
+    {
+      "index": 0,
+      "id": "none",
+      "name": "None"
+    },
+    {
+      "index": 1,
+      "id": "wizard-hat",
+      "name": "Wizard Hat"
+    },
+    {
+      "index": 2,
+      "id": "headband",
+      "name": "Headband"
+    },
+    {
+      "index": 3,
+      "id": "pointed-ears",
+      "name": "Pointed Ears"
+    },
+    {
+      "index": 4,
+      "id": "tv-head",
+      "name": "TV Head"
+    },
+    {
+      "index": 5,
+      "id": "hooded-robe",
+      "name": "Hooded Robe"
+    },
+    {
+      "index": 6,
+      "id": "night-cap",
+      "name": "Night Cap"
+    },
+    {
+      "index": 7,
+      "id": "banana",
+      "name": "Banana"
+    },
+    {
+      "index": 8,
+      "id": "boba-tea",
+      "name": "Boba Tea"
+    },
+    {
+      "index": 9,
+      "id": "cactus",
+      "name": "Cactus"
+    },
+    {
+      "index": 10,
+      "id": "chef-s-hat",
+      "name": "Chef's Hat"
+    },
+    {
+      "index": 11,
+      "id": "mimic-chest",
+      "name": "Mimic Chest"
+    },
+    {
+      "index": 12,
+      "id": "soda-pop",
+      "name": "Soda Pop"
+    },
+    {
+      "index": 13,
+      "id": "cowboy-hat",
+      "name": "Cowboy Hat"
+    },
+    {
+      "index": 14,
+      "id": "demon-helm",
+      "name": "Demon Helm"
+    },
+    {
+      "index": 15,
+      "id": "dragon-skull",
+      "name": "Dragon Skull"
+    },
+    {
+      "index": 16,
+      "id": "egg-shell",
+      "name": "Egg Shell"
+    },
+    {
+      "index": 17,
+      "id": "evil-eye",
+      "name": "Evil Eye"
+    },
+    {
+      "index": 18,
+      "id": "fairy-wings",
+      "name": "Fairy Wings"
+    },
+    {
+      "index": 19,
+      "id": "frog",
+      "name": "Frog"
+    },
+    {
+      "index": 20,
+      "id": "flame-skull",
+      "name": "Flame Skull"
+    },
+    {
+      "index": 21,
+      "id": "goblin",
+      "name": "Goblin"
+    },
+    {
+      "index": 22,
+      "id": "egg-yolk",
+      "name": "Egg Yolk"
+    },
+    {
+      "index": 23,
+      "id": "halo",
+      "name": "Halo"
+    },
+    {
+      "index": 24,
+      "id": "hero-goggles",
+      "name": "Hero Goggles"
+    },
+    {
+      "index": 25,
+      "id": "horn-helm",
+      "name": "Horn Helm"
+    },
+    {
+      "index": 26,
+      "id": "ram-horns",
+      "name": "Ram Horns"
+    },
+    {
+      "index": 27,
+      "id": "insect-horns",
+      "name": "Insect Horns"
+    },
+    {
+      "index": 28,
+      "id": "tilted-band",
+      "name": "Tilted Band"
+    },
+    {
+      "index": 29,
+      "id": "star-ride",
+      "name": "Star Ride"
+    },
+    {
+      "index": 30,
+      "id": "knight-helmet",
+      "name": "Knight Helmet"
+    },
+    {
+      "index": 31,
+      "id": "big-bull",
+      "name": "Big Bull"
+    },
+    {
+      "index": 32,
+      "id": "magic-hair",
+      "name": "Magic Hair"
+    },
+    {
+      "index": 33,
+      "id": "shroom-cap",
+      "name": "Shroom Cap"
+    },
+    {
+      "index": 34,
+      "id": "paper-bag",
+      "name": "Paper Bag"
+    },
+    {
+      "index": 35,
+      "id": "chili-pepper",
+      "name": "Chili Pepper"
+    },
+    {
+      "index": 36,
+      "id": "pirate-hat",
+      "name": "Pirate Hat"
+    },
+    {
+      "index": 37,
+      "id": "plague-doctor",
+      "name": "Plague Doctor"
+    },
+    {
+      "index": 38,
+      "id": "rabbit-ears",
+      "name": "Rabbit Ears"
+    },
+    {
+      "index": 39,
+      "id": "robo-signal",
+      "name": "Robo Signal"
+    },
+    {
+      "index": 40,
+      "id": "safety-helmet",
+      "name": "Safety Helmet"
+    },
+    {
+      "index": 41,
+      "id": "skeleton",
+      "name": "Skeleton"
+    },
+    {
+      "index": 42,
+      "id": "snake-head",
+      "name": "Snake Head"
+    },
+    {
+      "index": 43,
+      "id": "snorkle-mask",
+      "name": "Snorkle Mask"
+    },
+    {
+      "index": 44,
+      "id": "spacesuit",
+      "name": "Spacesuit"
+    },
+    {
+      "index": 45,
+      "id": "spikey-quills",
+      "name": "Spikey Quills"
+    },
+    {
+      "index": 46,
+      "id": "sprout",
+      "name": "Sprout"
+    },
+    {
+      "index": 47,
+      "id": "stand",
+      "name": "Stand"
+    },
+    {
+      "index": 48,
+      "id": "teacup",
+      "name": "Teacup"
+    },
+    {
+      "index": 49,
+      "id": "top-hat",
+      "name": "Top Hat"
+    },
+    {
+      "index": 50,
+      "id": "festive-tree",
+      "name": "Festive Tree"
+    }
+  ],
+  "bodyGear": [
+    {
+      "index": 0,
+      "id": "none",
+      "name": "None"
+    },
+    {
+      "index": 1,
+      "id": "staff",
+      "name": "Staff"
+    },
+    {
+      "index": 2,
+      "id": "sword-shield",
+      "name": "Sword/Shield"
+    },
+    {
+      "index": 3,
+      "id": "dual-blades",
+      "name": "Dual Blades"
+    },
+    {
+      "index": 4,
+      "id": "hero-s-cape",
+      "name": "Hero's Cape"
+    },
+    {
+      "index": 5,
+      "id": "spear",
+      "name": "Spear"
+    },
+    {
+      "index": 6,
+      "id": "giant-key",
+      "name": "Giant Key"
+    },
+    {
+      "index": 7,
+      "id": "balloon",
+      "name": "Balloon"
+    },
+    {
+      "index": 8,
+      "id": "bow",
+      "name": "Bow"
+    },
+    {
+      "index": 9,
+      "id": "eepy",
+      "name": "Eepy"
+    },
+    {
+      "index": 10,
+      "id": "chef-s-jacket",
+      "name": "Chef's Jacket"
+    },
+    {
+      "index": 11,
+      "id": "ghost-skull",
+      "name": "Ghost Skull"
+    },
+    {
+      "index": 12,
+      "id": "hammer",
+      "name": "Hammer"
+    },
+    {
+      "index": 13,
+      "id": "lamia",
+      "name": "Lamia"
+    },
+    {
+      "index": 14,
+      "id": "lollipop",
+      "name": "Lollipop"
+    },
+    {
+      "index": 15,
+      "id": "mage-book",
+      "name": "Mage Book"
+    },
+    {
+      "index": 16,
+      "id": "magic-dress",
+      "name": "Magic Dress"
+    },
+    {
+      "index": 17,
+      "id": "knight-armor",
+      "name": "Knight Armor"
+    },
+    {
+      "index": 18,
+      "id": "moon-staff",
+      "name": "Moon Staff"
+    },
+    {
+      "index": 19,
+      "id": "poncho",
+      "name": "Poncho"
+    },
+    {
+      "index": 20,
+      "id": "scarf",
+      "name": "Scarf"
+    },
+    {
+      "index": 21,
+      "id": "ornate-staff",
+      "name": "Ornate Staff"
+    },
+    {
+      "index": 22,
+      "id": "star-wand",
+      "name": "Star Wand"
+    },
+    {
+      "index": 23,
+      "id": "briefcase",
+      "name": "Briefcase"
+    },
+    {
+      "index": 24,
+      "id": "umbrella",
+      "name": "Umbrella"
+    },
+    {
+      "index": 25,
+      "id": "vest",
+      "name": "Vest"
+    },
+    {
+      "index": 26,
+      "id": "greatsword",
+      "name": "Greatsword"
+    },
+    {
+      "index": 27,
+      "id": "fishing-pole",
+      "name": "Fishing Pole"
+    },
+    {
+      "index": 28,
+      "id": "pickaxe",
+      "name": "Pickaxe"
+    },
+    {
+      "index": 29,
+      "id": "tank",
+      "name": "Tank"
+    },
+    {
+      "index": 30,
+      "id": "gift-box",
+      "name": "Gift Box"
+    }
+  ],
+  "counters": []
+}
