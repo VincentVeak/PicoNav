@@ -28,7 +28,7 @@ Deep Dungeon merits, afflictions, and gems. Pick a version to see descriptions a
 ## Merits
 
 <table class="card-table" id="merits-table">
-<thead><tr><th style="width:20%">Name</th><th style="width:96px">Rarity</th><th>Description</th></tr></thead>
+<thead><tr><th id="merit-sort-name" class="sortable" style="width:20%">Name <span class="sort-arrow"></span></th><th id="merit-sort-rarity" class="sortable" style="width:110px">Rarity <span class="sort-arrow"></span></th><th>Description</th></tr></thead>
 <tbody id="merits-body"></tbody>
 </table>
 
@@ -57,9 +57,14 @@ Deep Dungeon merits, afflictions, and gems. Pick a version to see descriptions a
 .gem-icon { text-align: center; padding: 0.3rem !important; }
 .gem-icon img { width: 40px; height: 40px; object-fit: contain; display: block; margin: 0 auto; image-rendering: pixelated; }
 .rarity { font-weight: 600; white-space: nowrap; }
-.rarity-common { color: #9fb0a0; }
-.rarity-uncommon { color: #6fd1b0; }
-.rarity-rare { color: #FF7573; }
+.rarity-common { color: #C9D1D9; }
+.rarity-uncommon { color: #57D18C; }
+.rarity-rare { color: #5AA9F0; }
+.rarity-epic { color: #B98BFF; }
+.rarity-legendary { color: #F5B84A; }
+.card-table th.sortable { cursor: pointer; user-select: none; }
+.card-table th.sortable:hover { background-color: #ff8f8d; }
+.sort-arrow { font-size: 0.7em; margin-left: 0.25rem; }
 </style>
 
 <script>
@@ -74,10 +79,28 @@ Deep Dungeon merits, afflictions, and gems. Pick a version to see descriptions a
   function q(){ return (document.getElementById('mag-search').value || '').toLowerCase(); }
   function match(name, desc){ var s = q(); return !s || (name + ' ' + desc).toLowerCase().indexOf(s) >= 0; }
 
-  function renderList(list, bodyId, withIcon, cols, sortByName, withRarity){
+  var RARITY_RANK = { common: 1, uncommon: 2, rare: 3, epic: 4, legendary: 5 };
+  var meritSort = { key: 'name', dir: 1 };
+  function meritCmp(a, b){
+    if (meritSort.key === 'rarity'){
+      var ra = RARITY_RANK[(a.rarity||'').toLowerCase()] || 99;
+      var rb = RARITY_RANK[(b.rarity||'').toLowerCase()] || 99;
+      if (ra !== rb) return (ra - rb) * meritSort.dir;
+      return a.name.localeCompare(b.name);
+    }
+    return a.name.localeCompare(b.name) * meritSort.dir;
+  }
+  function updateSortArrows(){
+    var n = document.querySelector('#merit-sort-name .sort-arrow');
+    var r = document.querySelector('#merit-sort-rarity .sort-arrow');
+    if (n) n.textContent = meritSort.key === 'name' ? (meritSort.dir > 0 ? '▲' : '▼') : '';
+    if (r) r.textContent = meritSort.key === 'rarity' ? (meritSort.dir > 0 ? '▲' : '▼') : '';
+  }
+  function renderList(list, bodyId, withIcon, cols, sortByName, withRarity, cmp){
     var body = document.getElementById(bodyId); if (!body) return;
     var arr = list.slice();
-    if (sortByName) arr.sort(function(a, b){ return a.name.localeCompare(b.name); });
+    if (cmp) arr.sort(cmp);
+    else if (sortByName) arr.sort(function(a, b){ return a.name.localeCompare(b.name); });
     var html = arr.map(function(it){
       var h = resolve(it, VERSION); var desc = h.description || '';
       if (!match(it.name, desc)) return '';
@@ -93,8 +116,9 @@ Deep Dungeon merits, afflictions, and gems. Pick a version to see descriptions a
   }
   function render(){
     renderList(DATA.gems || [], 'gems-body', true, 3, false);
-    renderList(DATA.merits || [], 'merits-body', false, 3, true, true);
+    renderList(DATA.merits || [], 'merits-body', false, 3, false, true, meritCmp);
     renderList(DATA.afflictions || [], 'affl-body', false, 2, true);
+    updateSortArrows();
   }
 
   fetch(RAW).then(function(r){ return r.json(); }).then(function(d){
@@ -109,6 +133,10 @@ Deep Dungeon merits, afflictions, and gems. Pick a version to see descriptions a
     sel.value = VERSION;
     sel.addEventListener('change', function(){ VERSION = sel.value; render(); });
     document.getElementById('mag-search').addEventListener('input', render);
+    var sortName = document.getElementById('merit-sort-name');
+    var sortRarity = document.getElementById('merit-sort-rarity');
+    if (sortName) sortName.addEventListener('click', function(){ if (meritSort.key === 'name') meritSort.dir *= -1; else { meritSort.key = 'name'; meritSort.dir = 1; } render(); });
+    if (sortRarity) sortRarity.addEventListener('click', function(){ if (meritSort.key === 'rarity') meritSort.dir *= -1; else { meritSort.key = 'rarity'; meritSort.dir = 1; } render(); });
     render();
   }).catch(function(){ document.getElementById('gems-body').innerHTML = '<tr><td colspan="3">Could not load data from GitHub.</td></tr>'; });
 })();
