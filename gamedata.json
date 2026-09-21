@@ -1573,6 +1573,7 @@
       "index": 0,
       "id": "windrider",
       "name": "Windrider",
+      "rarity": "Uncommon",
       "history": [
         {
           "version": "2.0",
@@ -1584,6 +1585,7 @@
       "index": 1,
       "id": "inflow",
       "name": "Inflow",
+      "rarity": "Uncommon",
       "history": [
         {
           "version": "2.0",
@@ -1595,6 +1597,7 @@
       "index": 2,
       "id": "scorching",
       "name": "Scorching",
+      "rarity": "Uncommon",
       "history": [
         {
           "version": "2.0",
@@ -1606,6 +1609,7 @@
       "index": 3,
       "id": "tectonics",
       "name": "Tectonics",
+      "rarity": "Uncommon",
       "history": [
         {
           "version": "2.0",
@@ -1617,6 +1621,7 @@
       "index": 4,
       "id": "high-voltage",
       "name": "High Voltage",
+      "rarity": "Common",
       "history": [
         {
           "version": "2.0",
@@ -1628,6 +1633,7 @@
       "index": 5,
       "id": "fire-amp",
       "name": "Fire Amp",
+      "rarity": "Common",
       "history": [
         {
           "version": "2.0",
@@ -1639,6 +1645,7 @@
       "index": 6,
       "id": "water-amp",
       "name": "Water Amp",
+      "rarity": "Common",
       "history": [
         {
           "version": "2.0",
@@ -1650,6 +1657,7 @@
       "index": 7,
       "id": "wind-amp",
       "name": "Wind Amp",
+      "rarity": "Common",
       "history": [
         {
           "version": "2.0",
@@ -1661,6 +1669,7 @@
       "index": 8,
       "id": "earth-amp",
       "name": "Earth Amp",
+      "rarity": "Common",
       "history": [
         {
           "version": "2.0",
@@ -1672,6 +1681,7 @@
       "index": 9,
       "id": "fire-surge",
       "name": "Fire Surge",
+      "rarity": "Common",
       "history": [
         {
           "version": "2.0",
@@ -1683,6 +1693,7 @@
       "index": 10,
       "id": "water-surge",
       "name": "Water Surge",
+      "rarity": "Common",
       "history": [
         {
           "version": "2.0",
@@ -1694,6 +1705,7 @@
       "index": 11,
       "id": "wind-surge",
       "name": "Wind Surge",
+      "rarity": "Common",
       "history": [
         {
           "version": "2.0",
@@ -1705,6 +1717,7 @@
       "index": 12,
       "id": "earth-surge",
       "name": "Earth Surge",
+      "rarity": "Common",
       "history": [
         {
           "version": "2.0",
@@ -1716,6 +1729,7 @@
       "index": 13,
       "id": "fire-td",
       "name": "Fire True Damage",
+      "rarity": "Common",
       "history": [
         {
           "version": "2.0",
@@ -1727,6 +1741,7 @@
       "index": 14,
       "id": "water-td",
       "name": "Water True Damage",
+      "rarity": "Common",
       "history": [
         {
           "version": "2.0",
@@ -1738,6 +1753,7 @@
       "index": 15,
       "id": "wind-td",
       "name": "Wind True Damage",
+      "rarity": "Common",
       "history": [
         {
           "version": "2.0",
@@ -1749,6 +1765,7 @@
       "index": 16,
       "id": "earth-td",
       "name": "Earth True Damage",
+      "rarity": "Common",
       "history": [
         {
           "version": "2.0",
@@ -1760,6 +1777,7 @@
       "index": 17,
       "id": "conduit",
       "name": "Conduit",
+      "rarity": "Uncommon",
       "history": [
         {
           "version": "2.0",
@@ -1771,6 +1789,7 @@
       "index": 18,
       "id": "overcharge",
       "name": "Overcharge",
+      "rarity": "Rare",
       "history": [
         {
           "version": "2.0",
@@ -1782,6 +1801,7 @@
       "index": 19,
       "id": "execute",
       "name": "Execute",
+      "rarity": "Rare",
       "history": [
         {
           "version": "2.0",
@@ -1793,6 +1813,7 @@
       "index": 20,
       "id": "whiplash",
       "name": "Whiplash",
+      "rarity": "Uncommon",
       "history": [
         {
           "version": "2.0",
@@ -1804,6 +1825,7 @@
       "index": 21,
       "id": "bloodrush",
       "name": "Bloodrush",
+      "rarity": "Uncommon",
       "history": [
         {
           "version": "2.0",
@@ -1815,6 +1837,7 @@
       "index": 22,
       "id": "sharpen",
       "name": "Sharpen",
+      "rarity": "Common",
       "history": [
         {
           "version": "2.0",
@@ -1826,6 +1849,7 @@
       "index": 23,
       "id": "bolster",
       "name": "Bolster",
+      "rarity": "Common",
       "history": [
         {
           "version": "2.0",
@@ -1837,6 +1861,7 @@
       "index": 24,
       "id": "temper",
       "name": "Temper",
+      "rarity": "Rare",
       "history": [
         {
           "version": "2.0",
@@ -1848,6 +1873,7 @@
       "index": 25,
       "id": "haste",
       "name": "Haste",
+      "rarity": "Uncommon",
       "history": [
         {
           "version": "2.0",
@@ -1859,6 +1885,7 @@
       "index": 26,
       "id": "keen-eye",
       "name": "Keen Eye",
+      "rarity": "Uncommon",
       "history": [
         {
           "version": "2.0",
@@ -1870,6 +1897,7 @@
       "index": 27,
       "id": "leech",
       "name": "Leech",
+      "rarity": "Uncommon",
       "history": [
         {
           "version": "2.0",
@@ -1881,6 +1909,7 @@
       "index": 28,
       "id": "desperation",
       "name": "Desperation",
+      "rarity": "Rare",
       "history": [
         {
           "version": "2.0",
@@ -1892,6 +1921,7 @@
       "index": 29,
       "id": "scholar",
       "name": "Scholar",
+      "rarity": "Rare",
       "history": [
         {
           "version": "2.0",
@@ -1903,6 +1933,7 @@
       "index": 30,
       "id": "berserk",
       "name": "Berserk",
+      "rarity": "Rare",
       "history": [
         {
           "version": "2.0",
@@ -1914,6 +1945,7 @@
       "index": 31,
       "id": "guts",
       "name": "Guts",
+      "rarity": "Common",
       "history": [
         {
           "version": "2.0",
@@ -1925,6 +1957,7 @@
       "index": 32,
       "id": "technician",
       "name": "Technician",
+      "rarity": "Uncommon",
       "history": [
         {
           "version": "2.0",
@@ -1936,6 +1969,7 @@
       "index": 33,
       "id": "speed-boost",
       "name": "Speed Boost",
+      "rarity": "Uncommon",
       "history": [
         {
           "version": "2.0",
@@ -1947,6 +1981,7 @@
       "index": 34,
       "id": "second-wind",
       "name": "Second Wind",
+      "rarity": "Rare",
       "history": [
         {
           "version": "2.0",
@@ -1958,6 +1993,7 @@
       "index": 35,
       "id": "regen",
       "name": "Regen",
+      "rarity": "Uncommon",
       "history": [
         {
           "version": "2.0",
@@ -1969,6 +2005,7 @@
       "index": 36,
       "id": "vitality",
       "name": "Vitality",
+      "rarity": "Rare",
       "history": [
         {
           "version": "2.0",
@@ -1980,6 +2017,7 @@
       "index": 37,
       "id": "spikes",
       "name": "Spikes",
+      "rarity": "Uncommon",
       "history": [
         {
           "version": "2.0",
@@ -1991,6 +2029,7 @@
       "index": 38,
       "id": "ambush",
       "name": "Ambush",
+      "rarity": "Uncommon",
       "history": [
         {
           "version": "2.0",
@@ -2002,6 +2041,7 @@
       "index": 39,
       "id": "phantom",
       "name": "Phantom",
+      "rarity": "Uncommon",
       "history": [
         {
           "version": "2.0",
@@ -2013,6 +2053,7 @@
       "index": 40,
       "id": "deep-freeze",
       "name": "Deep Freeze",
+      "rarity": "Uncommon",
       "history": [
         {
           "version": "2.0",
@@ -2024,6 +2065,7 @@
       "index": 41,
       "id": "ward",
       "name": "Ward",
+      "rarity": "Uncommon",
       "history": [
         {
           "version": "2.0",
@@ -2035,6 +2077,7 @@
       "index": 42,
       "id": "omen",
       "name": "Omen",
+      "rarity": "Uncommon",
       "history": [
         {
           "version": "2.0",
@@ -2046,6 +2089,7 @@
       "index": 43,
       "id": "frostguard",
       "name": "Frostguard",
+      "rarity": "Uncommon",
       "history": [
         {
           "version": "2.0",
@@ -2057,6 +2101,7 @@
       "index": 44,
       "id": "intimidate",
       "name": "Intimidate",
+      "rarity": "Uncommon",
       "history": [
         {
           "version": "2.0",
@@ -2068,6 +2113,7 @@
       "index": 45,
       "id": "reforge",
       "name": "Reforge",
+      "rarity": "Uncommon",
       "history": [
         {
           "version": "2.0",
@@ -2079,6 +2125,7 @@
       "index": 46,
       "id": "stacked-deck",
       "name": "Stacked Deck",
+      "rarity": "Uncommon",
       "history": [
         {
           "version": "2.0",
@@ -2090,6 +2137,7 @@
       "index": 47,
       "id": "scavenge",
       "name": "Scavenge",
+      "rarity": "Common",
       "history": [
         {
           "version": "2.0",
@@ -2101,6 +2149,7 @@
       "index": 48,
       "id": "bounty",
       "name": "Bounty",
+      "rarity": "Common",
       "history": [
         {
           "version": "2.0",
@@ -2112,6 +2161,7 @@
       "index": 49,
       "id": "reprieve",
       "name": "Reprieve",
+      "rarity": "Rare",
       "history": [
         {
           "version": "2.0",
@@ -2123,6 +2173,7 @@
       "index": 50,
       "id": "moxie",
       "name": "Moxie",
+      "rarity": "Rare",
       "history": [
         {
           "version": "2.0",
@@ -2134,6 +2185,7 @@
       "index": 51,
       "id": "purge",
       "name": "Purge",
+      "rarity": "Rare",
       "history": [
         {
           "version": "2.0",
@@ -2145,6 +2197,7 @@
       "index": 52,
       "id": "windfall",
       "name": "Windfall",
+      "rarity": "Rare",
       "history": [
         {
           "version": "2.0",

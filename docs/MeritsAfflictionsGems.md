@@ -28,7 +28,7 @@ Deep Dungeon merits, afflictions, and gems. Pick a version to see descriptions a
 ## Merits
 
 <table class="card-table" id="merits-table">
-<thead><tr><th style="width:22%">Name</th><th>Description</th></tr></thead>
+<thead><tr><th style="width:20%">Name</th><th style="width:96px">Rarity</th><th>Description</th></tr></thead>
 <tbody id="merits-body"></tbody>
 </table>
 
@@ -56,6 +56,10 @@ Deep Dungeon merits, afflictions, and gems. Pick a version to see descriptions a
 .card-table tbody tr:hover { background-color: rgba(255, 117, 115, 0.1); }
 .gem-icon { text-align: center; padding: 0.3rem !important; }
 .gem-icon img { width: 40px; height: 40px; object-fit: contain; display: block; margin: 0 auto; image-rendering: pixelated; }
+.rarity { font-weight: 600; white-space: nowrap; }
+.rarity-common { color: #9fb0a0; }
+.rarity-uncommon { color: #6fd1b0; }
+.rarity-rare { color: #FF7573; }
 </style>
 
 <script>
@@ -70,7 +74,7 @@ Deep Dungeon merits, afflictions, and gems. Pick a version to see descriptions a
   function q(){ return (document.getElementById('mag-search').value || '').toLowerCase(); }
   function match(name, desc){ var s = q(); return !s || (name + ' ' + desc).toLowerCase().indexOf(s) >= 0; }
 
-  function renderList(list, bodyId, withIcon, cols, sortByName){
+  function renderList(list, bodyId, withIcon, cols, sortByName, withRarity){
     var body = document.getElementById(bodyId); if (!body) return;
     var arr = list.slice();
     if (sortByName) arr.sort(function(a, b){ return a.name.localeCompare(b.name); });
@@ -79,7 +83,9 @@ Deep Dungeon merits, afflictions, and gems. Pick a version to see descriptions a
       if (!match(it.name, desc)) return '';
       var row = '<tr>';
       if (withIcon) row += '<td class="gem-icon"><img src="' + GEMBASE + encodeURI(it.icon || '') + '" alt="" onerror="this.style.display=\'none\'"></td>';
-      row += '<td><strong>' + esc(it.name) + '</strong></td><td>' + esc(desc) + '</td></tr>';
+      row += '<td><strong>' + esc(it.name) + '</strong></td>';
+      if (withRarity) row += '<td class="rarity rarity-' + (it.rarity||'').toLowerCase() + '">' + esc(it.rarity || '') + '</td>';
+      row += '<td>' + esc(desc) + '</td></tr>';
       return row;
     }).join('');
     if (!html) html = '<tr><td colspan="' + cols + '">No matches.</td></tr>';
@@ -87,7 +93,7 @@ Deep Dungeon merits, afflictions, and gems. Pick a version to see descriptions a
   }
   function render(){
     renderList(DATA.gems || [], 'gems-body', true, 3, false);
-    renderList(DATA.merits || [], 'merits-body', false, 2, true);
+    renderList(DATA.merits || [], 'merits-body', false, 3, true, true);
     renderList(DATA.afflictions || [], 'affl-body', false, 2, true);
   }
 
