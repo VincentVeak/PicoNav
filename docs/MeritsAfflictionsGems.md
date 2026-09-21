@@ -57,9 +57,9 @@ Deep Dungeon merits, afflictions, and gems. Pick a version to see descriptions a
 .gem-icon { text-align: center; padding: 0.3rem !important; }
 .gem-icon img { width: 40px; height: 40px; object-fit: contain; display: block; margin: 0 auto; image-rendering: pixelated; }
 .rarity { font-weight: 600; white-space: nowrap; }
-.rarity-common { color: #C9D1D9; }
-.rarity-uncommon { color: #57D18C; }
-.rarity-rare { color: #5AA9F0; }
+.rarity-common { color: inherit; }
+.rarity-uncommon { color: #5AA9F0; }
+.rarity-rare { color: #B98BFF; }
 .rarity-epic { color: #B98BFF; }
 .rarity-legendary { color: #F5B84A; }
 .card-table th.sortable { cursor: pointer; user-select: none; }
