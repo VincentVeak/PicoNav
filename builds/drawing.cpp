@@ -7,7 +7,7 @@ void pushScaled(int x, int y, int w, int h, const uint16_t* data, uint16_t trans
   static uint16_t row[240];
   for (int sy = 0; sy < h; sy++) {
     for (int sx = 0; sx < w; sx++) {
-      uint16_t c = pgm_read_word(&data[sy * w + sx]);
+      uint16_t c = RemapColor(pgm_read_word(&data[sy * w + sx]));
       row[sx * 3] = row[sx * 3 + 1] = row[sx * 3 + 2] = c;
     }
     for (int dy = 0; dy < 3; dy++)
@@ -20,7 +20,7 @@ void pushScaled(int x, int y, int w, int h, const uint16_t* data) {
   static uint16_t row[240];
   for (int sy = 0; sy < h; sy++) {
     for (int sx = 0; sx < w; sx++) {
-      uint16_t c = pgm_read_word(&data[sy * w + sx]);
+      uint16_t c = RemapColor(pgm_read_word(&data[sy * w + sx]));
       row[sx * 3] = row[sx * 3 + 1] = row[sx * 3 + 2] = c;
     }
     for (int dy = 0; dy < 3; dy++)
@@ -32,11 +32,20 @@ void pushScaled(TFT_eSprite &dst, int x, int y, int w, int h, const uint16_t* da
   static uint16_t row[240];
   for (int sy = 0; sy < h; sy++) {
     for (int sx = 0; sx < w; sx++) {
-      uint16_t c = pgm_read_word(&data[sy * w + sx]);
+      uint16_t c = RemapColor(pgm_read_word(&data[sy * w + sx]));
       row[sx * 3] = row[sx * 3 + 1] = row[sx * 3 + 2] = c;
     }
     for (int dy = 0; dy < 3; dy++)
       dst.pushImage(x, y + sy * 3 + dy, w * 3, 1, row, transparent);
+  }
+}
+
+// Full-image blit with palette remap (baked screens such as the title)
+void PushImageRemap(int x, int y, int w, int h, const uint16_t* data) {
+  static uint16_t row[240];
+  for (int sy = 0; sy < h; sy++) {
+    for (int sx = 0; sx < w; sx++) row[sx] = RemapColor(pgm_read_word(&data[sy * w + sx]));
+    tft.pushImage(x, y + sy, w, 1, row);
   }
 }
 
@@ -897,7 +906,7 @@ void ShowTitleScreen() {
   if (MENUSTATE != TITLE)
     return;
   static unsigned long lastTime = 0;
-  tft.pushImage(0, 0, 240, 135, titleScreen[0]);
+  PushImageRemap(0, 0, 240, 135, titleScreen[0]);
   testActive = true;
   if (millis() - lastTime > 3000) {
     if (EEPROM.read(0) != 1) {
@@ -5329,7 +5338,7 @@ void ScreenOff() {
   }
   //TURN SCREEN OFF
   if (screenOffTime >= screenTimeout && screenOff == false) {  //idle timeout (seconds)
-    if (MENUSTATE == MAINMENU && eventState != EVENT_PROMPT && eventState != EVENT_RESULT) {
+    if (MENUSTATE == MAINMENU && eventState != EVENT_PROMPT && eventState != EVENT_RESULT && OPTIONSSETTINGS != BACKUPWAIT && OPTIONSSETTINGS != RESTOREWAIT) {
       digitalWrite(4, LOW);
       tft.writecommand(ST7789_DISPOFF);
       tft.writecommand(ST7789_SLPIN);
@@ -5427,6 +5436,7 @@ void CombineImages(const uint16_t* bottomImage, const uint16_t* middleImage, con
         else if (middleColor != TFT_BLACK) finalColor = middleColor;
         else finalColor = bottomColor;
       }
+      finalColor = RemapColor(finalColor);
       // Scale 3x
       for (int dy = 0; dy < 3; dy++) {
         for (int dx = 0; dx < 3; dx++) {

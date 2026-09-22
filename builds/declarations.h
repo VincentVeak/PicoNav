@@ -184,3 +184,4 @@ void CheckRandomEvent();
 void pushScaled(int x, int y, int w, int h, const uint16_t* data, uint16_t transparent);
 void pushScaled(int x, int y, int w, int h, const uint16_t* data);
 void pushScaled(TFT_eSprite &dst, int x, int y, int w, int h, const uint16_t* data, uint16_t transparent);
+void PushImageRemap(int x, int y, int w, int h, const uint16_t* data);

@@ -372,11 +372,11 @@ int backlightPercent = 30;  // 0..100 in steps of 10 (scales screenBrightness in
 int screenTimeout = 15;     // seconds of idle before the screen sleeps (15/30/45/60)
 int ledTimeout = 0;         // minutes the LED may run continuously before auto-off; 0 = NONE
 //***
-//***FOR PNUT REFERENCE ONLY--COLORS
-String COLOR1 = "0xE758";
-String COLOR2 = "0xFE72";
-String COLOR3 = "0xFBAE";
-String COLOR4 = "0x0187";
+//***UI COLORS (loaded from save 492-499 at boot)
+uint16_t TFT_COLOR1 = 0xE758;
+uint16_t TFT_COLOR2 = 0xFE72;
+uint16_t TFT_COLOR3 = 0xFBAE;
+uint16_t TFT_COLOR4 = 0x0187;
 //***
 //***BUTTON STUFF
 int button1State = LOW;
@@ -411,6 +411,16 @@ void setup() {
   EEPROM.begin(512);
   CheckAndLoadRestore();
   SaveDataInit(); // Initialize EEPROM data BEFORE reading it (critical for new units)
+  // Load per-save UI colors (492-499) BEFORE ReadSaveData so the pet is built with them
+  {
+    uint16_t c1 = (EEPROM.read(492) << 8) | EEPROM.read(493);
+    uint16_t c2 = (EEPROM.read(494) << 8) | EEPROM.read(495);
+    uint16_t c3 = (EEPROM.read(496) << 8) | EEPROM.read(497);
+    uint16_t c4 = (EEPROM.read(498) << 8) | EEPROM.read(499);
+    bool blank = (c1 == 0xFFFF && c2 == 0xFFFF && c3 == 0xFFFF && c4 == 0xFFFF) ||
+                 (c1 == 0 && c2 == 0 && c3 == 0 && c4 == 0);
+    if (!blank) { TFT_COLOR1 = c1; TFT_COLOR2 = c2; TFT_COLOR3 = c3; TFT_COLOR4 = c4; }
+  }
   ReadSaveData();
   // Stamp running firmware version into save data (bytes 500-511) so backups carry it
   bool _verChanged = false;
@@ -428,7 +438,7 @@ void setup() {
   CreateDeck(equippedDeck);
   tft.setTextColor(TFT_COLOR1, TFT_COLOR4);
   tft.fillScreen(TFT_COLOR4);
-  tft.pushImage(0, 0, 240, 135, titleScreen[0]);
+  PushImageRemap(0, 0, 240, 135, titleScreen[0]);
   lastFarmUpdate = millis();
   //setTime(20, 52, 0, 1, 1, 1995);
   if(debug)

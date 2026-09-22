@@ -1,6 +1,26 @@
 #pragma once
 #include <Arduino.h>
 #include <TFT_eSPI.h>
+// UI colors are runtime globals loaded from the save; neutralize the library's compile-time defines
+#undef TFT_COLOR1
+#undef TFT_COLOR2
+#undef TFT_COLOR3
+#undef TFT_COLOR4
+extern uint16_t TFT_COLOR1;
+extern uint16_t TFT_COLOR2;
+extern uint16_t TFT_COLOR3;
+extern uint16_t TFT_COLOR4;
+// Runtime palette remap: art is authored in the four stock colors; map them to the
+// live palette at draw time. Transparent 0x0000 and fixed colors pass through.
+inline uint16_t RemapColor(uint16_t p) {
+  switch (p) {
+    case 0xE758: return TFT_COLOR1;
+    case 0xFE72: return TFT_COLOR2;
+    case 0xFBAE: return TFT_COLOR3;
+    case 0x0187: return TFT_COLOR4;
+    default: return p;
+  }
+}
 // ---- card / counter / item classes (was card.h) ----
 /////////////CARD DEFINITION//////////////////
 #pragma region Cards
@@ -465,10 +485,6 @@ extern int screenBrightness;
 extern int backlightPercent;
 extern int screenTimeout;
 extern int ledTimeout;
-extern String COLOR1;
-extern String COLOR2;
-extern String COLOR3;
-extern String COLOR4;
 extern int button1State;
 extern int button2State;
 extern String AButton;
