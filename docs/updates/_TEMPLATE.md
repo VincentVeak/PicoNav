@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: update
 title: "Post Title"
 parent: Updates & Blog
 nav_order: 20261231
