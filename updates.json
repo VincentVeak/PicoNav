@@ -1,0 +1,15 @@
+---
+layout: null
+permalink: /updates.json
+---
+{%- assign posts = site.pages | where: "parent", "Updates & Blog" | sort: "nav_order" | reverse -%}
+[
+{%- for p in posts limit: 10 %}
+  {
+    "title": {{ p.title | jsonify }},
+    "date": {{ p.date | date: "%Y-%m-%d" | jsonify }},
+    "summary": {{ p.summary | default: "" | jsonify }},
+    "url": {{ "https://piconav.com" | append: p.url | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+]
