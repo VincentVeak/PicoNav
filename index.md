@@ -37,7 +37,7 @@ The PicoNav is a different take on virtual pets with a focus on adventure and ba
 <div style="background: #2a2a2a; padding: 20px; border-radius: 8px;">
   <h3>📝 Updates & Blog</h3>
   <p>Latest news, patch notes, and announcements</p>
-  <a href="/docs/updates">View Updates → (Coming soon)</a>
+  <a href="/docs/updates">View Updates →</a>
 </div>
 
 <div style="background: #2a2a2a; padding: 20px; border-radius: 8px;">
